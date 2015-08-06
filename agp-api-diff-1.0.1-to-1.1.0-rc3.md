@@ -1,0 +1,8481 @@
+```diff
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.AppExtension gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.AppExtension
+--- gradle-1.0.1_489108d9/com.android.build.gradle.AppExtension	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.AppExtension	1969-12-31 14:00:00.000000000 -1000
+@@ -1,102 +0,0 @@
+-public class com.android.build.gradle.AppExtension extends com.android.build.gradle.BaseExtension implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254197;
+-  public com.android.build.gradle.AppExtension(com.android.build.gradle.AppPlugin, org.gradle.api.internal.project.ProjectInternal, org.gradle.internal.reflect.Instantiator, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.BuildType>, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.GroupableProductFlavor>, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.SigningConfig>, boolean);
+-  public org.gradle.api.internal.DefaultDomainObjectSet<com.android.build.gradle.api.ApplicationVariant> getApplicationVariants();
+-  public void addVariant(com.android.build.gradle.api.BaseVariant);
+-  public java.lang.Object this$dist$invoke$2(java.lang.String, java.lang.Object);
+-  public void this$dist$set$2(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$2(java.lang.String);
+-  public static void __$swapInit();
+-  public void super$2$setEnforceUniquePackageName(boolean);
+-  public com.android.build.gradle.internal.CompileOptions super$2$getCompileOptions();
+-  public void super$2$jacoco(org.gradle.api.Action);
+-  public void super$2$testOptions(org.gradle.api.Action);
+-  public void super$2$buildTypes(org.gradle.api.Action);
+-  public void super$2$resourcePrefix(java.lang.String);
+-  public java.lang.Object super$2$this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public com.android.sdklib.repository.FullRevision super$2$getBuildToolsRevision();
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getProductFlavors();
+-  public java.util.List super$2$getDeviceProviders();
+-  public com.android.build.gradle.internal.dsl.Splits super$2$getSplits();
+-  public void super$2$setTestBuildType(java.lang.String);
+-  public void super$2$setMetaClass(groovy.lang.MetaClass);
+-  public boolean super$2$getUseNewNativePlugin();
+-  public void super$2$setDefaultPublishConfig(java.lang.String);
+-  public void super$2$buildToolsVersion(java.lang.String);
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getSigningConfigs();
+-  public boolean super$2$isGeneratePureSplits();
+-  public com.android.builder.model.SourceProvider super$2$wrapJavaSourceSet(org.gradle.api.tasks.SourceSet);
+-  public void super$2$defaultPublishConfig(java.lang.String);
+-  public void super$2$productFlavors(org.gradle.api.Action);
+-  public void super$2$flavorDimensions(java.lang.String[]);
+-  public void super$2$registerArtifactType(java.lang.String, boolean, int);
+-  public void super$2$testServer(com.android.builder.testing.api.TestServer);
+-  public void super$2$setUseNewNativePlugin(boolean);
+-  public void super$2$compileSdkVersion(int);
+-  public java.util.List super$2$getBootClasspath();
+-  public void super$2$registerProductFlavorSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider);
+-  public void super$2$signingConfigs(org.gradle.api.Action);
+-  public java.lang.String super$2$getCompileSdkVersion();
+-  public void super$2$setBuildToolsVersion(java.lang.String);
+-  public java.lang.String super$2$getBuildToolsVersion();
+-  public void super$2$registerMultiFlavorSourceProvider(java.lang.String, java.lang.String, com.android.builder.model.SourceProvider);
+-  public void super$2$lintOptions(org.gradle.api.Action);
+-  public java.lang.Object super$2$getEnforceUniquePackageName();
+-  public void super$2$splits(org.gradle.api.Action);
+-  public void super$2$defaultConfig(org.gradle.api.Action);
+-  public void super$2$setGeneratePureSplits(boolean);
+-  public java.util.List super$2$getTestServers();
+-  public java.lang.String super$1$toString();
+-  public java.lang.String super$2$getDefaultPublishConfig();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public void super$2$compileOptions(org.gradle.api.Action);
+-  public void super$2$setResourcePrefix(java.lang.String);
+-  public void super$2$variantFilter(groovy.lang.Closure);
+-  public void super$2$publishNonDefault(boolean);
+-  public com.android.build.gradle.internal.dsl.PackagingOptions super$2$getPackagingOptions();
+-  public void super$1$wait();
+-  public org.gradle.api.internal.DefaultDomainObjectSet super$2$getTestVariants();
+-  public void super$2$enforceUniquePackageName(boolean);
+-  public groovy.lang.MetaClass super$2$getMetaClass();
+-  public com.android.build.gradle.internal.dsl.LintOptions super$2$getLintOptions();
+-  public com.android.build.gradle.internal.dsl.DexOptions super$2$getDexOptions();
+-  public java.io.File super$2$getDefaultProguardFile(java.lang.String);
+-  public void super$2$compileSdkVersion(java.lang.String);
+-  public void super$2$generatePureSplits(boolean);
+-  public void super$2$dexOptions(org.gradle.api.Action);
+-  public void super$2$setCompileSdkVersion(java.lang.String);
+-  public void super$2$registerBuildTypeSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider);
+-  public boolean super$2$getGeneratePureSplits();
+-  public void super$2$this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$2$invokeMethod(java.lang.String, java.lang.Object);
+-  public void super$2$registerJavaArtifact(java.lang.String, com.android.build.gradle.api.BaseVariant, java.lang.String, java.lang.String, org.gradle.api.artifacts.Configuration, java.io.File, com.android.builder.model.SourceProvider);
+-  public java.lang.Object super$2$getProperty(java.lang.String);
+-  public java.lang.Object super$2$getPlugin();
+-  public java.lang.String super$2$getTestBuildType();
+-  public boolean super$2$getPublishNonDefault();
+-  public com.android.build.gradle.internal.dsl.ProductFlavor super$2$getDefaultConfig();
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getBuildTypes();
+-  public void super$2$aaptOptions(org.gradle.api.Action);
+-  public java.util.List super$2$getFlavorDimensionList();
+-  public com.android.build.gradle.internal.coverage.JacocoExtension super$2$getJacoco();
+-  public java.lang.String super$2$getResourcePrefix();
+-  public java.io.File super$2$getAdbExe();
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getSourceSetsContainer();
+-  public void super$2$deviceProvider(com.android.builder.testing.api.DeviceProvider);
+-  public void super$2$packagingOptions(org.gradle.api.Action);
+-  public java.io.File super$2$getSdkDirectory();
+-  public void super$2$setFlavorDimensionList(java.util.List);
+-  public void super$2$addTestVariant(com.android.build.gradle.api.TestVariant);
+-  public groovy.lang.Closure super$2$getVariantFilter();
+-  public java.lang.Object super$2$this$dist$get$1(java.lang.String);
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getSourceSets();
+-  public com.android.build.gradle.internal.dsl.AaptOptions super$2$getAaptOptions();
+-  public com.android.build.gradle.internal.test.TestOptions super$2$getTestOptions();
+-  public void super$2$setVariantFilter(groovy.lang.Closure);
+-  public groovy.lang.MetaClass super$2$$getStaticMetaClass();
+-  public void super$2$sourceSets(org.gradle.api.Action);
+-  public com.android.utils.ILogger super$2$getLogger();
+-  public void super$2$setCompileSdkVersion(int);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.AppPlugin gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.AppPlugin
+--- gradle-1.0.1_489108d9/com.android.build.gradle.AppPlugin	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.AppPlugin	2015-08-06 11:05:15.000000000 -1000
+@@ -4 +4 @@
+-  public static long __timeStamp__239_neverHappen1420857254202;
++  public static long __timeStamp__239_neverHappen1423721438738;
+@@ -12,40 +11,0 @@
+-  public com.android.build.gradle.BaseExtension super$2$getExtension();
+-  public void super$2$createAndroidTasks(boolean);
+-  public void super$2$createProguardTasks(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.BasePlugin$PostCompilationData);
+-  public com.android.builder.sdk.SdkInfo super$2$getSdkInfo();
+-  public com.android.build.gradle.BasePlugin$PostCompilationData super$2$createJacocoTask(com.android.build.gradle.internal.core.GradleVariantConfiguration, com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.BasePlugin$PostCompilationData);
+-  public java.util.Collection super$2$getExtraJavaArtifacts(java.lang.String);
+-  public java.io.File super$2$getSdkFolder();
+-  public java.lang.Object super$2$this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public com.android.builder.core.AndroidBuilder super$2$getAndroidBuilder();
+-  public boolean super$2$isDebugLog();
+-  public void super$2$checkTasksAlreadyCreated();
+-  public void super$2$resolveDependencies(com.android.build.gradle.internal.dependency.VariantDependencies);
+-  public java.util.Collection super$2$getExtraVariantSourceProviders(java.lang.String);
+-  public boolean super$2$isVerbose();
+-  public void super$2$setMetaClass(groovy.lang.MetaClass);
+-  public java.util.Collection super$2$getExtraArtifacts();
+-  public void super$2$doApply();
+-  public void super$2$createProcessResTask(com.android.build.gradle.internal.variant.BaseVariantData, boolean);
+-  public void super$2$createCheckTasks(boolean, boolean);
+-  public void super$2$createRenderscriptTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createGenerateResValuesTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$registerArtifactType(java.lang.String, boolean, int);
+-  public void super$2$createGenerateMicroApkDataTask(com.android.build.gradle.internal.variant.BaseVariantData, org.gradle.api.artifacts.Configuration);
+-  public void super$2$createCompileTask(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createJackTask(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$configureProject();
+-  public java.util.List super$2$getBootClasspath();
+-  public java.util.Set super$2$getJniFolders(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public void super$2$registerProductFlavorSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider);
+-  public void super$2$createMergeLibManifestsTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String);
+-  public org.gradle.api.Task super$2$createAssembleTask(com.android.build.gradle.internal.variant.BaseVariantOutputData);
+-  public java.util.Collection super$2$getExtraFlavorSourceProviders(java.lang.String);
+-  public java.util.Collection super$2$getUnresolvedDependencies();
+-  public void super$2$createMergeAppManifestsTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createPostCompilationTasks(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public java.lang.Object super$2$addDependency(org.gradle.api.artifacts.result.ResolvedComponentResult, com.android.build.gradle.internal.dependency.VariantDependencies, java.util.Collection, java.util.Map, java.util.Map, java.util.Map, com.google.common.collect.Multimap);
+-  public void super$2$registerMultiFlavorSourceProvider(java.lang.String, java.lang.String, com.android.builder.model.SourceProvider);
+-  public void super$2$createPackagingTask(com.android.build.gradle.internal.variant.ApkVariantData, org.gradle.api.Task, boolean);
+-  public com.android.build.gradle.tasks.MergeResources super$2$basicCreateMergeResourcesTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String, java.lang.String, boolean, boolean);
+-  public void super$2$createMergeAssetsTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String, boolean);
+@@ -53 +12,0 @@
+-  public void super$2$createAidlTask(com.android.build.gradle.internal.variant.BaseVariantData, java.io.File);
+@@ -55,7 +14,2 @@
+-  public void super$2$displayDeprecationWarning(java.lang.String);
+-  public void super$2$createBuildConfigTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createProcessResTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String, boolean);
+-  public void super$2$createProcessTestManifestTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String);
+-  public org.gradle.internal.reflect.Instantiator super$2$getInstantiator();
+-  public java.io.File super$2$getNdkFolder();
+-  public java.util.Collection super$2$getExtraAndroidArtifacts(java.lang.String);
++  public void super$2$createAndroidTasks(boolean);
++  public java.lang.Object super$2$this$dist$invoke$1(java.lang.String, java.lang.Object);
+@@ -63 +16,0 @@
+-  public void super$2$ensureTargetSetup();
+@@ -64,0 +18 @@
++  public void super$2$setMetaClass(groovy.lang.MetaClass);
+@@ -66,3 +19,0 @@
+-  public java.util.Collection super$2$getExtraBuildTypeSourceProviders(java.lang.String);
+-  public void super$2$registerBuildTypeSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider);
+-  public void super$2$ensureConfigured(org.gradle.api.artifacts.Configuration);
+@@ -71,4 +21,0 @@
+-  public java.util.Map super$2$getPrepareTaskMap();
+-  public void super$2$registerJavaArtifact(java.lang.String, com.android.build.gradle.api.BaseVariant, java.lang.String, java.lang.String, org.gradle.api.artifacts.Configuration, java.io.File, com.android.builder.model.SourceProvider);
+-  public java.util.List super$2$getBootClasspathAsStrings();
+-  public void super$2$createTestApkTasks(com.android.build.gradle.internal.variant.TestVariantData);
+@@ -76,15 +23,2 @@
+-  public void super$2$createProcessJavaResTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createCheckManifestTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createMergeResourcesTask(com.android.build.gradle.internal.variant.BaseVariantData, boolean);
+-  public void super$2$createLintCompileTask();
+-  public java.util.List super$2$getVariantDataList();
+-  public org.gradle.api.Project super$2$getProject();
+-  public com.android.build.gradle.internal.tasks.PrepareLibraryTask super$2$handleLibrary(org.gradle.api.Project, com.android.build.gradle.internal.dependency.LibraryDependencyImpl);
+-  public void super$2$createLintTasks();
+-  public com.android.build.gradle.internal.ProductFlavorData super$2$getDefaultConfigData();
+-  public java.util.Map super$2$getValidateSigningTaskMap();
+-  public void super$2$setAssembleTest(org.gradle.api.Task);
+-  public void super$2$createNdkTasks(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public org.gradle.api.tasks.Copy super$2$getJacocoAgentTask();
+-  public void super$2$createSplitResourcesTasks(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public com.android.build.gradle.tasks.ZipAlign super$2$createZipAlignTask(java.lang.String, java.io.File, java.io.File);
++  public void super$1$notifyAll();
++  public void super$2$configureProject();
+@@ -92 +25,0 @@
+-  public java.util.List super$2$getManifestDependencies(java.util.List);
+@@ -94 +26,0 @@
+-  public org.gradle.api.Task super$2$createAssembleTask(com.android.build.gradle.internal.variant.BaseVariantData);
+@@ -96,2 +27,0 @@
+-  public void super$2$createAnchorTasks(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createSplitAbiTasks(com.android.build.gradle.internal.variant.ApplicationVariantData);
+@@ -98,0 +29 @@
++  public boolean super$2$isLibrary();
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.BaseExtension gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BaseExtension
+--- gradle-1.0.1_489108d9/com.android.build.gradle.BaseExtension	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BaseExtension	1969-12-31 14:00:00.000000000 -1000
+@@ -1,105 +0,0 @@
+-public abstract class com.android.build.gradle.BaseExtension implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857253908;
+-  public com.android.build.gradle.BaseExtension(com.android.build.gradle.BasePlugin, org.gradle.api.internal.project.ProjectInternal, org.gradle.internal.reflect.Instantiator, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.BuildType>, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.GroupableProductFlavor>, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.SigningConfig>, boolean);
+-  public void compileSdkVersion(java.lang.String);
+-  public void compileSdkVersion(int);
+-  public void setCompileSdkVersion(int);
+-  public void setCompileSdkVersion(java.lang.String);
+-  public void buildToolsVersion(java.lang.String);
+-  public java.lang.String getBuildToolsVersion();
+-  public void setBuildToolsVersion(java.lang.String);
+-  public void buildTypes(org.gradle.api.Action<? super org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.BuildType>>);
+-  public void productFlavors(org.gradle.api.Action<? super org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.GroupableProductFlavor>>);
+-  public void signingConfigs(org.gradle.api.Action<? super org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.SigningConfig>>);
+-  public void flavorDimensions(java.lang.String...);
+-  public void sourceSets(org.gradle.api.Action<org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.api.AndroidSourceSet>>);
+-  public org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.api.AndroidSourceSet> getSourceSets();
+-  public void defaultConfig(org.gradle.api.Action<com.android.build.gradle.internal.dsl.ProductFlavor>);
+-  public void aaptOptions(org.gradle.api.Action<com.android.build.gradle.internal.dsl.AaptOptions>);
+-  public void dexOptions(org.gradle.api.Action<com.android.build.gradle.internal.dsl.DexOptions>);
+-  public void lintOptions(org.gradle.api.Action<com.android.build.gradle.internal.dsl.LintOptions>);
+-  public void testOptions(org.gradle.api.Action<com.android.build.gradle.internal.test.TestOptions>);
+-  public void compileOptions(org.gradle.api.Action<com.android.build.gradle.internal.CompileOptions>);
+-  public void packagingOptions(org.gradle.api.Action<com.android.build.gradle.internal.dsl.PackagingOptions>);
+-  public void jacoco(org.gradle.api.Action<com.android.build.gradle.internal.coverage.JacocoExtension>);
+-  public void splits(org.gradle.api.Action<com.android.build.gradle.internal.dsl.Splits>);
+-  public void deviceProvider(com.android.builder.testing.api.DeviceProvider);
+-  public java.util.List<com.android.builder.testing.api.DeviceProvider> getDeviceProviders();
+-  public void testServer(com.android.builder.testing.api.TestServer);
+-  public java.util.List<com.android.builder.testing.api.TestServer> getTestServers();
+-  public void defaultPublishConfig(java.lang.String);
+-  public void publishNonDefault(boolean);
+-  public java.lang.String getDefaultPublishConfig();
+-  public void setDefaultPublishConfig(java.lang.String);
+-  public boolean getPublishNonDefault();
+-  public void variantFilter(groovy.lang.Closure<java.lang.Void>);
+-  public void setVariantFilter(groovy.lang.Closure<java.lang.Void>);
+-  public groovy.lang.Closure<java.lang.Void> getVariantFilter();
+-  public void resourcePrefix(java.lang.String);
+-  public org.gradle.api.internal.DefaultDomainObjectSet<com.android.build.gradle.api.TestVariant> getTestVariants();
+-  public abstract void addVariant(com.android.build.gradle.api.BaseVariant);
+-  public void addTestVariant(com.android.build.gradle.api.TestVariant);
+-  public void registerArtifactType(java.lang.String, boolean, int);
+-  public void registerBuildTypeSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider);
+-  public void registerProductFlavorSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider);
+-  public void registerJavaArtifact(java.lang.String, com.android.build.gradle.api.BaseVariant, java.lang.String, java.lang.String, org.gradle.api.artifacts.Configuration, java.io.File, com.android.builder.model.SourceProvider);
+-  public void registerMultiFlavorSourceProvider(java.lang.String, java.lang.String, com.android.builder.model.SourceProvider);
+-  public com.android.builder.model.SourceProvider wrapJavaSourceSet(org.gradle.api.tasks.SourceSet);
+-  public java.lang.String getCompileSdkVersion();
+-  public com.android.sdklib.repository.FullRevision getBuildToolsRevision();
+-  public java.io.File getSdkDirectory();
+-  public java.util.List<java.io.File> getBootClasspath();
+-  public java.io.File getAdbExe();
+-  public com.android.utils.ILogger getLogger();
+-  public java.io.File getDefaultProguardFile(java.lang.String);
+-  public void generatePureSplits(boolean);
+-  public void enforceUniquePackageName(boolean);
+-  public void setEnforceUniquePackageName(boolean);
+-  public java.lang.Object getEnforceUniquePackageName();
+-  public boolean getUseNewNativePlugin();
+-  public void setUseNewNativePlugin(boolean);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public final com.android.build.gradle.internal.dsl.ProductFlavor getDefaultConfig();
+-  public final com.android.build.gradle.internal.dsl.AaptOptions getAaptOptions();
+-  public final com.android.build.gradle.internal.dsl.LintOptions getLintOptions();
+-  public final com.android.build.gradle.internal.dsl.DexOptions getDexOptions();
+-  public final com.android.build.gradle.internal.test.TestOptions getTestOptions();
+-  public final com.android.build.gradle.internal.CompileOptions getCompileOptions();
+-  public final com.android.build.gradle.internal.dsl.PackagingOptions getPackagingOptions();
+-  public final com.android.build.gradle.internal.coverage.JacocoExtension getJacoco();
+-  public final com.android.build.gradle.internal.dsl.Splits getSplits();
+-  public final org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.GroupableProductFlavor> getProductFlavors();
+-  public final org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.BuildType> getBuildTypes();
+-  public final org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.SigningConfig> getSigningConfigs();
+-  public java.lang.String getResourcePrefix();
+-  public void setResourcePrefix(java.lang.String);
+-  public java.util.List<java.lang.String> getFlavorDimensionList();
+-  public void setFlavorDimensionList(java.util.List<java.lang.String>);
+-  public java.lang.String getTestBuildType();
+-  public void setTestBuildType(java.lang.String);
+-  public final org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.api.AndroidSourceSet> getSourceSetsContainer();
+-  public boolean getGeneratePureSplits();
+-  public boolean isGeneratePureSplits();
+-  public void setGeneratePureSplits(boolean);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.BasePlugin gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BasePlugin
+--- gradle-1.0.1_489108d9/com.android.build.gradle.BasePlugin	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BasePlugin	2015-08-06 11:05:15.000000000 -1000
+@@ -2 +1,0 @@
+-  public static final java.lang.String DIR_BUNDLES;
+@@ -5,5 +3,0 @@
+-  public static final java.lang.String INSTALL_GROUP;
+-  public static java.io.File TEST_SDK_DIR;
+-  public static final java.lang.String FILE_JACOCO_AGENT;
+-  public static final java.lang.String DEFAULT_PROGUARD_CONFIG_FILE;
+-  public org.gradle.api.Task lintCompile;
+@@ -12,2 +6 @@
+-  public static long __timeStamp__239_neverHappen1420857253225;
+-  public org.gradle.internal.reflect.Instantiator getInstantiator();
++  public static long __timeStamp__239_neverHappen1423721438632;
+@@ -15 +7,0 @@
+-  public com.android.build.gradle.BaseExtension getExtension();
+@@ -17,71 +8,0 @@
+-  public void checkTasksAlreadyCreated();
+-  public com.android.build.gradle.internal.ProductFlavorData<com.android.build.gradle.internal.dsl.ProductFlavor> getDefaultConfigData();
+-  public java.util.Collection<java.lang.String> getUnresolvedDependencies();
+-  public com.android.utils.ILogger getLogger();
+-  public boolean isVerbose();
+-  public boolean isDebugLog();
+-  public void setAssembleTest(org.gradle.api.Task);
+-  public com.android.builder.core.AndroidBuilder getAndroidBuilder();
+-  public java.io.File getSdkFolder();
+-  public java.io.File getNdkFolder();
+-  public com.android.builder.sdk.SdkInfo getSdkInfo();
+-  public java.util.List<java.io.File> getBootClasspath();
+-  public java.util.List<java.lang.String> getBootClasspathAsStrings();
+-  public java.util.List<com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>> getVariantDataList();
+-  public void ensureTargetSetup();
+-  public void createMergeAppManifestsTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createMergeLibManifestsTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, java.lang.String);
+-  public void createRenderscriptTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createMergeResourcesTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, boolean);
+-  public com.android.build.gradle.tasks.MergeResources basicCreateMergeResourcesTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, java.lang.String, java.lang.String, boolean, boolean);
+-  public void createMergeAssetsTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, java.lang.String, boolean);
+-  public void createBuildConfigTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createGenerateResValuesTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createProcessResTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, boolean);
+-  public void createProcessResTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, java.lang.String, boolean);
+-  public void createSplitResourcesTasks(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createSplitAbiTasks(com.android.build.gradle.internal.variant.ApplicationVariantData);
+-  public java.util.Set<java.io.File> getJniFolders(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public void createProcessJavaResTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createAidlTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, java.io.File);
+-  public void createCompileTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createGenerateMicroApkDataTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, org.gradle.api.artifacts.Configuration);
+-  public void createNdkTasks(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createTestApkTasks(com.android.build.gradle.internal.variant.TestVariantData);
+-  public void createLintCompileTask();
+-  public void createLintTasks();
+-  public void createCheckTasks(boolean, boolean);
+-  public void createPostCompilationTasks(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public com.android.build.gradle.BasePlugin$PostCompilationData createJacocoTask(com.android.build.gradle.internal.core.GradleVariantConfiguration, com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.BasePlugin$PostCompilationData);
+-  public void createJackTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createPackagingTask(com.android.build.gradle.internal.variant.ApkVariantData, org.gradle.api.Task, boolean);
+-  public org.gradle.api.Task createAssembleTask(com.android.build.gradle.internal.variant.BaseVariantOutputData);
+-  public org.gradle.api.Task createAssembleTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public org.gradle.api.tasks.Copy getJacocoAgentTask();
+-  public com.android.build.gradle.tasks.ZipAlign createZipAlignTask(java.lang.String, java.io.File, java.io.File);
+-  public void createProguardTasks(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.BasePlugin$PostCompilationData);
+-  public void createAnchorTasks(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void createCheckManifestTask(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public java.util.Collection<com.android.builder.model.ArtifactMetaData> getExtraArtifacts();
+-  public java.util.Collection<com.android.builder.model.AndroidArtifact> getExtraAndroidArtifacts(java.lang.String);
+-  public java.util.Collection<com.android.builder.model.JavaArtifact> getExtraJavaArtifacts(java.lang.String);
+-  public java.util.Collection<com.android.builder.model.SourceProviderContainer> getExtraVariantSourceProviders(java.lang.String);
+-  public java.util.Collection<com.android.builder.model.SourceProviderContainer> getExtraFlavorSourceProviders(java.lang.String);
+-  public java.util.Collection<com.android.builder.model.SourceProviderContainer> getExtraBuildTypeSourceProviders(java.lang.String);
+-  public void registerArtifactType(java.lang.String, boolean, int);
+-  public void registerBuildTypeSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider);
+-  public void registerProductFlavorSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider);
+-  public void registerMultiFlavorSourceProvider(java.lang.String, java.lang.String, com.android.builder.model.SourceProvider);
+-  public void registerJavaArtifact(java.lang.String, com.android.build.gradle.api.BaseVariant, java.lang.String, java.lang.String, org.gradle.api.artifacts.Configuration, java.io.File, com.android.builder.model.SourceProvider);
+-  public static java.lang.Object[] getLocalJarFileList(com.android.builder.dependency.DependencyContainer);
+-  public void resolveDependencies(com.android.build.gradle.internal.dependency.VariantDependencies);
+-  public java.lang.Object addDependency(org.gradle.api.artifacts.result.ResolvedComponentResult, com.android.build.gradle.internal.dependency.VariantDependencies, java.util.Collection<com.android.builder.dependency.LibraryDependency>, java.util.Map<java.io.File, com.android.builder.dependency.JarDependency>, java.util.Map<org.gradle.api.artifacts.ModuleVersionIdentifier, java.util.List<com.android.build.gradle.internal.dependency.LibraryDependencyImpl>>, java.util.Map<org.gradle.api.artifacts.ModuleVersionIdentifier, java.util.List<org.gradle.api.artifacts.ResolvedArtifact>>, com.google.common.collect.Multimap<com.android.builder.dependency.LibraryDependency, com.android.build.gradle.internal.dependency.VariantDependencies>);
+-  public static java.lang.String normalize(com.android.utils.ILogger, org.gradle.api.artifacts.ModuleVersionIdentifier, java.lang.String);
+-  public org.gradle.api.Project getProject();
+-  public static void displayWarning(com.android.utils.ILogger, org.gradle.api.Project, java.lang.String);
+-  public static void displayWarning(org.gradle.api.logging.Logger, org.gradle.api.Project, java.lang.String);
+-  public void displayDeprecationWarning(java.lang.String);
+-  public static void displayDeprecationWarning(org.gradle.api.logging.Logger, org.gradle.api.Project, java.lang.String);
+-  public static com.android.build.gradle.BasePlugin findBasePlugin(org.gradle.api.Project);
+-  public static void optionalDependsOn(org.gradle.api.Task, org.gradle.api.Task...);
+-  public static void optionalDependsOn(org.gradle.api.Task, java.util.List<java.lang.Object>);
+@@ -90,0 +12 @@
++  public static void access$0(com.android.build.gradle.BasePlugin);
+@@ -97,2 +19 @@
+-  public final java.util.Map<com.android.build.gradle.internal.dependency.LibraryDependencyImpl, com.android.build.gradle.internal.tasks.PrepareLibraryTask> getPrepareTaskMap();
+-  public final java.util.Map<com.android.build.gradle.internal.dsl.SigningConfig, com.android.build.gradle.internal.tasks.ValidateSigningTask> getValidateSigningTaskMap();
++  public void this$2$verifyRetirementAge();
+@@ -101 +21,0 @@
+-  public void this$2$setBaseExtension(com.android.build.gradle.BaseExtension);
+@@ -104,10 +24,2 @@
+-  public com.android.build.gradle.tasks.CompatibleScreensManifest this$2$createCompatibleScreensManifest(com.android.build.gradle.internal.variant.BaseVariantOutputData, java.util.Set);
+-  public void this$2$createLintVitalTask(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask this$2$createDeviceProviderInstrumentTestTask(java.lang.String, java.lang.String, java.lang.Class, com.android.build.gradle.internal.variant.TestVariantData, com.android.build.gradle.internal.variant.BaseVariantData, com.android.builder.testing.api.DeviceProvider, java.lang.String);
+-  public void this$2$configureLanguageLevel(org.gradle.api.tasks.compile.AbstractCompile);
+-  public com.android.build.gradle.tasks.ShrinkResources this$2$createShrinkResourcesTask(com.android.build.gradle.internal.variant.ApkVariantOutputData);
+-  public void this$2$createReportTasks();
+-  public void this$2$addDependencyToPrepareTask(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.tasks.PrepareDependenciesTask, com.android.build.gradle.internal.dependency.LibraryDependencyImpl);
+-  public void this$2$resolveDependencyForConfig(com.android.build.gradle.internal.dependency.VariantDependencies, java.util.Map, java.util.Map, com.google.common.collect.Multimap);
+-  public void this$2$collectArtifacts(org.gradle.api.artifacts.Configuration, java.util.Map);
+-  public void this$2$configureBuild(com.android.build.gradle.internal.dependency.VariantDependencies);
++  public boolean this$2$isVerbose();
++  public void this$2$ensureTargetSetup();
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.BasePlugin$1 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BasePlugin$1
+--- gradle-1.0.1_489108d9/com.android.build.gradle.BasePlugin$1	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BasePlugin$1	1969-12-31 14:00:00.000000000 -1000
+@@ -1,28 +0,0 @@
+-public class com.android.build.gradle.BasePlugin$1 implements com.google.common.base.Predicate<? super java.lang.String>, groovy.lang.GroovyObject {
+-  public com.android.build.gradle.BasePlugin this$0;
+-  public static transient boolean __$stMC;
+-  public boolean apply(java.lang.Object);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.BasePlugin$PostCompilationData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BasePlugin$PostCompilationData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.BasePlugin$PostCompilationData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.BasePlugin$PostCompilationData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,37 +0,0 @@
+-public class com.android.build.gradle.BasePlugin$PostCompilationData implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public com.android.build.gradle.BasePlugin$PostCompilationData();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.util.List<java.lang.Object> getClassGeneratingTask();
+-  public void setClassGeneratingTask(java.util.List<java.lang.Object>);
+-  public java.util.List<java.lang.Object> getLibraryGeneratingTask();
+-  public void setLibraryGeneratingTask(java.util.List<java.lang.Object>);
+-  public groovy.lang.Closure<java.util.Collection<java.io.File>> getInputFiles();
+-  public void setInputFiles(groovy.lang.Closure<java.util.Collection<java.io.File>>);
+-  public groovy.lang.Closure<java.io.File> getInputDir();
+-  public void setInputDir(groovy.lang.Closure<java.io.File>);
+-  public groovy.lang.Closure<java.util.Collection<java.io.File>> getInputLibraries();
+-  public void setInputLibraries(groovy.lang.Closure<java.util.Collection<java.io.File>>);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.LibraryExtension gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.LibraryExtension
+--- gradle-1.0.1_489108d9/com.android.build.gradle.LibraryExtension	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.LibraryExtension	1969-12-31 14:00:00.000000000 -1000
+@@ -1,105 +0,0 @@
+-public class com.android.build.gradle.LibraryExtension extends com.android.build.gradle.BaseExtension implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254208;
+-  public com.android.build.gradle.LibraryExtension(com.android.build.gradle.LibraryPlugin, org.gradle.api.internal.project.ProjectInternal, org.gradle.internal.reflect.Instantiator, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.BuildType>, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.GroupableProductFlavor>, org.gradle.api.NamedDomainObjectContainer<com.android.build.gradle.internal.dsl.SigningConfig>, boolean);
+-  public org.gradle.api.internal.DefaultDomainObjectSet<com.android.build.gradle.api.LibraryVariant> getLibraryVariants();
+-  public void addVariant(com.android.build.gradle.api.BaseVariant);
+-  public void packageBuildConfig(boolean);
+-  public void setPackageBuildConfig(boolean);
+-  public boolean getPackageBuildConfig();
+-  public java.lang.Object this$dist$invoke$2(java.lang.String, java.lang.Object);
+-  public void this$dist$set$2(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$2(java.lang.String);
+-  public static void __$swapInit();
+-  public void super$2$setEnforceUniquePackageName(boolean);
+-  public com.android.build.gradle.internal.CompileOptions super$2$getCompileOptions();
+-  public void super$2$jacoco(org.gradle.api.Action);
+-  public void super$2$testOptions(org.gradle.api.Action);
+-  public void super$2$buildTypes(org.gradle.api.Action);
+-  public void super$2$resourcePrefix(java.lang.String);
+-  public java.lang.Object super$2$this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public com.android.sdklib.repository.FullRevision super$2$getBuildToolsRevision();
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getProductFlavors();
+-  public java.util.List super$2$getDeviceProviders();
+-  public com.android.build.gradle.internal.dsl.Splits super$2$getSplits();
+-  public void super$2$setTestBuildType(java.lang.String);
+-  public void super$2$setMetaClass(groovy.lang.MetaClass);
+-  public boolean super$2$getUseNewNativePlugin();
+-  public void super$2$setDefaultPublishConfig(java.lang.String);
+-  public void super$2$buildToolsVersion(java.lang.String);
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getSigningConfigs();
+-  public boolean super$2$isGeneratePureSplits();
+-  public com.android.builder.model.SourceProvider super$2$wrapJavaSourceSet(org.gradle.api.tasks.SourceSet);
+-  public void super$2$defaultPublishConfig(java.lang.String);
+-  public void super$2$productFlavors(org.gradle.api.Action);
+-  public void super$2$flavorDimensions(java.lang.String[]);
+-  public void super$2$registerArtifactType(java.lang.String, boolean, int);
+-  public void super$2$testServer(com.android.builder.testing.api.TestServer);
+-  public void super$2$setUseNewNativePlugin(boolean);
+-  public void super$2$compileSdkVersion(int);
+-  public java.util.List super$2$getBootClasspath();
+-  public void super$2$registerProductFlavorSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider);
+-  public void super$2$signingConfigs(org.gradle.api.Action);
+-  public java.lang.String super$2$getCompileSdkVersion();
+-  public void super$2$setBuildToolsVersion(java.lang.String);
+-  public java.lang.String super$2$getBuildToolsVersion();
+-  public void super$2$registerMultiFlavorSourceProvider(java.lang.String, java.lang.String, com.android.builder.model.SourceProvider);
+-  public void super$2$lintOptions(org.gradle.api.Action);
+-  public java.lang.Object super$2$getEnforceUniquePackageName();
+-  public void super$2$splits(org.gradle.api.Action);
+-  public void super$2$defaultConfig(org.gradle.api.Action);
+-  public void super$2$setGeneratePureSplits(boolean);
+-  public java.util.List super$2$getTestServers();
+-  public java.lang.String super$1$toString();
+-  public java.lang.String super$2$getDefaultPublishConfig();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public void super$2$compileOptions(org.gradle.api.Action);
+-  public void super$2$setResourcePrefix(java.lang.String);
+-  public void super$2$variantFilter(groovy.lang.Closure);
+-  public void super$2$publishNonDefault(boolean);
+-  public com.android.build.gradle.internal.dsl.PackagingOptions super$2$getPackagingOptions();
+-  public void super$1$wait();
+-  public org.gradle.api.internal.DefaultDomainObjectSet super$2$getTestVariants();
+-  public void super$2$enforceUniquePackageName(boolean);
+-  public groovy.lang.MetaClass super$2$getMetaClass();
+-  public com.android.build.gradle.internal.dsl.LintOptions super$2$getLintOptions();
+-  public com.android.build.gradle.internal.dsl.DexOptions super$2$getDexOptions();
+-  public java.io.File super$2$getDefaultProguardFile(java.lang.String);
+-  public void super$2$compileSdkVersion(java.lang.String);
+-  public void super$2$generatePureSplits(boolean);
+-  public void super$2$dexOptions(org.gradle.api.Action);
+-  public void super$2$setCompileSdkVersion(java.lang.String);
+-  public void super$2$registerBuildTypeSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider);
+-  public boolean super$2$getGeneratePureSplits();
+-  public void super$2$this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$2$invokeMethod(java.lang.String, java.lang.Object);
+-  public void super$2$registerJavaArtifact(java.lang.String, com.android.build.gradle.api.BaseVariant, java.lang.String, java.lang.String, org.gradle.api.artifacts.Configuration, java.io.File, com.android.builder.model.SourceProvider);
+-  public java.lang.Object super$2$getProperty(java.lang.String);
+-  public java.lang.Object super$2$getPlugin();
+-  public java.lang.String super$2$getTestBuildType();
+-  public boolean super$2$getPublishNonDefault();
+-  public com.android.build.gradle.internal.dsl.ProductFlavor super$2$getDefaultConfig();
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getBuildTypes();
+-  public void super$2$aaptOptions(org.gradle.api.Action);
+-  public java.util.List super$2$getFlavorDimensionList();
+-  public com.android.build.gradle.internal.coverage.JacocoExtension super$2$getJacoco();
+-  public java.lang.String super$2$getResourcePrefix();
+-  public java.io.File super$2$getAdbExe();
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getSourceSetsContainer();
+-  public void super$2$deviceProvider(com.android.builder.testing.api.DeviceProvider);
+-  public void super$2$packagingOptions(org.gradle.api.Action);
+-  public java.io.File super$2$getSdkDirectory();
+-  public void super$2$setFlavorDimensionList(java.util.List);
+-  public void super$2$addTestVariant(com.android.build.gradle.api.TestVariant);
+-  public groovy.lang.Closure super$2$getVariantFilter();
+-  public java.lang.Object super$2$this$dist$get$1(java.lang.String);
+-  public org.gradle.api.NamedDomainObjectContainer super$2$getSourceSets();
+-  public com.android.build.gradle.internal.dsl.AaptOptions super$2$getAaptOptions();
+-  public com.android.build.gradle.internal.test.TestOptions super$2$getTestOptions();
+-  public void super$2$setVariantFilter(groovy.lang.Closure);
+-  public groovy.lang.MetaClass super$2$$getStaticMetaClass();
+-  public void super$2$sourceSets(org.gradle.api.Action);
+-  public com.android.utils.ILogger super$2$getLogger();
+-  public void super$2$setCompileSdkVersion(int);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.LibraryPlugin gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.LibraryPlugin
+--- gradle-1.0.1_489108d9/com.android.build.gradle.LibraryPlugin	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.LibraryPlugin	2015-08-06 11:05:15.000000000 -1000
+@@ -4 +4 @@
+-  public static long __timeStamp__239_neverHappen1420857254214;
++  public static long __timeStamp__239_neverHappen1423721438745;
+@@ -15,40 +14,0 @@
+-  public com.android.build.gradle.BaseExtension super$2$getExtension();
+-  public void super$2$createAndroidTasks(boolean);
+-  public void super$2$createProguardTasks(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.BasePlugin$PostCompilationData);
+-  public com.android.builder.sdk.SdkInfo super$2$getSdkInfo();
+-  public com.android.build.gradle.BasePlugin$PostCompilationData super$2$createJacocoTask(com.android.build.gradle.internal.core.GradleVariantConfiguration, com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.BasePlugin$PostCompilationData);
+-  public java.util.Collection super$2$getExtraJavaArtifacts(java.lang.String);
+-  public java.io.File super$2$getSdkFolder();
+-  public java.lang.Object super$2$this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public com.android.builder.core.AndroidBuilder super$2$getAndroidBuilder();
+-  public boolean super$2$isDebugLog();
+-  public void super$2$checkTasksAlreadyCreated();
+-  public void super$2$resolveDependencies(com.android.build.gradle.internal.dependency.VariantDependencies);
+-  public java.util.Collection super$2$getExtraVariantSourceProviders(java.lang.String);
+-  public boolean super$2$isVerbose();
+-  public void super$2$setMetaClass(groovy.lang.MetaClass);
+-  public java.util.Collection super$2$getExtraArtifacts();
+-  public void super$2$doApply();
+-  public void super$2$createProcessResTask(com.android.build.gradle.internal.variant.BaseVariantData, boolean);
+-  public void super$2$createCheckTasks(boolean, boolean);
+-  public void super$2$createRenderscriptTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createGenerateResValuesTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$registerArtifactType(java.lang.String, boolean, int);
+-  public void super$2$createGenerateMicroApkDataTask(com.android.build.gradle.internal.variant.BaseVariantData, org.gradle.api.artifacts.Configuration);
+-  public void super$2$createCompileTask(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createJackTask(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$configureProject();
+-  public java.util.List super$2$getBootClasspath();
+-  public java.util.Set super$2$getJniFolders(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public void super$2$registerProductFlavorSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider);
+-  public void super$2$createMergeLibManifestsTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String);
+-  public org.gradle.api.Task super$2$createAssembleTask(com.android.build.gradle.internal.variant.BaseVariantOutputData);
+-  public java.util.Collection super$2$getExtraFlavorSourceProviders(java.lang.String);
+-  public java.util.Collection super$2$getUnresolvedDependencies();
+-  public void super$2$createMergeAppManifestsTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createPostCompilationTasks(com.android.build.gradle.internal.variant.ApkVariantData);
+-  public java.lang.Object super$2$addDependency(org.gradle.api.artifacts.result.ResolvedComponentResult, com.android.build.gradle.internal.dependency.VariantDependencies, java.util.Collection, java.util.Map, java.util.Map, java.util.Map, com.google.common.collect.Multimap);
+-  public void super$2$registerMultiFlavorSourceProvider(java.lang.String, java.lang.String, com.android.builder.model.SourceProvider);
+-  public void super$2$createPackagingTask(com.android.build.gradle.internal.variant.ApkVariantData, org.gradle.api.Task, boolean);
+-  public com.android.build.gradle.tasks.MergeResources super$2$basicCreateMergeResourcesTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String, java.lang.String, boolean, boolean);
+-  public void super$2$createMergeAssetsTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String, boolean);
+@@ -56 +15,0 @@
+-  public void super$2$createAidlTask(com.android.build.gradle.internal.variant.BaseVariantData, java.io.File);
+@@ -58,7 +17,2 @@
+-  public void super$2$displayDeprecationWarning(java.lang.String);
+-  public void super$2$createBuildConfigTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createProcessResTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String, boolean);
+-  public void super$2$createProcessTestManifestTask(com.android.build.gradle.internal.variant.BaseVariantData, java.lang.String);
+-  public org.gradle.internal.reflect.Instantiator super$2$getInstantiator();
+-  public java.io.File super$2$getNdkFolder();
+-  public java.util.Collection super$2$getExtraAndroidArtifacts(java.lang.String);
++  public void super$2$createAndroidTasks(boolean);
++  public java.lang.Object super$2$this$dist$invoke$1(java.lang.String, java.lang.Object);
+@@ -66 +19,0 @@
+-  public void super$2$ensureTargetSetup();
+@@ -67,0 +21 @@
++  public void super$2$setMetaClass(groovy.lang.MetaClass);
+@@ -69,3 +22,0 @@
+-  public java.util.Collection super$2$getExtraBuildTypeSourceProviders(java.lang.String);
+-  public void super$2$registerBuildTypeSourceProvider(java.lang.String, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider);
+-  public void super$2$ensureConfigured(org.gradle.api.artifacts.Configuration);
+@@ -74,4 +24,0 @@
+-  public java.util.Map super$2$getPrepareTaskMap();
+-  public void super$2$registerJavaArtifact(java.lang.String, com.android.build.gradle.api.BaseVariant, java.lang.String, java.lang.String, org.gradle.api.artifacts.Configuration, java.io.File, com.android.builder.model.SourceProvider);
+-  public java.util.List super$2$getBootClasspathAsStrings();
+-  public void super$2$createTestApkTasks(com.android.build.gradle.internal.variant.TestVariantData);
+@@ -79,15 +26,2 @@
+-  public void super$2$createProcessJavaResTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createCheckManifestTask(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createMergeResourcesTask(com.android.build.gradle.internal.variant.BaseVariantData, boolean);
+-  public void super$2$createLintCompileTask();
+-  public java.util.List super$2$getVariantDataList();
+-  public org.gradle.api.Project super$2$getProject();
+-  public com.android.build.gradle.internal.tasks.PrepareLibraryTask super$2$handleLibrary(org.gradle.api.Project, com.android.build.gradle.internal.dependency.LibraryDependencyImpl);
+-  public void super$2$createLintTasks();
+-  public com.android.build.gradle.internal.ProductFlavorData super$2$getDefaultConfigData();
+-  public java.util.Map super$2$getValidateSigningTaskMap();
+-  public void super$2$setAssembleTest(org.gradle.api.Task);
+-  public void super$2$createNdkTasks(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public org.gradle.api.tasks.Copy super$2$getJacocoAgentTask();
+-  public void super$2$createSplitResourcesTasks(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public com.android.build.gradle.tasks.ZipAlign super$2$createZipAlignTask(java.lang.String, java.io.File, java.io.File);
++  public void super$1$notifyAll();
++  public void super$2$configureProject();
+@@ -95 +28,0 @@
+-  public java.util.List super$2$getManifestDependencies(java.util.List);
+@@ -97 +29,0 @@
+-  public org.gradle.api.Task super$2$createAssembleTask(com.android.build.gradle.internal.variant.BaseVariantData);
+@@ -99,2 +30,0 @@
+-  public void super$2$createAnchorTasks(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$createSplitAbiTasks(com.android.build.gradle.internal.variant.ApplicationVariantData);
+@@ -101,0 +32 @@
++  public boolean super$2$isLibrary();
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.ReportingPlugin gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.ReportingPlugin
+--- gradle-1.0.1_489108d9/com.android.build.gradle.ReportingPlugin	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.ReportingPlugin	1969-12-31 14:00:00.000000000 -1000
+@@ -1,28 +0,0 @@
+-public class com.android.build.gradle.ReportingPlugin implements org.gradle.api.Plugin<org.gradle.api.Project>, groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857253967;
+-  public com.android.build.gradle.ReportingPlugin();
+-  public void apply(org.gradle.api.Project);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void apply(java.lang.Object);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.AndroidSourceDirectorySet gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.AndroidSourceDirectorySet
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.AndroidSourceDirectorySet	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.AndroidSourceDirectorySet	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public interface com.android.build.gradle.api.AndroidSourceDirectorySet extends org.gradle.api.tasks.util.PatternFilterable {
+-  public abstract java.lang.String getName();
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet srcDir(java.lang.Object);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet srcDirs(java.lang.Object...);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet setSrcDirs(java.lang.Iterable<?>);
+-  public abstract org.gradle.api.file.FileTree getSourceFiles();
+-  public abstract org.gradle.api.tasks.util.PatternFilterable getFilter();
+-  public abstract java.util.Set<java.io.File> getSrcDirs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.AndroidSourceFile gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.AndroidSourceFile
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.AndroidSourceFile	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.AndroidSourceFile	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public interface com.android.build.gradle.api.AndroidSourceFile {
+-  public abstract java.lang.String getName();
+-  public abstract java.io.File getSrcFile();
+-  public abstract com.android.build.gradle.api.AndroidSourceFile srcFile(java.lang.Object);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.AndroidSourceSet gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.AndroidSourceSet
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.AndroidSourceSet	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.AndroidSourceSet	1969-12-31 14:00:00.000000000 -1000
+@@ -1,26 +0,0 @@
+-public interface com.android.build.gradle.api.AndroidSourceSet {
+-  public abstract java.lang.String getName();
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getResources();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet resources(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getJava();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet java(groovy.lang.Closure);
+-  public abstract java.lang.String getCompileConfigurationName();
+-  public abstract java.lang.String getPackageConfigurationName();
+-  public abstract java.lang.String getProvidedConfigurationName();
+-  public abstract java.lang.String getWearAppConfigurationName();
+-  public abstract com.android.build.gradle.api.AndroidSourceFile getManifest();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet manifest(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getRes();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet res(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getAssets();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet assets(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getAidl();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet aidl(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getRenderscript();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet renderscript(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getJni();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet jni(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceDirectorySet getJniLibs();
+-  public abstract com.android.build.gradle.api.AndroidSourceSet jniLibs(groovy.lang.Closure);
+-  public abstract com.android.build.gradle.api.AndroidSourceSet setRoot(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.ApkOutputFile gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApkOutputFile
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.ApkOutputFile	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApkOutputFile	1969-12-31 14:00:00.000000000 -1000
+@@ -1,12 +0,0 @@
+-public class com.android.build.gradle.api.ApkOutputFile implements com.android.build.OutputFile,java.io.Serializable {
+-  public com.android.build.gradle.api.ApkOutputFile(com.android.build.OutputFile$OutputType, java.util.Collection<com.android.build.FilterData>, java.util.concurrent.Callable<java.io.File>);
+-  public com.android.build.OutputFile$OutputType getType();
+-  public java.io.File getOutputFile();
+-  public java.lang.String getSplitIdentifiers(char);
+-  public java.util.Collection<com.android.build.FilterData> getFilters();
+-  public java.lang.String toString();
+-  public java.lang.String getOutputType();
+-  public java.util.Collection<java.lang.String> getFilterTypes();
+-  public java.lang.String getFilterByType(com.android.build.OutputFile$FilterType);
+-  public java.lang.String getFilter(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.ApkVariant gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApkVariant
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.ApkVariant	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApkVariant	1969-12-31 14:00:00.000000000 -1000
+@@ -1,11 +0,0 @@
+-public interface com.android.build.gradle.api.ApkVariant extends com.android.build.gradle.api.BaseVariant {
+-  public abstract int getVersionCode();
+-  public abstract java.lang.String getVersionName();
+-  public abstract com.android.builder.model.SigningConfig getSigningConfig();
+-  public abstract boolean isSigningReady();
+-  public abstract com.android.build.gradle.tasks.Dex getDex();
+-  public abstract java.util.Collection<java.io.File> getCompileLibraries();
+-  public abstract java.util.Collection<java.io.File> getApkLibraries();
+-  public abstract org.gradle.api.DefaultTask getInstall();
+-  public abstract org.gradle.api.DefaultTask getUninstall();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.ApkVariantOutput gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApkVariantOutput
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.ApkVariantOutput	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApkVariantOutput	1969-12-31 14:00:00.000000000 -1000
+@@ -1,10 +0,0 @@
+-public interface com.android.build.gradle.api.ApkVariantOutput extends com.android.build.gradle.api.BaseVariantOutput {
+-  public abstract com.android.build.gradle.tasks.PackageApplication getPackageApplication();
+-  public abstract com.android.build.gradle.tasks.ZipAlign getZipAlign();
+-  public abstract com.android.build.gradle.tasks.ZipAlign createZipAlignTask(java.lang.String, java.io.File, java.io.File);
+-  public abstract void setVersionCodeOverride(int);
+-  public abstract int getVersionCodeOverride();
+-  public abstract void setVersionNameOverride(java.lang.String);
+-  public abstract java.lang.String getVersionNameOverride();
+-  public abstract java.lang.String getFilter(com.android.build.OutputFile$FilterType);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.ApplicationVariant gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApplicationVariant
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.ApplicationVariant	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.ApplicationVariant	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public interface com.android.build.gradle.api.ApplicationVariant extends com.android.build.gradle.api.ApkVariant {
+-  public abstract com.android.build.gradle.api.TestVariant getTestVariant();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.BaseVariant gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.BaseVariant
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.BaseVariant	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.BaseVariant	1969-12-31 14:00:00.000000000 -1000
+@@ -1,34 +0,0 @@
+-public interface com.android.build.gradle.api.BaseVariant {
+-  public abstract java.lang.String getName();
+-  public abstract java.lang.String getDescription();
+-  public abstract java.lang.String getDirName();
+-  public abstract java.lang.String getBaseName();
+-  public abstract java.lang.String getFlavorName();
+-  public abstract java.util.List<com.android.build.gradle.api.BaseVariantOutput> getOutputs();
+-  public abstract com.android.builder.model.BuildType getBuildType();
+-  public abstract com.android.builder.model.ProductFlavor getMergedFlavor();
+-  public abstract java.util.List<com.android.build.gradle.api.GroupableProductFlavor> getProductFlavors();
+-  public abstract java.util.List<com.android.builder.model.SourceProvider> getSourceSets();
+-  public abstract java.lang.String getApplicationId();
+-  public abstract org.gradle.api.Task getPreBuild();
+-  public abstract org.gradle.api.Task getCheckManifest();
+-  public abstract com.android.build.gradle.tasks.AidlCompile getAidlCompile();
+-  public abstract com.android.build.gradle.tasks.RenderscriptCompile getRenderscriptCompile();
+-  public abstract com.android.build.gradle.tasks.MergeResources getMergeResources();
+-  public abstract com.android.build.gradle.tasks.MergeAssets getMergeAssets();
+-  public abstract com.android.build.gradle.tasks.GenerateBuildConfig getGenerateBuildConfig();
+-  public abstract org.gradle.api.tasks.compile.JavaCompile getJavaCompile();
+-  public abstract com.android.build.gradle.tasks.NdkCompile getNdkCompile();
+-  public abstract org.gradle.api.Task getObfuscation();
+-  public abstract java.io.File getMappingFile();
+-  public abstract org.gradle.api.tasks.Copy getProcessJavaResources();
+-  public abstract org.gradle.api.Task getAssemble();
+-  public abstract void addJavaSourceFoldersToModel(java.io.File...);
+-  public abstract void addJavaSourceFoldersToModel(java.util.Collection<java.io.File>);
+-  public abstract void registerJavaGeneratingTask(org.gradle.api.Task, java.io.File...);
+-  public abstract void registerJavaGeneratingTask(org.gradle.api.Task, java.util.Collection<java.io.File>);
+-  public abstract void buildConfigField(java.lang.String, java.lang.String, java.lang.String);
+-  public abstract void resValue(java.lang.String, java.lang.String, java.lang.String);
+-  public abstract void setOutputsAreSigned(boolean);
+-  public abstract boolean getOutputsAreSigned();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.BaseVariantOutput gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.BaseVariantOutput
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.BaseVariantOutput	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.BaseVariantOutput	1969-12-31 14:00:00.000000000 -1000
+@@ -1,10 +0,0 @@
+-public interface com.android.build.gradle.api.BaseVariantOutput extends com.android.build.VariantOutput {
+-  public abstract java.io.File getOutputFile();
+-  public abstract void setOutputFile(java.io.File);
+-  public abstract com.android.build.gradle.tasks.ProcessAndroidResources getProcessResources();
+-  public abstract com.android.build.gradle.tasks.ManifestProcessorTask getProcessManifest();
+-  public abstract org.gradle.api.Task getAssemble();
+-  public abstract java.lang.String getName();
+-  public abstract java.lang.String getBaseName();
+-  public abstract java.lang.String getDirName();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.GroupableProductFlavor gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.GroupableProductFlavor
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.GroupableProductFlavor	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.GroupableProductFlavor	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public interface com.android.build.gradle.api.GroupableProductFlavor extends com.android.builder.model.ProductFlavor {
+-  public abstract java.lang.String getFlavorDimension();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.LibraryVariant gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.LibraryVariant
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.LibraryVariant	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.LibraryVariant	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public interface com.android.build.gradle.api.LibraryVariant extends com.android.build.gradle.api.BaseVariant {
+-  public abstract com.android.build.gradle.api.TestVariant getTestVariant();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.LibraryVariantOutput gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.LibraryVariantOutput
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.LibraryVariantOutput	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.LibraryVariantOutput	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public interface com.android.build.gradle.api.LibraryVariantOutput {
+-  public abstract org.gradle.api.tasks.bundling.Zip getPackageLibrary();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.TestVariant gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.TestVariant
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.TestVariant	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.TestVariant	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public interface com.android.build.gradle.api.TestVariant extends com.android.build.gradle.api.ApkVariant {
+-  public abstract com.android.build.gradle.api.BaseVariant getTestedVariant();
+-  public abstract org.gradle.api.DefaultTask getConnectedInstrumentTest();
+-  public abstract java.util.List<? extends org.gradle.api.DefaultTask> getProviderInstrumentTests();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.api.VariantFilter gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.VariantFilter
+--- gradle-1.0.1_489108d9/com.android.build.gradle.api.VariantFilter	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.api.VariantFilter	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public interface com.android.build.gradle.api.VariantFilter {
+-  public abstract void setIgnore(boolean);
+-  public abstract com.android.builder.model.ProductFlavor getDefaultConfig();
+-  public abstract com.android.builder.model.BuildType getBuildType();
+-  public abstract java.util.List<com.android.build.gradle.api.GroupableProductFlavor> getFlavors();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.AndroidAsciiReportRenderer gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.AndroidAsciiReportRenderer
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.AndroidAsciiReportRenderer	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.AndroidAsciiReportRenderer	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.AndroidAsciiReportRenderer extends org.gradle.api.tasks.diagnostics.internal.TextReportRenderer {
+-  public com.android.build.gradle.internal.AndroidAsciiReportRenderer();
+-  public void startProject(org.gradle.api.Project);
+-  public void completeProject(org.gradle.api.Project);
+-  public void startVariant(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void completeConfiguration(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void render(com.android.build.gradle.internal.variant.BaseVariantData) throws java.io.IOException;
+-  public void complete();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.BadPluginException gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.BadPluginException
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.BadPluginException	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.BadPluginException	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public class com.android.build.gradle.internal.BadPluginException extends org.gradle.api.GradleException {
+-  public com.android.build.gradle.internal.BadPluginException(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.BuildTypeData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.BuildTypeData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.BuildTypeData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.BuildTypeData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,32 +0,0 @@
+-public class com.android.build.gradle.internal.BuildTypeData implements com.android.build.gradle.internal.ConfigurationProvider,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254032;
+-  public com.android.build.gradle.internal.BuildTypeData(com.android.build.gradle.internal.dsl.BuildType, com.android.build.gradle.internal.api.DefaultAndroidSourceSet, org.gradle.api.Project);
+-  public org.gradle.api.artifacts.Configuration getCompileConfiguration();
+-  public org.gradle.api.artifacts.Configuration getPackageConfiguration();
+-  public org.gradle.api.artifacts.Configuration getProvidedConfiguration();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public final com.android.build.gradle.internal.dsl.BuildType getBuildType();
+-  public final com.android.build.gradle.internal.api.DefaultAndroidSourceSet getSourceSet();
+-  public final org.gradle.api.Task getAssembleTask();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.CompileOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.CompileOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.CompileOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.CompileOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,37 +0,0 @@
+-public class com.android.build.gradle.internal.CompileOptions implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254003;
+-  public com.android.build.gradle.internal.CompileOptions();
+-  public void setSourceCompatibility(org.gradle.api.JavaVersion);
+-  public org.gradle.api.JavaVersion getSourceCompatibility();
+-  public void setTargetCompatibility(org.gradle.api.JavaVersion);
+-  public org.gradle.api.JavaVersion getTargetCompatibility();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.String getEncoding();
+-  public void setEncoding(java.lang.String);
+-  public org.gradle.api.JavaVersion getDefaultJavaVersion();
+-  public void setDefaultJavaVersion(org.gradle.api.JavaVersion);
+-  public boolean getNdkCygwinMode();
+-  public boolean isNdkCygwinMode();
+-  public void setNdkCygwinMode(boolean);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.ConfigurationDependencies gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ConfigurationDependencies
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.ConfigurationDependencies	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ConfigurationDependencies	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.ConfigurationDependencies implements com.android.builder.model.Dependencies {
+-  public com.android.build.gradle.internal.ConfigurationDependencies(org.gradle.api.artifacts.Configuration);
+-  public java.util.Collection<com.android.builder.model.AndroidLibrary> getLibraries();
+-  public java.util.Collection<com.android.builder.model.JavaLibrary> getJavaLibraries();
+-  public java.util.Collection<java.lang.String> getProjects();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.ConfigurationProvider gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ConfigurationProvider
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.ConfigurationProvider	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ConfigurationProvider	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public interface com.android.build.gradle.internal.ConfigurationProvider {
+-  public abstract org.gradle.api.artifacts.Configuration getCompileConfiguration();
+-  public abstract org.gradle.api.artifacts.Configuration getPackageConfiguration();
+-  public abstract org.gradle.api.artifacts.Configuration getProvidedConfiguration();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.LibraryCache gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LibraryCache
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.LibraryCache	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LibraryCache	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.internal.LibraryCache implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254035;
+-  public com.android.build.gradle.internal.LibraryCache();
+-  public static com.android.build.gradle.internal.LibraryCache getCache();
+-  public synchronized java.lang.Object unload();
+-  public void unzipLibrary(java.lang.String, org.gradle.api.Project, java.io.File, java.io.File);
+-  public static void unzipAar(java.io.File, java.io.File, org.gradle.api.Project);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.LintGradleClient gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LintGradleClient
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.LintGradleClient	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LintGradleClient	1969-12-31 14:00:00.000000000 -1000
+@@ -1,10 +0,0 @@
+-public class com.android.build.gradle.internal.LintGradleClient extends com.android.tools.lint.LintCliClient {
+-  public com.android.build.gradle.internal.LintGradleClient(com.android.tools.lint.client.api.IssueRegistry, com.android.tools.lint.LintCliFlags, com.android.build.gradle.BasePlugin, com.android.builder.model.AndroidProject, java.lang.String);
+-  public com.android.build.gradle.BasePlugin getPlugin();
+-  public void setCustomRules(java.util.List<java.io.File>);
+-  public java.util.List<java.io.File> findRuleJars(com.android.tools.lint.detector.api.Project);
+-  public java.io.File getSdkHome();
+-  public java.io.File getCacheDir(boolean);
+-  public java.util.List<com.android.tools.lint.Warning> run(com.android.tools.lint.client.api.IssueRegistry) throws java.io.IOException;
+-  public static java.util.List<com.android.tools.lint.Warning> merge(java.util.Map<com.android.builder.model.Variant, java.util.List<com.android.tools.lint.Warning>>, com.android.builder.model.AndroidProject);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.LintGradleProject gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LintGradleProject
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.LintGradleProject	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LintGradleProject	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public class com.android.build.gradle.internal.LintGradleProject extends com.android.tools.lint.detector.api.Project {
+-  public static com.android.utils.Pair<com.android.build.gradle.internal.LintGradleProject, java.util.List<java.io.File>> create(com.android.build.gradle.internal.LintGradleClient, com.android.builder.model.AndroidProject, com.android.builder.model.Variant, org.gradle.api.Project);
+-  public boolean isGradleProject();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.LoggerWrapper gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LoggerWrapper
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.LoggerWrapper	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.LoggerWrapper	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.internal.LoggerWrapper implements com.android.utils.ILogger,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254024;
+-  public com.android.build.gradle.internal.LoggerWrapper(org.gradle.api.logging.Logger);
+-  public void error(java.lang.Throwable, java.lang.String, java.lang.Object...);
+-  public void warning(java.lang.String, java.lang.Object...);
+-  public void info(java.lang.String, java.lang.Object...);
+-  public void verbose(java.lang.String, java.lang.Object...);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.ProductFlavorCombo gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ProductFlavorCombo
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.ProductFlavorCombo	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ProductFlavorCombo	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.ProductFlavorCombo {
+-  public com.android.build.gradle.internal.ProductFlavorCombo(com.android.build.gradle.api.GroupableProductFlavor...);
+-  public com.android.build.gradle.internal.ProductFlavorCombo(java.lang.Iterable<com.android.build.gradle.api.GroupableProductFlavor>);
+-  public java.lang.String getName();
+-  public java.util.List<com.android.build.gradle.api.GroupableProductFlavor> getFlavorList();
+-  public static java.util.List<com.android.build.gradle.internal.ProductFlavorCombo> createCombinations(java.util.List<java.lang.String>, java.lang.Iterable<? extends com.android.build.gradle.api.GroupableProductFlavor>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.ProductFlavorData$ConfigurationProviderImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ProductFlavorData$ConfigurationProviderImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.ProductFlavorData$ConfigurationProviderImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ProductFlavorData$ConfigurationProviderImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.internal.ProductFlavorData$ConfigurationProviderImpl implements com.android.build.gradle.internal.ConfigurationProvider,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public com.android.build.gradle.internal.ProductFlavorData$ConfigurationProviderImpl(org.gradle.api.Project, com.android.build.gradle.internal.api.DefaultAndroidSourceSet);
+-  public org.gradle.api.artifacts.Configuration getCompileConfiguration();
+-  public org.gradle.api.artifacts.Configuration getPackageConfiguration();
+-  public org.gradle.api.artifacts.Configuration getProvidedConfiguration();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.ProductFlavorData<T gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ProductFlavorData<T
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.ProductFlavorData<T	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.ProductFlavorData<T	1969-12-31 14:00:00.000000000 -1000
+@@ -1,33 +0,0 @@
+-public class com.android.build.gradle.internal.ProductFlavorData<T extends com.android.builder.core.DefaultProductFlavor> implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254016;
+-  public com.android.build.gradle.internal.ProductFlavorData(T, com.android.build.gradle.internal.api.DefaultAndroidSourceSet, com.android.build.gradle.internal.api.DefaultAndroidSourceSet, org.gradle.api.Project);
+-  public static java.lang.String getFlavoredName(com.android.build.gradle.internal.ProductFlavorData[], boolean);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public final T getProductFlavor();
+-  public final com.android.build.gradle.internal.api.DefaultAndroidSourceSet getSourceSet();
+-  public final com.android.build.gradle.internal.api.DefaultAndroidSourceSet getTestSourceSet();
+-  public final com.android.build.gradle.internal.ConfigurationProvider getMainProvider();
+-  public final com.android.build.gradle.internal.ConfigurationProvider getTestProvider();
+-  public final org.gradle.api.Task getAssembleTask();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.SdkHandler gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.SdkHandler
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.SdkHandler	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.SdkHandler	1969-12-31 14:00:00.000000000 -1000
+@@ -1,10 +0,0 @@
+-public class com.android.build.gradle.internal.SdkHandler {
+-  public com.android.build.gradle.internal.SdkHandler(org.gradle.api.Project, com.android.utils.ILogger);
+-  public com.android.builder.sdk.SdkInfo getSdkInfo();
+-  public void initTarget(java.lang.String, com.android.sdklib.repository.FullRevision, com.android.builder.core.AndroidBuilder);
+-  public java.io.File getSdkFolder();
+-  public java.io.File getAndCheckSdkFolder();
+-  public synchronized com.android.builder.sdk.SdkLoader getSdkLoader();
+-  public synchronized void unload();
+-  public java.io.File getNdkFolder();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.SourceSetSourceProviderWrapper gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.SourceSetSourceProviderWrapper
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.SourceSetSourceProviderWrapper	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.SourceSetSourceProviderWrapper	1969-12-31 14:00:00.000000000 -1000
+@@ -1,14 +0,0 @@
+-public class com.android.build.gradle.internal.SourceSetSourceProviderWrapper implements com.android.builder.model.SourceProvider {
+-  public com.android.build.gradle.internal.SourceSetSourceProviderWrapper(org.gradle.api.tasks.SourceSet);
+-  public java.lang.String getName();
+-  public java.io.File getManifestFile();
+-  public java.util.Collection<java.io.File> getJavaDirectories();
+-  public java.util.Collection<java.io.File> getResourcesDirectories();
+-  public java.util.Collection<java.io.File> getAidlDirectories();
+-  public java.util.Collection<java.io.File> getRenderscriptDirectories();
+-  public java.util.Collection<java.io.File> getCDirectories();
+-  public java.util.Collection<java.io.File> getCppDirectories();
+-  public java.util.Collection<java.io.File> getResDirectories();
+-  public java.util.Collection<java.io.File> getAssetsDirectories();
+-  public java.util.Collection<java.io.File> getJniLibsDirectories();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.StringHelper gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.StringHelper
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.StringHelper	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.StringHelper	1969-12-31 14:00:00.000000000 -1000
+@@ -1,27 +0,0 @@
+-public class com.android.build.gradle.internal.StringHelper implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254030;
+-  public com.android.build.gradle.internal.StringHelper();
+-  public static java.lang.String capitalize(java.lang.String);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.VariantManager gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.VariantManager
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.VariantManager	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.VariantManager	1969-12-31 14:00:00.000000000 -1000
+@@ -1,16 +0,0 @@
+-public class com.android.build.gradle.internal.VariantManager implements com.android.build.gradle.internal.VariantModel {
+-  public com.android.build.gradle.internal.VariantManager(org.gradle.api.Project, com.android.build.gradle.BasePlugin, com.android.build.gradle.BaseExtension, com.android.build.gradle.internal.variant.VariantFactory);
+-  public com.android.build.gradle.internal.ProductFlavorData<com.android.build.gradle.internal.dsl.ProductFlavor> getDefaultConfig();
+-  public java.util.Map<java.lang.String, com.android.build.gradle.internal.BuildTypeData> getBuildTypes();
+-  public java.util.Map<java.lang.String, com.android.build.gradle.internal.ProductFlavorData<com.android.build.gradle.internal.dsl.GroupableProductFlavor>> getProductFlavors();
+-  public java.util.Map<java.lang.String, com.android.build.gradle.internal.dsl.SigningConfig> getSigningConfigs();
+-  public void addSigningConfig(com.android.build.gradle.internal.dsl.SigningConfig);
+-  public void addBuildType(com.android.build.gradle.internal.dsl.BuildType);
+-  public void addProductFlavor(com.android.build.gradle.internal.dsl.GroupableProductFlavor);
+-  public java.util.List<com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>> getVariantDataList();
+-  public void createAndroidTasks(com.android.builder.model.SigningConfig);
+-  public void createTasksForVariantData(org.gradle.api.tasks.TaskContainer, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void populateVariantDataList(com.android.builder.model.SigningConfig);
+-  public com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData> createVariantData(com.android.builder.model.BuildType, java.util.List<com.android.build.gradle.api.GroupableProductFlavor>, com.android.builder.model.SigningConfig);
+-  public com.android.build.gradle.internal.variant.TestVariantData createTestVariantData(com.android.build.gradle.internal.variant.BaseVariantData, com.android.builder.model.SigningConfig);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.VariantModel gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.VariantModel
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.VariantModel	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.VariantModel	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public interface com.android.build.gradle.internal.VariantModel {
+-  public abstract com.android.build.gradle.internal.ProductFlavorData<com.android.build.gradle.internal.dsl.ProductFlavor> getDefaultConfig();
+-  public abstract java.util.Map<java.lang.String, com.android.build.gradle.internal.BuildTypeData> getBuildTypes();
+-  public abstract java.util.Map<java.lang.String, com.android.build.gradle.internal.ProductFlavorData<com.android.build.gradle.internal.dsl.GroupableProductFlavor>> getProductFlavors();
+-  public abstract java.util.Map<java.lang.String, ? extends com.android.builder.model.SigningConfig> getSigningConfigs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ApkVariantImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ApkVariantImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ApkVariantImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ApkVariantImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,44 +0,0 @@
+-public abstract class com.android.build.gradle.internal.api.ApkVariantImpl extends com.android.build.gradle.internal.api.BaseVariantImpl implements com.android.build.gradle.api.ApkVariant {
+-  public java.lang.String getVersionName();
+-  public int getVersionCode();
+-  public com.android.build.gradle.tasks.Dex getDex();
+-  public org.gradle.api.DefaultTask getUninstall();
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-  public boolean isSigningReady();
+-  public java.util.Collection<java.io.File> getCompileLibraries();
+-  public java.util.Collection<java.io.File> getApkLibraries();
+-  public org.gradle.api.DefaultTask getInstall();
+-  public boolean getOutputsAreSigned();
+-  public void setOutputsAreSigned(boolean);
+-  public void resValue(java.lang.String, java.lang.String, java.lang.String);
+-  public void buildConfigField(java.lang.String, java.lang.String, java.lang.String);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.util.Collection);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.io.File[]);
+-  public void addJavaSourceFoldersToModel(java.util.Collection);
+-  public void addJavaSourceFoldersToModel(java.io.File[]);
+-  public org.gradle.api.Task getAssemble();
+-  public org.gradle.api.tasks.Copy getProcessJavaResources();
+-  public java.io.File getMappingFile();
+-  public org.gradle.api.Task getObfuscation();
+-  public com.android.build.gradle.tasks.NdkCompile getNdkCompile();
+-  public org.gradle.api.tasks.compile.JavaCompile getJavaCompile();
+-  public com.android.build.gradle.tasks.GenerateBuildConfig getGenerateBuildConfig();
+-  public com.android.build.gradle.tasks.MergeAssets getMergeAssets();
+-  public com.android.build.gradle.tasks.MergeResources getMergeResources();
+-  public com.android.build.gradle.tasks.RenderscriptCompile getRenderscriptCompile();
+-  public com.android.build.gradle.tasks.AidlCompile getAidlCompile();
+-  public org.gradle.api.Task getCheckManifest();
+-  public org.gradle.api.Task getPreBuild();
+-  public java.lang.String getApplicationId();
+-  public java.util.List getSourceSets();
+-  public com.android.builder.model.ProductFlavor getMergedFlavor();
+-  public java.util.List getProductFlavors();
+-  public com.android.builder.model.BuildType getBuildType();
+-  public java.util.List getOutputs();
+-  public java.lang.String getFlavorName();
+-  public java.lang.String getBaseName();
+-  public java.lang.String getDirName();
+-  public java.lang.String getDescription();
+-  public java.lang.String getName();
+-  public void addOutputs(java.util.List);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ApkVariantOutputImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ApkVariantOutputImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ApkVariantOutputImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ApkVariantOutputImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,12 +0,0 @@
+-public class com.android.build.gradle.internal.api.ApkVariantOutputImpl extends com.android.build.gradle.internal.api.BaseVariantOutputImpl implements com.android.build.gradle.api.ApkVariantOutput {
+-  public com.android.build.gradle.internal.api.ApkVariantOutputImpl(com.android.build.gradle.internal.variant.ApkVariantOutputData);
+-  public com.android.build.gradle.tasks.PackageApplication getPackageApplication();
+-  public com.android.build.gradle.tasks.ZipAlign getZipAlign();
+-  public com.android.build.gradle.tasks.ZipAlign createZipAlignTask(java.lang.String, java.io.File, java.io.File);
+-  public void setVersionCodeOverride(int);
+-  public int getVersionCodeOverride();
+-  public void setVersionNameOverride(java.lang.String);
+-  public java.lang.String getVersionNameOverride();
+-  public int getVersionCode();
+-  public java.lang.String getFilter(com.android.build.OutputFile$FilterType);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ApplicationVariantImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ApplicationVariantImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ApplicationVariantImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ApplicationVariantImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.api.ApplicationVariantImpl extends com.android.build.gradle.internal.api.ApkVariantImpl implements com.android.build.gradle.api.ApplicationVariant,com.android.build.gradle.internal.api.TestedVariant {
+-  public com.android.build.gradle.internal.api.ApplicationVariantImpl(com.android.build.gradle.internal.variant.ApplicationVariantData, com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public void setTestVariant(com.android.build.gradle.api.TestVariant);
+-  public com.android.build.gradle.api.TestVariant getTestVariant();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.BaseVariantOutputImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.BaseVariantOutputImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.BaseVariantOutputImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.BaseVariantOutputImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,15 +0,0 @@
+-public abstract class com.android.build.gradle.internal.api.BaseVariantOutputImpl implements com.android.build.gradle.api.BaseVariantOutput {
+-  public com.android.build.gradle.internal.api.BaseVariantOutputImpl();
+-  public void setOutputFile(java.io.File);
+-  public java.io.File getOutputFile();
+-  public com.android.build.OutputFile getMainOutputFile();
+-  public com.google.common.collect.ImmutableList<com.android.build.OutputFile> getOutputs();
+-  public com.android.build.gradle.tasks.ProcessAndroidResources getProcessResources();
+-  public com.android.build.gradle.tasks.ManifestProcessorTask getProcessManifest();
+-  public org.gradle.api.Task getAssemble();
+-  public java.lang.String getName();
+-  public java.lang.String getBaseName();
+-  public java.lang.String getDirName();
+-  public java.io.File getSplitFolder();
+-  public java.util.Collection getOutputs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet	1969-12-31 14:00:00.000000000 -1000
+@@ -1,23 +0,0 @@
+-public class com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet implements com.android.build.gradle.api.AndroidSourceDirectorySet {
+-  public com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet(java.lang.String, org.gradle.api.Project);
+-  public java.lang.String getName();
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet srcDir(java.lang.Object);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet srcDirs(java.lang.Object...);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet setSrcDirs(java.lang.Iterable<?>);
+-  public org.gradle.api.file.FileTree getSourceFiles();
+-  public java.util.Set<java.io.File> getSrcDirs();
+-  public org.gradle.api.tasks.util.PatternFilterable getFilter();
+-  public java.lang.String toString();
+-  public java.util.Set<java.lang.String> getIncludes();
+-  public java.util.Set<java.lang.String> getExcludes();
+-  public org.gradle.api.tasks.util.PatternFilterable setIncludes(java.lang.Iterable<java.lang.String>);
+-  public org.gradle.api.tasks.util.PatternFilterable setExcludes(java.lang.Iterable<java.lang.String>);
+-  public org.gradle.api.tasks.util.PatternFilterable include(java.lang.String...);
+-  public org.gradle.api.tasks.util.PatternFilterable include(java.lang.Iterable<java.lang.String>);
+-  public org.gradle.api.tasks.util.PatternFilterable include(org.gradle.api.specs.Spec<org.gradle.api.file.FileTreeElement>);
+-  public org.gradle.api.tasks.util.PatternFilterable include(groovy.lang.Closure);
+-  public org.gradle.api.tasks.util.PatternFilterable exclude(java.lang.Iterable<java.lang.String>);
+-  public org.gradle.api.tasks.util.PatternFilterable exclude(java.lang.String...);
+-  public org.gradle.api.tasks.util.PatternFilterable exclude(org.gradle.api.specs.Spec<org.gradle.api.file.FileTreeElement>);
+-  public org.gradle.api.tasks.util.PatternFilterable exclude(groovy.lang.Closure);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.DefaultAndroidSourceFile gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.DefaultAndroidSourceFile
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.DefaultAndroidSourceFile	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.DefaultAndroidSourceFile	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.api.DefaultAndroidSourceFile implements com.android.build.gradle.api.AndroidSourceFile {
+-  public java.lang.String getName();
+-  public com.android.build.gradle.api.AndroidSourceFile srcFile(java.lang.Object);
+-  public java.io.File getSrcFile();
+-  public java.lang.String toString();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.DefaultAndroidSourceSet gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.DefaultAndroidSourceSet
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.DefaultAndroidSourceSet	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.DefaultAndroidSourceSet	1969-12-31 14:00:00.000000000 -1000
+@@ -1,47 +0,0 @@
+-public class com.android.build.gradle.internal.api.DefaultAndroidSourceSet implements com.android.build.gradle.api.AndroidSourceSet,com.android.builder.model.SourceProvider {
+-  public com.android.build.gradle.internal.api.DefaultAndroidSourceSet(java.lang.String, org.gradle.api.Project, boolean);
+-  public java.lang.String getName();
+-  public java.lang.String toString();
+-  public java.lang.String getDisplayName();
+-  public java.lang.String getCompileConfigurationName();
+-  public java.lang.String getPackageConfigurationName();
+-  public java.lang.String getProvidedConfigurationName();
+-  public java.lang.String getWearAppConfigurationName();
+-  public com.android.build.gradle.api.AndroidSourceFile getManifest();
+-  public com.android.build.gradle.api.AndroidSourceSet manifest(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getRes();
+-  public com.android.build.gradle.api.AndroidSourceSet res(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getAssets();
+-  public com.android.build.gradle.api.AndroidSourceSet assets(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getAidl();
+-  public com.android.build.gradle.api.AndroidSourceSet aidl(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getRenderscript();
+-  public com.android.build.gradle.api.AndroidSourceSet renderscript(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getJni();
+-  public com.android.build.gradle.api.AndroidSourceSet jni(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getJniLibs();
+-  public com.android.build.gradle.api.AndroidSourceSet jniLibs(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getJava();
+-  public com.android.build.gradle.api.AndroidSourceSet java(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceDirectorySet getResources();
+-  public com.android.build.gradle.api.AndroidSourceSet resources(groovy.lang.Closure);
+-  public com.android.build.gradle.api.AndroidSourceSet setRoot(java.lang.String);
+-  public java.util.Set<java.io.File> getJavaDirectories();
+-  public java.util.Set<java.io.File> getResourcesDirectories();
+-  public java.io.File getManifestFile();
+-  public java.util.Set<java.io.File> getAidlDirectories();
+-  public java.util.Set<java.io.File> getRenderscriptDirectories();
+-  public java.util.Set<java.io.File> getCDirectories();
+-  public java.util.Set<java.io.File> getCppDirectories();
+-  public java.util.Set<java.io.File> getResDirectories();
+-  public java.util.Set<java.io.File> getAssetsDirectories();
+-  public java.util.Collection<java.io.File> getJniLibsDirectories();
+-  public java.util.Collection getAssetsDirectories();
+-  public java.util.Collection getResDirectories();
+-  public java.util.Collection getCppDirectories();
+-  public java.util.Collection getCDirectories();
+-  public java.util.Collection getRenderscriptDirectories();
+-  public java.util.Collection getAidlDirectories();
+-  public java.util.Collection getResourcesDirectories();
+-  public java.util.Collection getJavaDirectories();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ImmutableFlavorList gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ImmutableFlavorList
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ImmutableFlavorList	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ImmutableFlavorList	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.internal.api.ImmutableFlavorList implements java.util.List<com.android.build.gradle.api.GroupableProductFlavor> {
+-  public int size();
+-  public boolean isEmpty();
+-  public boolean contains(java.lang.Object);
+-  public java.util.Iterator<com.android.build.gradle.api.GroupableProductFlavor> iterator();
+-  public java.lang.Object[] toArray();
+-  public <T> T[] toArray(T[]);
+-  public boolean add(com.android.build.gradle.api.GroupableProductFlavor);
+-  public boolean remove(java.lang.Object);
+-  public boolean containsAll(java.util.Collection<?>);
+-  public boolean addAll(java.util.Collection<? extends com.android.build.gradle.api.GroupableProductFlavor>);
+-  public boolean addAll(int, java.util.Collection<? extends com.android.build.gradle.api.GroupableProductFlavor>);
+-  public boolean removeAll(java.util.Collection<?>);
+-  public boolean retainAll(java.util.Collection<?>);
+-  public void clear();
+-  public com.android.build.gradle.api.GroupableProductFlavor get(int);
+-  public com.android.build.gradle.api.GroupableProductFlavor set(int, com.android.build.gradle.api.GroupableProductFlavor);
+-  public void add(int, com.android.build.gradle.api.GroupableProductFlavor);
+-  public com.android.build.gradle.api.GroupableProductFlavor remove(int);
+-  public int indexOf(java.lang.Object);
+-  public int lastIndexOf(java.lang.Object);
+-  public java.util.ListIterator<com.android.build.gradle.api.GroupableProductFlavor> listIterator();
+-  public java.util.ListIterator<com.android.build.gradle.api.GroupableProductFlavor> listIterator(int);
+-  public java.util.List<com.android.build.gradle.api.GroupableProductFlavor> subList(int, int);
+-  public java.lang.Object remove(int);
+-  public void add(int, java.lang.Object);
+-  public java.lang.Object set(int, java.lang.Object);
+-  public java.lang.Object get(int);
+-  public boolean add(java.lang.Object);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.LibraryVariantImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.LibraryVariantImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.LibraryVariantImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.LibraryVariantImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,38 +0,0 @@
+-public class com.android.build.gradle.internal.api.LibraryVariantImpl extends com.android.build.gradle.internal.api.BaseVariantImpl implements com.android.build.gradle.api.LibraryVariant,com.android.build.gradle.internal.api.TestedVariant {
+-  public com.android.build.gradle.internal.api.LibraryVariantImpl(com.android.build.gradle.internal.variant.LibraryVariantData, com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public void setTestVariant(com.android.build.gradle.api.TestVariant);
+-  public com.android.build.gradle.api.TestVariant getTestVariant();
+-  public boolean getOutputsAreSigned();
+-  public void setOutputsAreSigned(boolean);
+-  public void resValue(java.lang.String, java.lang.String, java.lang.String);
+-  public void buildConfigField(java.lang.String, java.lang.String, java.lang.String);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.util.Collection);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.io.File[]);
+-  public void addJavaSourceFoldersToModel(java.util.Collection);
+-  public void addJavaSourceFoldersToModel(java.io.File[]);
+-  public org.gradle.api.Task getAssemble();
+-  public org.gradle.api.tasks.Copy getProcessJavaResources();
+-  public java.io.File getMappingFile();
+-  public org.gradle.api.Task getObfuscation();
+-  public com.android.build.gradle.tasks.NdkCompile getNdkCompile();
+-  public org.gradle.api.tasks.compile.JavaCompile getJavaCompile();
+-  public com.android.build.gradle.tasks.GenerateBuildConfig getGenerateBuildConfig();
+-  public com.android.build.gradle.tasks.MergeAssets getMergeAssets();
+-  public com.android.build.gradle.tasks.MergeResources getMergeResources();
+-  public com.android.build.gradle.tasks.RenderscriptCompile getRenderscriptCompile();
+-  public com.android.build.gradle.tasks.AidlCompile getAidlCompile();
+-  public org.gradle.api.Task getCheckManifest();
+-  public org.gradle.api.Task getPreBuild();
+-  public java.lang.String getApplicationId();
+-  public java.util.List getSourceSets();
+-  public com.android.builder.model.ProductFlavor getMergedFlavor();
+-  public java.util.List getProductFlavors();
+-  public com.android.builder.model.BuildType getBuildType();
+-  public java.util.List getOutputs();
+-  public java.lang.String getFlavorName();
+-  public java.lang.String getBaseName();
+-  public java.lang.String getDirName();
+-  public java.lang.String getDescription();
+-  public java.lang.String getName();
+-  public void addOutputs(java.util.List);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.LibraryVariantOutputImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.LibraryVariantOutputImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.LibraryVariantOutputImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.LibraryVariantOutputImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.api.LibraryVariantOutputImpl extends com.android.build.gradle.internal.api.BaseVariantOutputImpl implements com.android.build.gradle.api.LibraryVariantOutput {
+-  public com.android.build.gradle.internal.api.LibraryVariantOutputImpl(com.android.build.gradle.internal.variant.LibVariantOutputData);
+-  public org.gradle.api.tasks.bundling.Zip getPackageLibrary();
+-  public int getVersionCode();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyBaseConfig gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyBaseConfig
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyBaseConfig	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyBaseConfig	1969-12-31 14:00:00.000000000 -1000
+@@ -1,37 +0,0 @@
+-public abstract class com.android.build.gradle.internal.api.ReadOnlyBaseConfig implements com.android.builder.model.BaseConfig,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254114;
+-  public java.lang.String getName();
+-  public java.util.Map<java.lang.String, com.android.builder.model.ClassField> getBuildConfigFields();
+-  public java.util.Map<java.lang.String, com.android.builder.model.ClassField> getResValues();
+-  public java.util.Collection<java.io.File> getProguardFiles();
+-  public java.util.Collection<java.io.File> getConsumerProguardFiles();
+-  public java.util.Map<java.lang.String, java.lang.Object> getManifestPlaceholders();
+-  public java.lang.Boolean getMultiDexEnabled();
+-  public java.io.File getMultiDexKeepFile();
+-  public java.io.File getMultiDexKeepProguard();
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public java.lang.Object propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object hasProperty(java.lang.String);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyBuildType gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyBuildType
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyBuildType	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyBuildType	1969-12-31 14:00:00.000000000 -1000
+@@ -1,15 +0,0 @@
+-public class com.android.build.gradle.internal.api.ReadOnlyBuildType extends com.android.build.gradle.internal.api.ReadOnlyBaseConfig implements com.android.builder.model.BuildType {
+-  public com.android.build.gradle.internal.api.ReadOnlyBuildType(com.android.builder.model.BuildType, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public boolean isDebuggable();
+-  public boolean isTestCoverageEnabled();
+-  public boolean isJniDebuggable();
+-  public boolean isPseudoLocalesEnabled();
+-  public boolean isRenderscriptDebuggable();
+-  public int getRenderscriptOptimLevel();
+-  public java.lang.String getApplicationIdSuffix();
+-  public java.lang.String getVersionNameSuffix();
+-  public boolean isMinifyEnabled();
+-  public boolean isZipAlignEnabled();
+-  public boolean isEmbedMicroApp();
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyGroupableProductFlavor gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyGroupableProductFlavor
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyGroupableProductFlavor	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyGroupableProductFlavor	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public class com.android.build.gradle.internal.api.ReadOnlyGroupableProductFlavor extends com.android.build.gradle.internal.api.ReadOnlyProductFlavor implements com.android.build.gradle.api.GroupableProductFlavor {
+-  public java.lang.String getFlavorDimension();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyObjectProvider gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyObjectProvider
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyObjectProvider	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyObjectProvider	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.api.ReadOnlyObjectProvider {
+-  public com.android.build.gradle.internal.api.ReadOnlyObjectProvider();
+-  public com.android.builder.model.BuildType getBuildType(com.android.builder.model.BuildType);
+-  public com.android.build.gradle.api.GroupableProductFlavor getProductFlavor(com.android.build.gradle.api.GroupableProductFlavor);
+-  public com.android.builder.model.SigningConfig getSigningConfig(com.android.builder.model.SigningConfig);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyProductFlavor gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyProductFlavor
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlyProductFlavor	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlyProductFlavor	1969-12-31 14:00:00.000000000 -1000
+@@ -1,17 +0,0 @@
+-public class com.android.build.gradle.internal.api.ReadOnlyProductFlavor extends com.android.build.gradle.internal.api.ReadOnlyBaseConfig implements com.android.builder.model.ProductFlavor {
+-  public java.lang.String getApplicationId();
+-  public java.lang.Integer getVersionCode();
+-  public java.lang.String getVersionName();
+-  public com.android.builder.model.ApiVersion getMinSdkVersion();
+-  public com.android.builder.model.ApiVersion getTargetSdkVersion();
+-  public java.lang.Integer getMaxSdkVersion();
+-  public java.lang.Integer getRenderscriptTargetApi();
+-  public java.lang.Boolean getRenderscriptSupportModeEnabled();
+-  public java.lang.Boolean getRenderscriptNdkModeEnabled();
+-  public java.lang.String getTestApplicationId();
+-  public java.lang.String getTestInstrumentationRunner();
+-  public java.lang.Boolean getTestHandleProfiling();
+-  public java.lang.Boolean getTestFunctionalTest();
+-  public java.util.Collection<java.lang.String> getResourceConfigurations();
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlySigningConfig gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlySigningConfig
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.ReadOnlySigningConfig	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.ReadOnlySigningConfig	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.api.ReadOnlySigningConfig implements com.android.builder.model.SigningConfig {
+-  public java.lang.String getName();
+-  public java.io.File getStoreFile();
+-  public java.lang.String getStorePassword();
+-  public java.lang.String getKeyAlias();
+-  public java.lang.String getKeyPassword();
+-  public java.lang.String getStoreType();
+-  public boolean isSigningReady();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.TestVariantImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.TestVariantImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.TestVariantImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.TestVariantImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.api.TestVariantImpl extends com.android.build.gradle.internal.api.ApkVariantImpl implements com.android.build.gradle.api.TestVariant {
+-  public com.android.build.gradle.internal.api.TestVariantImpl(com.android.build.gradle.internal.variant.TestVariantData, com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public com.android.build.gradle.api.BaseVariant getTestedVariant();
+-  public void setTestedVariant(com.android.build.gradle.api.BaseVariant);
+-  public org.gradle.api.DefaultTask getConnectedInstrumentTest();
+-  public java.util.List<? extends org.gradle.api.DefaultTask> getProviderInstrumentTests();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.TestedVariant gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.TestedVariant
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.TestedVariant	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.TestedVariant	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public interface com.android.build.gradle.internal.api.TestedVariant {
+-  public abstract void setTestVariant(com.android.build.gradle.api.TestVariant);
+-  public abstract com.android.build.gradle.api.TestVariant getTestVariant();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.VariantFilter gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.VariantFilter
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.api.VariantFilter	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.api.VariantFilter	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.api.VariantFilter implements com.android.build.gradle.api.VariantFilter {
+-  public com.android.build.gradle.internal.api.VariantFilter(com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public void reset(com.android.builder.model.ProductFlavor, com.android.builder.model.BuildType, java.util.List<com.android.build.gradle.api.GroupableProductFlavor>);
+-  public boolean isIgnore();
+-  public void setIgnore(boolean);
+-  public com.android.builder.model.ProductFlavor getDefaultConfig();
+-  public com.android.builder.model.BuildType getBuildType();
+-  public java.util.List<com.android.build.gradle.api.GroupableProductFlavor> getFlavors();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.core.GradleVariantConfiguration gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.core.GradleVariantConfiguration
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.core.GradleVariantConfiguration	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.core.GradleVariantConfiguration	1969-12-31 14:00:00.000000000 -1000
+@@ -1,11 +0,0 @@
+-public class com.android.build.gradle.internal.core.GradleVariantConfiguration extends com.android.builder.core.VariantConfiguration<com.android.build.gradle.internal.dsl.BuildType, com.android.build.gradle.internal.dsl.ProductFlavor, com.android.build.gradle.internal.dsl.GroupableProductFlavor> {
+-  public com.android.build.gradle.internal.core.GradleVariantConfiguration(com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider, com.android.builder.model.SigningConfig);
+-  public com.android.build.gradle.internal.core.GradleVariantConfiguration(com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider, com.android.builder.core.VariantConfiguration$Type, com.android.builder.model.SigningConfig);
+-  public com.android.build.gradle.internal.core.GradleVariantConfiguration(com.android.build.gradle.internal.dsl.ProductFlavor, com.android.builder.model.SourceProvider, com.android.build.gradle.internal.dsl.BuildType, com.android.builder.model.SourceProvider, com.android.builder.core.VariantConfiguration$Type, com.android.builder.core.VariantConfiguration, com.android.builder.model.SigningConfig);
+-  public com.android.builder.core.VariantConfiguration addProductFlavor(com.android.build.gradle.internal.dsl.GroupableProductFlavor, com.android.builder.model.SourceProvider, java.lang.String);
+-  public com.android.build.gradle.internal.core.NdkConfig getNdkConfig();
+-  public java.util.Set<java.lang.String> getSupportedAbis();
+-  public boolean isMinifyEnabled();
+-  public boolean getUseJack();
+-  public com.android.builder.core.VariantConfiguration addProductFlavor(com.android.builder.model.ProductFlavor, com.android.builder.model.SourceProvider, java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.core.MergedNdkConfig gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.core.MergedNdkConfig
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.core.MergedNdkConfig	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.core.MergedNdkConfig	1969-12-31 14:00:00.000000000 -1000
+@@ -1,11 +0,0 @@
+-public class com.android.build.gradle.internal.core.MergedNdkConfig implements com.android.build.gradle.internal.core.NdkConfig {
+-  public com.android.build.gradle.internal.core.MergedNdkConfig();
+-  public void reset();
+-  public java.lang.String getModuleName();
+-  public java.lang.String getcFlags();
+-  public java.util.Set<java.lang.String> getLdLibs();
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-  public java.lang.String getStl();
+-  public void append(com.android.build.gradle.internal.core.NdkConfig);
+-  public java.util.Collection getLdLibs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.core.NdkConfig gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.core.NdkConfig
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.core.NdkConfig	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.core.NdkConfig	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public interface com.android.build.gradle.internal.core.NdkConfig {
+-  public abstract java.lang.String getModuleName();
+-  public abstract java.lang.String getcFlags();
+-  public abstract java.util.Collection<java.lang.String> getLdLibs();
+-  public abstract java.util.Set<java.lang.String> getAbiFilters();
+-  public abstract java.lang.String getStl();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoExtension gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoExtension
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoExtension	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoExtension	1969-12-31 14:00:00.000000000 -1000
+@@ -1,28 +0,0 @@
+-public class com.android.build.gradle.internal.coverage.JacocoExtension implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254185;
+-  public com.android.build.gradle.internal.coverage.JacocoExtension();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.String getVersion();
+-  public void setVersion(java.lang.String);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoInstrumentTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoInstrumentTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoInstrumentTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoInstrumentTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,100 +0,0 @@
+-public class com.android.build.gradle.internal.coverage.JacocoInstrumentTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254480;
+-  public com.android.build.gradle.internal.coverage.JacocoInstrumentTask();
+-  public void instrument();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getInputDir();
+-  public void setInputDir(java.io.File);
+-  public java.io.File getOutputDir();
+-  public void setOutputDir(java.io.File);
+-  public org.gradle.api.file.FileCollection getJacocoClasspath();
+-  public void setJacocoClasspath(org.gradle.api.file.FileCollection);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoPlugin gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoPlugin
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoPlugin	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoPlugin	1969-12-31 14:00:00.000000000 -1000
+@@ -1,33 +0,0 @@
+-public class com.android.build.gradle.internal.coverage.JacocoPlugin implements org.gradle.api.Plugin<org.gradle.api.Project>, groovy.lang.GroovyObject {
+-  public static final java.lang.String ANT_CONFIGURATION_NAME;
+-  public static final java.lang.String AGENT_CONFIGURATION_NAME;
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254187;
+-  public com.android.build.gradle.internal.coverage.JacocoPlugin();
+-  public void apply(org.gradle.api.Project);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void apply(java.lang.Object);
+-  public void this$2$addJacocoConfigurations();
+-  public void this$2$configureAgentDependencies();
+-  public void this$2$configureTaskClasspathDefaults();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoReportTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoReportTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.coverage.JacocoReportTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.coverage.JacocoReportTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,106 +0,0 @@
+-public class com.android.build.gradle.internal.coverage.JacocoReportTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254489;
+-  public com.android.build.gradle.internal.coverage.JacocoReportTask();
+-  public void report();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getCoverageFile();
+-  public void setCoverageFile(java.io.File);
+-  public java.io.File getReportDir();
+-  public void setReportDir(java.io.File);
+-  public java.io.File getClassDir();
+-  public void setClassDir(java.io.File);
+-  public java.util.List<java.io.File> getSourceDir();
+-  public void setSourceDir(java.util.List<java.io.File>);
+-  public java.lang.String getReportName();
+-  public void setReportName(java.lang.String);
+-  public org.gradle.api.file.FileCollection getJacocoClasspath();
+-  public void setJacocoClasspath(org.gradle.api.file.FileCollection);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.DependencyChecker gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.DependencyChecker
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.DependencyChecker	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.DependencyChecker	1969-12-31 14:00:00.000000000 -1000
+@@ -1,31 +0,0 @@
+-public class com.android.build.gradle.internal.dependency.DependencyChecker implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254171;
+-  public com.android.build.gradle.internal.dependency.DependencyChecker(com.android.build.gradle.internal.dependency.VariantDependencies, com.android.utils.ILogger);
+-  public boolean excluded(org.gradle.api.artifacts.ModuleVersionIdentifier);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public final com.android.build.gradle.internal.dependency.VariantDependencies getConfigurationDependencies();
+-  public final java.lang.Object getLogger();
+-  public final java.util.List<java.lang.Integer> getFoundAndroidApis();
+-  public final java.util.List<java.lang.String> getFoundBouncyCastle();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.LibraryDependencyImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.LibraryDependencyImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.LibraryDependencyImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.LibraryDependencyImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.dependency.LibraryDependencyImpl extends com.android.builder.dependency.LibraryBundle {
+-  public com.android.build.gradle.internal.dependency.LibraryDependencyImpl(java.io.File, java.io.File, java.util.List<com.android.builder.dependency.LibraryDependency>, java.lang.String, java.lang.String, com.android.builder.model.MavenCoordinates, com.android.builder.model.MavenCoordinates);
+-  public java.util.List<? extends com.android.builder.model.AndroidLibrary> getLibraryDependencies();
+-  public java.util.List<com.android.builder.dependency.LibraryDependency> getDependencies();
+-  public java.util.List<? extends com.android.builder.dependency.ManifestDependency> getManifestDependencies();
+-  public java.lang.String getProjectVariant();
+-  public com.android.builder.model.MavenCoordinates getRequestedCoordinates();
+-  public com.android.builder.model.MavenCoordinates getResolvedCoordinates();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.ManifestDependencyImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.ManifestDependencyImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.ManifestDependencyImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.ManifestDependencyImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.dependency.ManifestDependencyImpl implements com.android.builder.dependency.ManifestDependency {
+-  public com.android.build.gradle.internal.dependency.ManifestDependencyImpl(java.io.File, java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl>);
+-  public com.android.build.gradle.internal.dependency.ManifestDependencyImpl(java.lang.String, java.io.File, java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl>);
+-  public java.lang.String getName();
+-  public java.io.File getManifest();
+-  public java.util.List<? extends com.android.builder.dependency.ManifestDependency> getManifestDependencies();
+-  public java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl> getManifestDependenciesForInput();
+-  public java.util.List<java.io.File> getAllManifests();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.SymbolFileProviderImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.SymbolFileProviderImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.SymbolFileProviderImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.SymbolFileProviderImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.dependency.SymbolFileProviderImpl implements com.android.builder.dependency.SymbolFileProvider {
+-  public com.android.build.gradle.internal.dependency.SymbolFileProviderImpl(java.io.File, java.io.File);
+-  public java.io.File getManifest();
+-  public java.io.File getSymbolFile();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.VariantDependencies gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.VariantDependencies
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dependency.VariantDependencies	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dependency.VariantDependencies	1969-12-31 14:00:00.000000000 -1000
+@@ -1,43 +0,0 @@
+-public class com.android.build.gradle.internal.dependency.VariantDependencies implements com.android.builder.dependency.DependencyContainer,com.android.build.gradle.internal.ConfigurationProvider,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254177;
+-  public static com.android.build.gradle.internal.dependency.VariantDependencies compute(org.gradle.api.Project, java.lang.String, boolean, boolean, com.android.build.gradle.internal.ConfigurationProvider...);
+-  public java.lang.String getName();
+-  public org.gradle.api.artifacts.Configuration getCompileConfiguration();
+-  public org.gradle.api.artifacts.Configuration getPackageConfiguration();
+-  public org.gradle.api.artifacts.Configuration getProvidedConfiguration();
+-  public org.gradle.api.artifacts.Configuration getPublishConfiguration();
+-  public void addLibraries(java.util.List<com.android.build.gradle.internal.dependency.LibraryDependencyImpl>);
+-  public void addJars(java.util.Collection<com.android.builder.dependency.JarDependency>);
+-  public void addLocalJars(java.util.Collection<com.android.builder.dependency.JarDependency>);
+-  public java.util.List<com.android.build.gradle.internal.dependency.LibraryDependencyImpl> getLibraries();
+-  public java.util.List<? extends com.android.builder.dependency.LibraryDependency> getAndroidDependencies();
+-  public java.util.List<com.android.builder.dependency.JarDependency> getJarDependencies();
+-  public java.util.List<com.android.builder.dependency.JarDependency> getLocalDependencies();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public boolean getAnnotationsPresent();
+-  public boolean isAnnotationsPresent();
+-  public void setAnnotationsPresent(boolean);
+-  public com.android.build.gradle.internal.dependency.DependencyChecker getChecker();
+-  public void setChecker(com.android.build.gradle.internal.dependency.DependencyChecker);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.AaptOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.AaptOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.AaptOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.AaptOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,39 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.AaptOptions implements com.android.builder.model.AaptOptions,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254166;
+-  public com.android.build.gradle.internal.dsl.AaptOptions();
+-  public void setIgnoreAssetsPattern(java.lang.String);
+-  public java.lang.String getIgnoreAssets();
+-  public void setNoCompress(java.lang.String);
+-  public void setNoCompress(java.lang.String...);
+-  public java.util.Collection<java.lang.String> getNoCompress();
+-  public void useNewCruncher(boolean);
+-  public void setUseNewCruncher(boolean);
+-  public boolean getUseNewCruncher();
+-  public void failOnMissingConfigEntry(boolean);
+-  public void setFailOnMissingConfigEntry(boolean);
+-  public boolean getFailOnMissingConfigEntry();
+-  public void noCompress(java.lang.String);
+-  public void noCompress(java.lang.String...);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.AbiSplitOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.AbiSplitOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.AbiSplitOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.AbiSplitOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.AbiSplitOptions extends com.android.build.gradle.internal.dsl.SplitOptions {
+-  public com.android.build.gradle.internal.dsl.AbiSplitOptions();
+-  public boolean isUniversalApk();
+-  public void setUniversalApk(boolean);
+-  public java.util.Set<java.lang.String> getApplicableFilters(java.util.Set<java.lang.String>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.AndroidSourceSetFactory gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.AndroidSourceSetFactory
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.AndroidSourceSetFactory	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.AndroidSourceSetFactory	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.AndroidSourceSetFactory implements org.gradle.api.NamedDomainObjectFactory<com.android.build.gradle.api.AndroidSourceSet> {
+-  public com.android.build.gradle.internal.dsl.AndroidSourceSetFactory(org.gradle.internal.reflect.Instantiator, org.gradle.api.Project, boolean);
+-  public com.android.build.gradle.api.AndroidSourceSet create(java.lang.String);
+-  public java.lang.Object create(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.BuildType gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.BuildType
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.BuildType	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.BuildType	1969-12-31 14:00:00.000000000 -1000
+@@ -1,92 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.BuildType extends com.android.builder.core.DefaultBuildType implements java.io.Serializable,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254452;
+-  public com.android.build.gradle.internal.dsl.BuildType(java.lang.String, org.gradle.api.Project, org.gradle.internal.reflect.Instantiator, org.gradle.api.logging.Logger);
+-  public com.android.build.gradle.internal.dsl.BuildType(java.lang.String, org.gradle.api.Project, org.gradle.api.logging.Logger);
+-  public com.android.build.gradle.internal.core.NdkConfig getNdkConfig();
+-  public void init(com.android.build.gradle.internal.dsl.SigningConfig);
+-  public com.android.build.gradle.internal.dsl.SigningConfig getSigningConfig();
+-  public int hashCode();
+-  public boolean equals(java.lang.Object);
+-  public void buildConfigField(java.lang.String, java.lang.String, java.lang.String);
+-  public void resValue(java.lang.String, java.lang.String, java.lang.String);
+-  public com.android.build.gradle.internal.dsl.BuildType proguardFile(java.lang.Object);
+-  public com.android.build.gradle.internal.dsl.BuildType proguardFiles(java.lang.Object...);
+-  public com.android.build.gradle.internal.dsl.BuildType setProguardFiles(java.lang.Iterable<?>);
+-  public com.android.build.gradle.internal.dsl.BuildType consumerProguardFiles(java.lang.Object...);
+-  public com.android.build.gradle.internal.dsl.BuildType setConsumerProguardFiles(java.lang.Iterable<?>);
+-  public void ndk(org.gradle.api.Action<com.android.build.gradle.internal.dsl.NdkOptions>);
+-  public java.lang.Boolean getUseJack();
+-  public void setUseJack(java.lang.Boolean);
+-  public void useJack(java.lang.Boolean);
+-  public void shrinkResources(boolean);
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public boolean getShrinkResources();
+-  public boolean isShrinkResources();
+-  public void setShrinkResources(boolean);
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-  public boolean super$3$isRenderscriptDebuggable();
+-  public java.lang.String super$3$toString();
+-  public int super$3$getRenderscriptOptimLevel();
+-  public java.util.List super$2$getProguardFiles();
+-  public com.android.builder.core.DefaultBuildType super$3$initWith(com.android.builder.core.DefaultBuildType);
+-  public com.android.builder.model.SigningConfig super$3$getSigningConfig();
+-  public void super$2$setMultiDexEnabled(java.lang.Boolean);
+-  public java.util.Map super$2$getResValues();
+-  public com.android.builder.model.BuildType super$3$setSigningConfig(com.android.builder.model.SigningConfig);
+-  public com.android.builder.model.BuildType super$3$setRenderscriptDebuggable(boolean);
+-  public void super$2$setManifestPlaceholders(java.util.Map);
+-  public java.lang.String super$3$getApplicationIdSuffix();
+-  public com.android.builder.model.BuildType super$3$setMinifyEnabled(boolean);
+-  public void super$2$setMultiDexKeepFile(java.io.File);
+-  public void super$1$wait();
+-  public void super$2$_initWith(com.android.builder.model.BaseConfig);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Map super$2$getBuildConfigFields();
+-  public com.android.builder.model.BuildType super$3$setDebuggable(boolean);
+-  public void super$3$setPseudoLocalesEnabled(boolean);
+-  public java.util.List super$2$getConsumerProguardFiles();
+-  public void super$3$setRenderscriptOptimLevel(int);
+-  public int super$3$hashCode();
+-  public void super$2$addResValue(com.android.builder.model.ClassField);
+-  public java.lang.String super$3$getName();
+-  public void super$2$addBuildConfigField(com.android.builder.model.ClassField);
+-  public void super$1$notify();
+-  public void super$3$setTestCoverageEnabled(boolean);
+-  public void super$2$setMultiDexKeepProguard(java.io.File);
+-  public void super$2$addBuildConfigFields(java.util.Map);
+-  public void super$1$notifyAll();
+-  public java.util.Map super$2$getManifestPlaceholders();
+-  public boolean super$3$isMinifyEnabled();
+-  public com.android.builder.model.BuildType super$3$setJniDebuggable(boolean);
+-  public boolean super$3$isEmbedMicroApp();
+-  public java.io.File super$2$getMultiDexKeepFile();
+-  public boolean super$3$isDebuggable();
+-  public java.lang.Object super$1$clone();
+-  public com.android.builder.model.BuildType super$3$setZipAlignEnabled(boolean);
+-  public com.android.builder.model.BuildType super$3$setApplicationIdSuffix(java.lang.String);
+-  public java.io.File super$2$getMultiDexKeepProguard();
+-  public void super$1$wait(long, int);
+-  public boolean super$3$isPseudoLocalesEnabled();
+-  public boolean super$3$isTestCoverageEnabled();
+-  public void super$3$setEmbedMicroApp(boolean);
+-  public void super$1$finalize();
+-  public void super$2$addManifestPlaceHolders(java.util.Map);
+-  public boolean super$3$isZipAlignEnabled();
+-  public java.lang.Boolean super$2$getMultiDexEnabled();
+-  public void super$1$wait(long);
+-  public boolean super$3$isJniDebuggable();
+-  public com.android.builder.model.BuildType super$3$setVersionNameSuffix(java.lang.String);
+-  public java.lang.String super$3$getVersionNameSuffix();
+-  public boolean super$3$equals(java.lang.Object);
+-  public void super$2$addResValues(java.util.Map);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.BuildTypeFactory gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.BuildTypeFactory
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.BuildTypeFactory	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.BuildTypeFactory	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.BuildTypeFactory implements org.gradle.api.NamedDomainObjectFactory<com.android.build.gradle.internal.dsl.BuildType> {
+-  public com.android.build.gradle.internal.dsl.BuildTypeFactory(org.gradle.internal.reflect.Instantiator, org.gradle.api.Project, org.gradle.api.logging.Logger);
+-  public com.android.build.gradle.internal.dsl.BuildType create(java.lang.String);
+-  public java.lang.Object create(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.DensitySplitOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.DensitySplitOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.DensitySplitOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.DensitySplitOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.DensitySplitOptions extends com.android.build.gradle.internal.dsl.SplitOptions {
+-  public com.android.build.gradle.internal.dsl.DensitySplitOptions();
+-  public boolean isStrict();
+-  public void setStrict(boolean);
+-  public void setCompatibleScreens(java.util.List<java.lang.String>);
+-  public void compatibleScreens(java.lang.String...);
+-  public java.util.Set<java.lang.String> getCompatibleScreens();
+-  public java.util.Set<java.lang.String> getApplicableFilters(java.util.Set<java.lang.String>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.DexOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.DexOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.DexOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.DexOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,36 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.DexOptions implements com.android.builder.core.DexOptions,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254127;
+-  public com.android.build.gradle.internal.dsl.DexOptions();
+-  public void setIncremental(boolean);
+-  public boolean getIncremental();
+-  public boolean getPreDexLibraries();
+-  public void setPreDexLibraries(boolean);
+-  public void setJumboMode(boolean);
+-  public boolean getJumboMode();
+-  public void setJavaMaxHeapSize(java.lang.String);
+-  public java.lang.String getJavaMaxHeapSize();
+-  public void setThreadCount(int);
+-  public int getThreadCount();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.GroupableProductFlavor gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.GroupableProductFlavor
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.GroupableProductFlavor	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.GroupableProductFlavor	1969-12-31 14:00:00.000000000 -1000
+@@ -1,73 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.GroupableProductFlavor extends com.android.build.gradle.internal.dsl.ProductFlavor implements com.android.build.gradle.api.GroupableProductFlavor {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254805;
+-  public com.android.build.gradle.internal.dsl.GroupableProductFlavor(java.lang.String, org.gradle.api.Project, org.gradle.internal.reflect.Instantiator, org.gradle.api.logging.Logger);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.lang.String getFlavorDimension();
+-  public void setFlavorDimension(java.lang.String);
+-  public java.util.Collection getProguardFiles();
+-  public java.util.Collection getConsumerProguardFiles();
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-  public void super$4$setProguardFiles(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Boolean super$3$getTestFunctionalTest();
+-  public java.util.List super$2$getProguardFiles();
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.util.Map super$2$getResValues();
+-  public java.lang.String super$3$getTestInstrumentationRunner();
+-  public void super$3$setRenderscriptTargetApi(java.lang.Integer);
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public void super$4$proguardFile(java.lang.Object);
+-  public com.android.builder.model.ProductFlavor super$4$setTargetSdkVersion(int);
+-  public com.android.builder.model.ProductFlavor super$3$setTestInstrumentationRunner(java.lang.String);
+-  public java.lang.Integer super$3$getRenderscriptTargetApi();
+-  public java.util.Map super$2$getBuildConfigFields();
+-  public com.android.builder.model.ProductFlavor super$3$setApplicationId(java.lang.String);
+-  public void super$4$setMinSdkVersion(java.lang.String);
+-  public java.lang.String super$3$getName();
+-  public java.lang.Boolean super$3$getRenderscriptSupportModeEnabled();
+-  public void super$2$addBuildConfigField(com.android.builder.model.ClassField);
+-  public com.android.builder.model.ProductFlavor super$3$setTestHandleProfiling(boolean);
+-  public java.util.Map super$2$getManifestPlaceholders();
+-  public void super$4$minSdkVersion(int);
+-  public java.util.Collection super$3$getResourceConfigurations();
+-  public void super$4$resValue(java.lang.String, java.lang.String, java.lang.String);
+-  public void super$4$targetSdkVersion(java.lang.String);
+-  public void super$4$useJack(java.lang.Boolean);
+-  public void super$2$addManifestPlaceHolders(java.util.Map);
+-  public void super$3$addResourceConfigurations(java.util.Collection);
+-  public void super$4$setMinSdkVersion(int);
+-  public java.lang.String super$3$getVersionName();
+-  public com.android.builder.model.ProductFlavor super$3$setMaxSdkVersion(java.lang.Integer);
+-  public void super$4$setProperty(java.lang.String, java.lang.Object);
+-  public java.lang.Boolean super$3$getTestHandleProfiling();
+-  public void super$4$ndk(org.gradle.api.Action);
+-  public void super$4$consumerProguardFiles(java.lang.Object[]);
+-  public void super$2$setMultiDexEnabled(java.lang.Boolean);
+-  public void super$4$buildConfigField(java.lang.String, java.lang.String, java.lang.String);
+-  public void super$1$wait();
+-  public void super$4$resConfigs(java.lang.String[]);
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public void super$4$targetSdkVersion(int);
+-  public com.android.build.gradle.internal.core.NdkConfig super$4$getNdkConfig();
+-  public com.android.builder.model.ProductFlavor super$3$setMinSdkVersion(com.android.builder.model.ApiVersion);
+-  public void super$4$setTargetSdkVersion(java.lang.String);
+-  public void super$4$maxSdkVersion(int);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public com.android.build.gradle.internal.dsl.SigningConfig super$4$getSigningConfig();
+-  public void super$4$setConsumerProguardFiles(java.lang.Iterable);
+-  public void super$4$resConfigs(java.util.Collection);
+-  public java.io.File super$2$getMultiDexKeepFile();
+-  public void super$4$setUseJack(java.lang.Boolean);
+-  public void super$4$resConfig(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void super$4$proguardFiles(java.lang.Object[]);
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public java.lang.Boolean super$4$getUseJack();
+-  public void super$4$minSdkVersion(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.GroupableProductFlavorFactory gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.GroupableProductFlavorFactory
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.GroupableProductFlavorFactory	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.GroupableProductFlavorFactory	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.GroupableProductFlavorFactory implements org.gradle.api.NamedDomainObjectFactory<com.android.build.gradle.internal.dsl.GroupableProductFlavor> {
+-  public com.android.build.gradle.internal.dsl.GroupableProductFlavorFactory(org.gradle.internal.reflect.Instantiator, org.gradle.api.Project, org.gradle.api.logging.Logger);
+-  public com.android.build.gradle.internal.dsl.GroupableProductFlavor create(java.lang.String);
+-  public java.lang.Object create(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.LintOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.LintOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.LintOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.LintOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,87 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.LintOptions implements com.android.builder.model.LintOptions,java.io.Serializable,groovy.lang.GroovyObject {
+-  public static final java.lang.String STDOUT;
+-  public static final java.lang.String STDERR;
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254134;
+-  public com.android.build.gradle.internal.dsl.LintOptions();
+-  public com.android.build.gradle.internal.dsl.LintOptions(java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.io.File, boolean, java.io.File, boolean, java.io.File, boolean, java.io.File, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, java.util.Map<java.lang.String, java.lang.Integer>);
+-  public static com.android.builder.model.LintOptions create(com.android.builder.model.LintOptions);
+-  public java.util.Set<java.lang.String> getDisable();
+-  public void setDisable(java.util.Set<java.lang.String>);
+-  public java.util.Set<java.lang.String> getEnable();
+-  public void setEnable(java.util.Set<java.lang.String>);
+-  public java.util.Set<java.lang.String> getCheck();
+-  public void setCheck(java.util.Set<java.lang.String>);
+-  public boolean isAbortOnError();
+-  public void setAbortOnError(boolean);
+-  public boolean isAbsolutePaths();
+-  public void setAbsolutePaths(boolean);
+-  public boolean isNoLines();
+-  public void setNoLines(boolean);
+-  public boolean isQuiet();
+-  public void setQuiet(boolean);
+-  public boolean isCheckAllWarnings();
+-  public void setCheckAllWarnings(boolean);
+-  public boolean isIgnoreWarnings();
+-  public void setIgnoreWarnings(boolean);
+-  public boolean isWarningsAsErrors();
+-  public void setWarningsAsErrors(boolean);
+-  public boolean isExplainIssues();
+-  public void setExplainIssues(boolean);
+-  public boolean isShowAll();
+-  public void setShowAll(boolean);
+-  public boolean isCheckReleaseBuilds();
+-  public void setCheckReleaseBuilds(boolean);
+-  public java.io.File getLintConfig();
+-  public boolean getTextReport();
+-  public void setTextReport(boolean);
+-  public void setHtmlReport(boolean);
+-  public void setHtmlOutput(java.io.File);
+-  public void setXmlReport(boolean);
+-  public void setXmlOutput(java.io.File);
+-  public java.io.File getTextOutput();
+-  public boolean getHtmlReport();
+-  public java.io.File getHtmlOutput();
+-  public boolean getXmlReport();
+-  public java.io.File getXmlOutput();
+-  public void setLintConfig(java.io.File);
+-  public void syncTo(com.android.tools.lint.LintCliClient, com.android.tools.lint.LintCliFlags, java.lang.String, org.gradle.api.Project, boolean);
+-  public java.util.Map<java.lang.String, java.lang.Integer> getSeverityOverrides();
+-  public void check(java.lang.String);
+-  public void check(java.lang.String...);
+-  public void enable(java.lang.String);
+-  public void enable(java.lang.String...);
+-  public void disable(java.lang.String);
+-  public void disable(java.lang.String...);
+-  public void textOutput(java.lang.String);
+-  public void textOutput(java.io.File);
+-  public void fatal(java.lang.String);
+-  public void fatal(java.lang.String...);
+-  public void error(java.lang.String);
+-  public void error(java.lang.String...);
+-  public void warning(java.lang.String);
+-  public void warning(java.lang.String...);
+-  public void ignore(java.lang.String);
+-  public void ignore(java.lang.String...);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.NdkOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.NdkOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.NdkOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.NdkOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,19 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.NdkOptions implements com.android.build.gradle.internal.core.NdkConfig,java.io.Serializable {
+-  public com.android.build.gradle.internal.dsl.NdkOptions();
+-  public com.android.build.gradle.internal.dsl.NdkOptions(com.android.build.gradle.internal.dsl.NdkOptions);
+-  public java.lang.String getModuleName();
+-  public void setModuleName(java.lang.String);
+-  public java.lang.String getcFlags();
+-  public void setcFlags(java.lang.String);
+-  public java.util.Set<java.lang.String> getLdLibs();
+-  public com.android.build.gradle.internal.dsl.NdkOptions ldLibs(java.lang.String);
+-  public com.android.build.gradle.internal.dsl.NdkOptions ldLibs(java.lang.String...);
+-  public com.android.build.gradle.internal.dsl.NdkOptions setLdLibs(java.util.Collection<java.lang.String>);
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-  public com.android.build.gradle.internal.dsl.NdkOptions abiFilter(java.lang.String);
+-  public com.android.build.gradle.internal.dsl.NdkOptions abiFilters(java.lang.String...);
+-  public com.android.build.gradle.internal.dsl.NdkOptions setAbiFilters(java.util.Collection<java.lang.String>);
+-  public java.lang.String getStl();
+-  public void setStl(java.lang.String);
+-  public java.util.Collection getLdLibs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.PackagingOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.PackagingOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.PackagingOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.PackagingOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.PackagingOptions implements com.android.builder.model.PackagingOptions {
+-  public com.android.build.gradle.internal.dsl.PackagingOptions();
+-  public java.util.Set<java.lang.String> getExcludes();
+-  public void exclude(java.lang.String);
+-  public java.util.Set<java.lang.String> getPickFirsts();
+-  public void pickFirst(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.ProductFlavor gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.ProductFlavor
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.ProductFlavor	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.ProductFlavor	1969-12-31 14:00:00.000000000 -1000
+@@ -1,103 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.ProductFlavor extends com.android.builder.core.DefaultProductFlavor implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254467;
+-  public com.android.build.gradle.internal.dsl.ProductFlavor(java.lang.String, org.gradle.api.Project, org.gradle.internal.reflect.Instantiator, org.gradle.api.logging.Logger);
+-  public com.android.build.gradle.internal.core.NdkConfig getNdkConfig();
+-  public void setMinSdkVersion(int);
+-  public void minSdkVersion(int);
+-  public void setMinSdkVersion(java.lang.String);
+-  public void minSdkVersion(java.lang.String);
+-  public com.android.builder.model.ProductFlavor setTargetSdkVersion(int);
+-  public void targetSdkVersion(int);
+-  public void setTargetSdkVersion(java.lang.String);
+-  public void targetSdkVersion(java.lang.String);
+-  public void maxSdkVersion(int);
+-  public com.android.build.gradle.internal.dsl.SigningConfig getSigningConfig();
+-  public void buildConfigField(java.lang.String, java.lang.String, java.lang.String);
+-  public void resValue(java.lang.String, java.lang.String, java.lang.String);
+-  public void proguardFile(java.lang.Object);
+-  public void proguardFiles(java.lang.Object...);
+-  public void setProguardFiles(java.lang.Iterable<?>);
+-  public void consumerProguardFiles(java.lang.Object...);
+-  public void setConsumerProguardFiles(java.lang.Iterable<?>);
+-  public void ndk(org.gradle.api.Action<com.android.build.gradle.internal.dsl.NdkOptions>);
+-  public void resConfig(java.lang.String);
+-  public void resConfigs(java.lang.String...);
+-  public void resConfigs(java.util.Collection<java.lang.String>);
+-  public java.lang.Boolean getUseJack();
+-  public void setUseJack(java.lang.Boolean);
+-  public void useJack(java.lang.Boolean);
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-  public java.lang.String super$3$toString();
+-  public java.lang.String super$3$getVersionName();
+-  public com.android.builder.model.ProductFlavor super$3$setMaxSdkVersion(java.lang.Integer);
+-  public java.lang.Boolean super$3$getTestFunctionalTest();
+-  public java.lang.Boolean super$3$getTestHandleProfiling();
+-  public java.util.List super$2$getProguardFiles();
+-  public void super$3$addResourceConfiguration(java.lang.String);
+-  public com.android.builder.model.SigningConfig super$3$getSigningConfig();
+-  public void super$2$setMultiDexEnabled(java.lang.Boolean);
+-  public com.android.builder.model.ProductFlavor super$3$setVersionCode(java.lang.Integer);
+-  public java.util.Map super$2$getResValues();
+-  public com.android.builder.model.ProductFlavor super$3$setTestApplicationId(java.lang.String);
+-  public void super$2$setManifestPlaceholders(java.util.Map);
+-  public void super$2$setMultiDexKeepFile(java.io.File);
+-  public void super$3$setRenderscriptTargetApi(java.lang.Integer);
+-  public void super$1$wait();
+-  public java.lang.String super$3$getTestInstrumentationRunner();
+-  public void super$2$_initWith(com.android.builder.model.BaseConfig);
+-  public java.lang.Integer super$3$getMaxSdkVersion();
+-  public com.android.builder.model.ProductFlavor super$3$setMinSdkVersion(com.android.builder.model.ApiVersion);
+-  public java.lang.Class super$1$getClass();
+-  public com.android.builder.model.ProductFlavor super$3$setTestInstrumentationRunner(java.lang.String);
+-  public java.lang.Integer super$3$getRenderscriptTargetApi();
+-  public java.util.Map super$2$getBuildConfigFields();
+-  public java.util.List super$2$getConsumerProguardFiles();
+-  public java.lang.String super$3$getTestApplicationId();
+-  public com.android.builder.model.ProductFlavor super$3$setApplicationId(java.lang.String);
+-  public com.android.builder.model.ProductFlavor super$3$setRenderscriptSupportModeEnabled(java.lang.Boolean);
+-  public int super$3$hashCode();
+-  public com.android.builder.model.ApiVersion super$3$getMinSdkVersion();
+-  public void super$2$addResValue(com.android.builder.model.ClassField);
+-  public java.lang.String super$3$getName();
+-  public void super$3$addResourceConfigurations(java.lang.String[]);
+-  public java.lang.Boolean super$3$getRenderscriptSupportModeEnabled();
+-  public java.lang.String super$3$getApplicationId();
+-  public void super$2$addBuildConfigField(com.android.builder.model.ClassField);
+-  public void super$1$notify();
+-  public void super$2$setMultiDexKeepProguard(java.io.File);
+-  public void super$2$addBuildConfigFields(java.util.Map);
+-  public void super$1$notifyAll();
+-  public com.android.builder.model.ProductFlavor super$3$setTestHandleProfiling(boolean);
+-  public com.android.builder.model.ApiVersion super$3$getTargetSdkVersion();
+-  public java.util.Map super$2$getManifestPlaceholders();
+-  public com.android.builder.model.ProductFlavor super$3$setRenderscriptNdkModeEnabled(java.lang.Boolean);
+-  public java.io.File super$2$getMultiDexKeepFile();
+-  public com.android.builder.model.ProductFlavor super$3$setVersionName(java.lang.String);
+-  public java.lang.Object super$1$clone();
+-  public com.android.builder.model.ProductFlavor super$3$setTargetSdkVersion(com.android.builder.model.ApiVersion);
+-  public java.util.Collection super$3$getResourceConfigurations();
+-  public com.android.builder.model.ProductFlavor super$3$setSigningConfig(com.android.builder.model.SigningConfig);
+-  public java.io.File super$2$getMultiDexKeepProguard();
+-  public void super$1$wait(long, int);
+-  public java.lang.Integer super$3$getVersionCode();
+-  public java.lang.Boolean super$3$getRenderscriptNdkModeEnabled();
+-  public void super$1$finalize();
+-  public void super$2$addManifestPlaceHolders(java.util.Map);
+-  public java.lang.Boolean super$2$getMultiDexEnabled();
+-  public void super$1$wait(long);
+-  public void super$3$addResourceConfigurations(java.util.Collection);
+-  public com.android.builder.model.ProductFlavor super$3$setTestFunctionalTest(boolean);
+-  public boolean super$3$equals(java.lang.Object);
+-  public void super$2$addResValues(java.util.Map);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.SigningConfig gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.SigningConfig
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.SigningConfig	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.SigningConfig	1969-12-31 14:00:00.000000000 -1000
+@@ -1,12 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.SigningConfig extends com.android.builder.signing.DefaultSigningConfig implements java.io.Serializable,org.gradle.api.Named {
+-  public com.android.build.gradle.internal.dsl.SigningConfig(java.lang.String);
+-  public com.android.build.gradle.internal.dsl.SigningConfig initWith(com.android.builder.model.SigningConfig);
+-  public java.io.File getStoreFile();
+-  public java.lang.String getStorePassword();
+-  public java.lang.String getKeyAlias();
+-  public java.lang.String getKeyPassword();
+-  public java.lang.String getStoreType();
+-  public boolean equals(java.lang.Object);
+-  public int hashCode();
+-  public java.lang.String toString();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.SigningConfigFactory gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.SigningConfigFactory
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.SigningConfigFactory	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.SigningConfigFactory	1969-12-31 14:00:00.000000000 -1000
+@@ -1,29 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.SigningConfigFactory implements org.gradle.api.NamedDomainObjectFactory<com.android.build.gradle.internal.dsl.SigningConfig>, groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254130;
+-  public com.android.build.gradle.internal.dsl.SigningConfigFactory(org.gradle.internal.reflect.Instantiator);
+-  public com.android.build.gradle.internal.dsl.SigningConfig create(java.lang.String);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public final org.gradle.internal.reflect.Instantiator getInstantiator();
+-  public java.lang.Object create(java.lang.String);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.SplitOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.SplitOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.SplitOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.SplitOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,13 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.SplitOptions {
+-  public com.android.build.gradle.internal.dsl.SplitOptions();
+-  public boolean isEnable();
+-  public void setEnable(boolean);
+-  public java.util.Set<java.lang.String> getExclude();
+-  public java.util.Set<java.lang.String> getInclude();
+-  public void setExclude(java.util.List<java.lang.String>);
+-  public void exclude(java.lang.String...);
+-  public void setInclude(java.util.List<java.lang.String>);
+-  public void include(java.lang.String...);
+-  public void reset();
+-  public java.util.Set<java.lang.String> getApplicableFilters(java.util.Set<java.lang.String>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.Splits gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.Splits
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.dsl.Splits	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.dsl.Splits	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.dsl.Splits {
+-  public com.android.build.gradle.internal.dsl.Splits(org.gradle.internal.reflect.Instantiator);
+-  public com.android.build.gradle.internal.dsl.DensitySplitOptions getDensity();
+-  public void density(org.gradle.api.Action<com.android.build.gradle.internal.dsl.DensitySplitOptions>);
+-  public com.android.build.gradle.internal.dsl.AbiSplitOptions getAbi();
+-  public void abi(org.gradle.api.Action<com.android.build.gradle.internal.dsl.AbiSplitOptions>);
+-  public java.util.Set<java.lang.String> getDensityFilters();
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AaptOptionsImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AaptOptionsImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AaptOptionsImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AaptOptionsImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.model.AaptOptionsImpl implements com.android.builder.model.AaptOptions,java.io.Serializable {
+-  public java.lang.String getIgnoreAssets();
+-  public java.util.Collection<java.lang.String> getNoCompress();
+-  public boolean getFailOnMissingConfigEntry();
+-  public java.lang.String toString();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AndroidArtifactImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AndroidArtifactImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AndroidArtifactImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AndroidArtifactImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,21 +0,0 @@
+-public class com.android.build.gradle.internal.model.AndroidArtifactImpl extends com.android.build.gradle.internal.model.BaseArtifactImpl implements com.android.builder.model.AndroidArtifact,java.io.Serializable {
+-  public java.util.Collection<com.android.builder.model.AndroidArtifactOutput> getOutputs();
+-  public boolean isSigned();
+-  public java.lang.String getSigningConfigName();
+-  public java.lang.String getApplicationId();
+-  public java.lang.String getSourceGenTaskName();
+-  public java.util.List<java.io.File> getGeneratedSourceFolders();
+-  public java.util.List<java.io.File> getGeneratedResourceFolders();
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-  public java.util.Map<java.lang.String, com.android.builder.model.ClassField> getBuildConfigFields();
+-  public java.util.Map<java.lang.String, com.android.builder.model.ClassField> getResValues();
+-  public com.android.builder.model.SourceProvider getMultiFlavorSourceProvider();
+-  public com.android.builder.model.SourceProvider getVariantSourceProvider();
+-  public com.android.builder.model.Dependencies getDependencies();
+-  public java.io.File getClassesFolder();
+-  public java.lang.String getAssembleTaskName();
+-  public java.lang.String getCompileTaskName();
+-  public java.lang.String getName();
+-  public java.util.Collection getGeneratedResourceFolders();
+-  public java.util.Collection getGeneratedSourceFolders();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AndroidArtifactOutputImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AndroidArtifactOutputImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AndroidArtifactOutputImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AndroidArtifactOutputImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,8 +0,0 @@
+-public class com.android.build.gradle.internal.model.AndroidArtifactOutputImpl implements com.android.builder.model.AndroidArtifactOutput,java.io.Serializable {
+-  public com.android.build.OutputFile getMainOutputFile();
+-  public java.util.Collection<com.android.build.OutputFile> getOutputs();
+-  public java.lang.String getAssembleTaskName();
+-  public java.io.File getGeneratedManifest();
+-  public int getVersionCode();
+-  public java.io.File getSplitFolder();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AndroidLibraryImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AndroidLibraryImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.AndroidLibraryImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.AndroidLibraryImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,19 +0,0 @@
+-public class com.android.build.gradle.internal.model.AndroidLibraryImpl extends com.android.build.gradle.internal.model.LibraryImpl implements com.android.builder.model.AndroidLibrary,java.io.Serializable {
+-  public java.lang.String getProject();
+-  public java.lang.String getProjectVariant();
+-  public java.io.File getBundle();
+-  public java.io.File getFolder();
+-  public java.util.List<? extends com.android.builder.model.AndroidLibrary> getLibraryDependencies();
+-  public java.io.File getManifest();
+-  public java.io.File getJarFile();
+-  public java.util.Collection<java.io.File> getLocalJars();
+-  public java.io.File getResFolder();
+-  public java.io.File getAssetsFolder();
+-  public java.io.File getJniFolder();
+-  public java.io.File getAidlFolder();
+-  public java.io.File getRenderscriptFolder();
+-  public java.io.File getProguardRules();
+-  public java.io.File getLintJar();
+-  public com.android.builder.model.MavenCoordinates getResolvedCoordinates();
+-  public com.android.builder.model.MavenCoordinates getRequestedCoordinates();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.ApiVersionImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.ApiVersionImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.ApiVersionImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.ApiVersionImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.model.ApiVersionImpl implements com.android.builder.model.ApiVersion,java.io.Serializable {
+-  public static com.android.builder.model.ApiVersion clone(com.android.builder.model.ApiVersion);
+-  public static com.android.builder.model.ApiVersion clone(com.android.sdklib.AndroidVersion);
+-  public int getApiLevel();
+-  public java.lang.String getCodename();
+-  public java.lang.String getApiString();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.ArtifactMetaDataImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.ArtifactMetaDataImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.ArtifactMetaDataImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.ArtifactMetaDataImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.model.ArtifactMetaDataImpl implements com.android.builder.model.ArtifactMetaData,java.io.Serializable {
+-  public com.android.build.gradle.internal.model.ArtifactMetaDataImpl(java.lang.String, boolean, int);
+-  public java.lang.String getName();
+-  public boolean isTest();
+-  public int getType();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.DependenciesImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.DependenciesImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.DependenciesImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.DependenciesImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,8 +0,0 @@
+-public class com.android.build.gradle.internal.model.DependenciesImpl implements com.android.builder.model.Dependencies,java.io.Serializable {
+-  public com.android.build.gradle.internal.model.DependenciesImpl(java.util.Set<com.android.builder.model.JavaLibrary>);
+-  public java.util.Collection<com.android.builder.model.AndroidLibrary> getLibraries();
+-  public java.util.Collection<com.android.builder.model.JavaLibrary> getJavaLibraries();
+-  public java.util.List<java.lang.String> getProjects();
+-  public static org.gradle.api.Project getProject(java.io.File, java.util.Set<org.gradle.api.Project>);
+-  public java.util.Collection getProjects();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.JavaArtifactImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.JavaArtifactImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.JavaArtifactImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.JavaArtifactImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,11 +0,0 @@
+-public class com.android.build.gradle.internal.model.JavaArtifactImpl extends com.android.build.gradle.internal.model.BaseArtifactImpl implements com.android.builder.model.JavaArtifact,java.io.Serializable {
+-  public static com.android.build.gradle.internal.model.JavaArtifactImpl clone(com.android.builder.model.JavaArtifact);
+-  public com.android.build.gradle.internal.model.JavaArtifactImpl(java.lang.String, java.lang.String, java.lang.String, java.io.File, com.android.builder.model.Dependencies, com.android.builder.model.SourceProvider, com.android.builder.model.SourceProvider);
+-  public com.android.builder.model.SourceProvider getMultiFlavorSourceProvider();
+-  public com.android.builder.model.SourceProvider getVariantSourceProvider();
+-  public com.android.builder.model.Dependencies getDependencies();
+-  public java.io.File getClassesFolder();
+-  public java.lang.String getAssembleTaskName();
+-  public java.lang.String getCompileTaskName();
+-  public java.lang.String getName();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.JavaLibraryImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.JavaLibraryImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.JavaLibraryImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.JavaLibraryImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.model.JavaLibraryImpl extends com.android.build.gradle.internal.model.LibraryImpl implements com.android.builder.model.JavaLibrary,java.io.Serializable {
+-  public com.android.build.gradle.internal.model.JavaLibraryImpl(java.io.File, com.android.builder.model.MavenCoordinates, com.android.builder.model.MavenCoordinates);
+-  public java.io.File getJarFile();
+-  public java.util.List<? extends com.android.builder.model.JavaLibrary> getDependencies();
+-  public com.android.builder.model.MavenCoordinates getResolvedCoordinates();
+-  public com.android.builder.model.MavenCoordinates getRequestedCoordinates();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.MavenCoordinatesImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.MavenCoordinatesImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.MavenCoordinatesImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.MavenCoordinatesImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.model.MavenCoordinatesImpl implements com.android.builder.model.MavenCoordinates,java.io.Serializable {
+-  public com.android.build.gradle.internal.model.MavenCoordinatesImpl(org.gradle.api.artifacts.ResolvedArtifact);
+-  public java.lang.String getGroupId();
+-  public java.lang.String getArtifactId();
+-  public java.lang.String getVersion();
+-  public java.lang.String getPackaging();
+-  public java.lang.String getClassifier();
+-  public java.lang.String toString();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.ModelBuilder gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.ModelBuilder
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.ModelBuilder	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.ModelBuilder	1969-12-31 14:00:00.000000000 -1000
+@@ -1,28 +0,0 @@
+-public class com.android.build.gradle.internal.model.ModelBuilder implements org.gradle.tooling.provider.model.ToolingModelBuilder,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254045;
+-  public com.android.build.gradle.internal.model.ModelBuilder();
+-  public boolean canBuild(java.lang.String);
+-  public java.lang.Object buildAll(java.lang.String, org.gradle.api.Project);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.OutputFileImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.OutputFileImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.model.OutputFileImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.model.OutputFileImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.model.OutputFileImpl implements com.android.build.OutputFile,java.io.Serializable {
+-  public com.android.build.gradle.internal.model.OutputFileImpl(java.util.Collection<com.android.build.FilterData>, java.lang.String, java.io.File);
+-  public java.lang.String getOutputType();
+-  public java.util.Collection<java.lang.String> getFilterTypes();
+-  public java.util.Collection<com.android.build.FilterData> getFilters();
+-  public java.io.File getOutputFile();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.publishing.ApkPublishArtifact gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.publishing.ApkPublishArtifact
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.publishing.ApkPublishArtifact	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.publishing.ApkPublishArtifact	1969-12-31 14:00:00.000000000 -1000
+@@ -1,10 +0,0 @@
+-public class com.android.build.gradle.internal.publishing.ApkPublishArtifact implements org.gradle.api.artifacts.PublishArtifact {
+-  public com.android.build.gradle.internal.publishing.ApkPublishArtifact(java.lang.String, java.lang.String, com.android.build.gradle.internal.tasks.OutputFileTask);
+-  public java.lang.String getName();
+-  public java.lang.String getExtension();
+-  public java.lang.String getType();
+-  public java.lang.String getClassifier();
+-  public java.io.File getFile();
+-  public java.util.Date getDate();
+-  public org.gradle.api.tasks.TaskDependency getBuildDependencies();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.AndroidReportTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.AndroidReportTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.AndroidReportTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.AndroidReportTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,78 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.AndroidReportTask extends com.android.build.gradle.internal.tasks.BaseTask implements com.android.build.gradle.internal.tasks.AndroidTestTask {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254777;
+-  public com.android.build.gradle.internal.tasks.AndroidReportTask();
+-  public void addTask(com.android.build.gradle.internal.tasks.AndroidTestTask);
+-  public java.util.List<java.io.File> getResultInputs();
+-  public void setWillRun();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.build.gradle.internal.test.report.ReportType getReportType();
+-  public void setReportType(com.android.build.gradle.internal.test.report.ReportType);
+-  public boolean getIgnoreFailures();
+-  public boolean isIgnoreFailures();
+-  public void setIgnoreFailures(boolean);
+-  public boolean getTestFailed();
+-  public boolean isTestFailed();
+-  public void setTestFailed(boolean);
+-  public java.io.File getReportsDir();
+-  public void setReportsDir(java.io.File);
+-  public java.io.File getResultsDir();
+-  public void setResultsDir(java.io.File);
+-  public void this$5$copyResults(java.io.File);
+-  public void this$5$copyFile(java.io.File, java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.AndroidTestTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.AndroidTestTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.AndroidTestTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.AndroidTestTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public interface com.android.build.gradle.internal.tasks.AndroidTestTask extends org.gradle.api.tasks.VerificationTask {
+-  public abstract java.io.File getResultsDir();
+-  public abstract boolean getTestFailed();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.BaseTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.BaseTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.BaseTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.BaseTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,95 +0,0 @@
+-public abstract class com.android.build.gradle.internal.tasks.BaseTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254377;
+-  public com.android.build.gradle.internal.tasks.BaseTask();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.build.gradle.BasePlugin getPlugin();
+-  public void setPlugin(com.android.build.gradle.BasePlugin);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.CheckManifest gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.CheckManifest
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.CheckManifest	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.CheckManifest	1969-12-31 14:00:00.000000000 -1000
+@@ -1,98 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.CheckManifest extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254384;
+-  public com.android.build.gradle.internal.tasks.CheckManifest();
+-  public void check();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getManifest();
+-  public void setManifest(java.io.File);
+-  public java.lang.String getVariantName();
+-  public void setVariantName(java.lang.String);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DependencyReportTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DependencyReportTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DependencyReportTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DependencyReportTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,96 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.DependencyReportTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254361;
+-  public com.android.build.gradle.internal.tasks.DependencyReportTask();
+-  public void generate() throws java.io.IOException;
+-  public java.util.Set<com.android.build.gradle.internal.variant.BaseVariantData> getVariants();
+-  public void setVariants(java.util.Collection<com.android.build.gradle.internal.variant.BaseVariantData>);
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DependencyReportTask$1 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DependencyReportTask$1
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DependencyReportTask$1	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DependencyReportTask$1	1969-12-31 14:00:00.000000000 -1000
+@@ -1,29 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.DependencyReportTask$1 implements java.util.Comparator<com.android.build.gradle.internal.variant.BaseVariantData>, groovy.lang.GroovyObject {
+-  public com.android.build.gradle.internal.tasks.DependencyReportTask this$0;
+-  public static transient boolean __$stMC;
+-  public int compare(com.android.build.gradle.internal.variant.BaseVariantData, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public int compare(java.lang.Object, java.lang.Object);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestLibraryTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestLibraryTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestLibraryTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestLibraryTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,85 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestLibraryTask extends com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254978;
+-  public com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestLibraryTask();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public boolean super$5$isIgnoreFailures();
+-  public void super$5$setFlavorName(java.lang.String);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public void super$5$runTests();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getAdbExec();
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public boolean super$5$isTestFailed();
+-  public java.io.File super$5$getCoverageDir();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$5$setCoverageDir(java.io.File);
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public void super$5$setResultsDir(java.io.File);
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$5$getFlavorName();
+-  public com.android.build.gradle.internal.variant.TestVariantData super$5$getTestVariantData();
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public boolean super$5$getTestFailed();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public void super$5$setTestFailed(boolean);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.io.File super$5$getReportsDir();
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public boolean super$5$getIgnoreFailures();
+-  public void super$5$setAdbExec(java.io.File);
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$5$setSplitApks(java.io.File[]);
+-  public java.io.File super$5$getResultsDir();
+-  public void super$2$setGroup(java.lang.String);
+-  public void super$5$setReportsDir(java.io.File);
+-  public com.android.builder.testing.api.DeviceProvider super$5$getDeviceProvider();
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$5$setIgnoreFailures(boolean);
+-  public java.io.File[] super$5$getSplitApks();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$setTestVariantData(com.android.build.gradle.internal.variant.TestVariantData);
+-  public void super$5$setDeviceProvider(com.android.builder.testing.api.DeviceProvider);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,84 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask extends com.android.build.gradle.internal.tasks.BaseTask implements com.android.build.gradle.internal.tasks.AndroidTestTask,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254691;
+-  public com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getReportsDir();
+-  public void setReportsDir(java.io.File);
+-  public java.io.File getResultsDir();
+-  public void setResultsDir(java.io.File);
+-  public java.io.File getCoverageDir();
+-  public void setCoverageDir(java.io.File);
+-  public java.lang.String getFlavorName();
+-  public void setFlavorName(java.lang.String);
+-  public com.android.builder.testing.api.DeviceProvider getDeviceProvider();
+-  public void setDeviceProvider(com.android.builder.testing.api.DeviceProvider);
+-  public com.android.build.gradle.internal.variant.TestVariantData getTestVariantData();
+-  public void setTestVariantData(com.android.build.gradle.internal.variant.TestVariantData);
+-  public java.io.File[] getSplitApks();
+-  public void setSplitApks(java.io.File...);
+-  public java.io.File getAdbExec();
+-  public void setAdbExec(java.io.File);
+-  public boolean getIgnoreFailures();
+-  public boolean isIgnoreFailures();
+-  public void setIgnoreFailures(boolean);
+-  public boolean getTestFailed();
+-  public boolean isTestFailed();
+-  public void setTestFailed(boolean);
+-  public boolean this$5$testsFound();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.GenerateApkDataTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.GenerateApkDataTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.GenerateApkDataTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.GenerateApkDataTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,75 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.GenerateApkDataTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254718;
+-  public com.android.build.gradle.internal.tasks.GenerateApkDataTask();
+-  public java.lang.String getBuildToolsVersion();
+-  public void generate();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getApkFile();
+-  public void setApkFile(java.io.File);
+-  public java.io.File getResOutputDir();
+-  public void setResOutputDir(java.io.File);
+-  public java.io.File getManifestFile();
+-  public void setManifestFile(java.io.File);
+-  public java.lang.String getMainPkgName();
+-  public void setMainPkgName(java.lang.String);
+-  public int getMinSdkVersion();
+-  public void setMinSdkVersion(int);
+-  public int getTargetSdkVersion();
+-  public void setTargetSdkVersion(int);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.IncrementalTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.IncrementalTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.IncrementalTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.IncrementalTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,65 +0,0 @@
+-public abstract class com.android.build.gradle.internal.tasks.IncrementalTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254682;
+-  public com.android.build.gradle.internal.tasks.IncrementalTask();
+-  public void taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-  public static java.util.List<java.io.File> flattenSourceSets(java.util.List<? extends com.android.ide.common.res2.SourceSet>);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getIncrementalFolder();
+-  public void setIncrementalFolder(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.InstallApkTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.InstallApkTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.InstallApkTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.InstallApkTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,98 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.InstallApkTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254369;
+-  public com.android.build.gradle.internal.tasks.InstallApkTask();
+-  public void install();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getAdbExe();
+-  public void setAdbExe(java.io.File);
+-  public java.io.File getPackageFile();
+-  public void setPackageFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.InstallVariantTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.InstallVariantTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.InstallVariantTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.InstallVariantTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,68 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.InstallVariantTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254745;
+-  public com.android.build.gradle.internal.tasks.InstallVariantTask();
+-  public void install();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getAdbExe();
+-  public void setAdbExe(java.io.File);
+-  public int getTimeOut();
+-  public void setTimeOut(int);
+-  public com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData> getVariantData();
+-  public void setVariantData(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.MergeFileTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.MergeFileTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.MergeFileTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.MergeFileTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,98 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.MergeFileTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254391;
+-  public com.android.build.gradle.internal.tasks.MergeFileTask();
+-  public void mergeFiles();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.util.Set<java.io.File> getInputFiles();
+-  public void setInputFiles(java.util.Set<java.io.File>);
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.NdkTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.NdkTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.NdkTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.NdkTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,68 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.NdkTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254731;
+-  public com.android.build.gradle.internal.tasks.NdkTask();
+-  public java.lang.String getModuleName();
+-  public java.lang.String getcFlags();
+-  public java.util.Set<java.lang.String> getLdLibs();
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-  public java.lang.String getStl();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.build.gradle.internal.core.NdkConfig getNdkConfig();
+-  public void setNdkConfig(com.android.build.gradle.internal.core.NdkConfig);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.OutputFileTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.OutputFileTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.OutputFileTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.OutputFileTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public interface com.android.build.gradle.internal.tasks.OutputFileTask {
+-  public abstract java.io.File getOutputFile();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.PrepareDependenciesTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.PrepareDependenciesTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.PrepareDependenciesTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.PrepareDependenciesTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,67 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.PrepareDependenciesTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254666;
+-  public com.android.build.gradle.internal.tasks.PrepareDependenciesTask();
+-  public void addDependency(com.android.utils.Pair<java.lang.Integer, java.lang.String>);
+-  public java.lang.Object addChecker(com.android.build.gradle.internal.dependency.DependencyChecker);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.build.gradle.internal.variant.BaseVariantData getVariant();
+-  public void setVariant(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public final java.util.List<com.android.build.gradle.internal.dependency.DependencyChecker> getCheckers();
+-  public final java.util.Set<com.android.utils.Pair<java.lang.Integer, java.lang.String>> getAndroidDependencies();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.PrepareLibraryTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.PrepareLibraryTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.PrepareLibraryTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.PrepareLibraryTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,98 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.PrepareLibraryTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254354;
+-  public com.android.build.gradle.internal.tasks.PrepareLibraryTask();
+-  public java.lang.Object prepare();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getBundle();
+-  public void setBundle(java.io.File);
+-  public java.io.File getExplodedDir();
+-  public void setExplodedDir(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.PrepareSdkTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.PrepareSdkTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.PrepareSdkTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.PrepareSdkTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,96 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.PrepareSdkTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254407;
+-  public com.android.build.gradle.internal.tasks.PrepareSdkTask();
+-  public void prepareSdk();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.build.gradle.BasePlugin getPlugin();
+-  public void setPlugin(com.android.build.gradle.BasePlugin);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.SigningReportTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.SigningReportTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.SigningReportTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.SigningReportTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,64 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.SigningReportTask extends com.android.build.gradle.internal.tasks.BaseTask {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254761;
+-  public com.android.build.gradle.internal.tasks.SigningReportTask();
+-  public void generate() throws java.io.IOException;
+-  public void setVariants(java.util.Collection<com.android.build.gradle.internal.variant.BaseVariantData>);
+-  public static java.lang.String getFingerprint(java.security.cert.Certificate, java.lang.String);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.TestServerTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.TestServerTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.TestServerTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.TestServerTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,102 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.TestServerTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254399;
+-  public com.android.build.gradle.internal.tasks.TestServerTask();
+-  public void sendToServer();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getTestApk();
+-  public void setTestApk(java.io.File);
+-  public java.io.File getTestedApk();
+-  public void setTestedApk(java.io.File);
+-  public java.lang.String getVariantName();
+-  public void setVariantName(java.lang.String);
+-  public com.android.builder.testing.api.TestServer getTestServer();
+-  public void setTestServer(com.android.builder.testing.api.TestServer);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.UninstallTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.UninstallTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.UninstallTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.UninstallTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,66 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.UninstallTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254674;
+-  public com.android.build.gradle.internal.tasks.UninstallTask();
+-  public void uninstall();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getAdbExe();
+-  public void setAdbExe(java.io.File);
+-  public com.android.build.gradle.internal.variant.BaseVariantData getVariant();
+-  public void setVariant(com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.ValidateSigningTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.ValidateSigningTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.ValidateSigningTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.ValidateSigningTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,65 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.ValidateSigningTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254737;
+-  public com.android.build.gradle.internal.tasks.ValidateSigningTask();
+-  public java.lang.String getStoreLocation();
+-  public void validate();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.builder.model.SigningConfig getSigningConfig();
+-  public void setSigningConfig(com.android.builder.model.SigningConfig);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.CreateMainDexList gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.CreateMainDexList
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.CreateMainDexList	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.CreateMainDexList	1969-12-31 14:00:00.000000000 -1000
+@@ -1,74 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.multidex.CreateMainDexList extends com.android.build.gradle.internal.tasks.BaseTask {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254792;
+-  public com.android.build.gradle.internal.tasks.multidex.CreateMainDexList();
+-  public java.io.File getDxJar();
+-  public void output();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getAllClassesJarFile();
+-  public void setAllClassesJarFile(java.io.File);
+-  public java.io.File getComponentsJarFile();
+-  public void setComponentsJarFile(java.io.File);
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public java.io.File getIncludeInMainDexJarFile();
+-  public void setIncludeInMainDexJarFile(java.io.File);
+-  public java.io.File getMainDexListFile();
+-  public void setMainDexListFile(java.io.File);
+-  public java.util.Set this$5$callDx(java.io.File, java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.CreateManifestKeepList gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.CreateManifestKeepList
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.CreateManifestKeepList	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.CreateManifestKeepList	1969-12-31 14:00:00.000000000 -1000
+@@ -1,102 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.multidex.CreateManifestKeepList extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254414;
+-  public com.android.build.gradle.internal.tasks.multidex.CreateManifestKeepList();
+-  public void generateKeepListFromManifest();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getManifest();
+-  public void setManifest(java.io.File);
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public java.io.File getProguardFile();
+-  public void setProguardFile(java.io.File);
+-  public groovy.lang.Closure getFilter();
+-  public void setFilter(groovy.lang.Closure);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.JarMergingTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.JarMergingTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.JarMergingTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.JarMergingTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,101 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.multidex.JarMergingTask extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254424;
+-  public com.android.build.gradle.internal.tasks.multidex.JarMergingTask();
+-  public void createJar();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.util.Collection<java.io.File> getInputJars();
+-  public void setInputJars(java.util.Collection<java.io.File>);
+-  public java.io.File getInputDir();
+-  public void setInputDir(java.io.File);
+-  public java.io.File getJarFile();
+-  public void setJarFile(java.io.File);
+-  public void this$4$processFolder(java.util.jar.JarOutputStream, java.lang.String, java.io.File, byte[]);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.RetraceMainDexList gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.RetraceMainDexList
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.tasks.multidex.RetraceMainDexList	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.tasks.multidex.RetraceMainDexList	1969-12-31 14:00:00.000000000 -1000
+@@ -1,102 +0,0 @@
+-public class com.android.build.gradle.internal.tasks.multidex.RetraceMainDexList extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254440;
+-  public com.android.build.gradle.internal.tasks.multidex.RetraceMainDexList();
+-  public java.io.File getMappingFileInput();
+-  public void retrace();
+-  public static java.util.Map<java.lang.String, java.lang.String> createDict(java.util.List<java.lang.String>);
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getMainDexListFile();
+-  public void setMainDexListFile(java.io.File);
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public java.io.File getMappingFile();
+-  public void setMappingFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.TestDataImpl gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.TestDataImpl
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.TestDataImpl	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.TestDataImpl	1969-12-31 14:00:00.000000000 -1000
+@@ -1,12 +0,0 @@
+-public class com.android.build.gradle.internal.test.TestDataImpl implements com.android.builder.testing.TestData {
+-  public com.android.build.gradle.internal.test.TestDataImpl(com.android.build.gradle.internal.variant.TestVariantData);
+-  public java.lang.String getApplicationId();
+-  public java.lang.String getTestedApplicationId();
+-  public java.lang.String getInstrumentationRunner();
+-  public java.lang.Boolean getHandleProfiling();
+-  public java.lang.Boolean getFunctionalTest();
+-  public boolean isTestCoverageEnabled();
+-  public com.android.builder.model.ApiVersion getMinSdkVersion();
+-  public boolean isLibrary();
+-  public com.google.common.collect.ImmutableList<java.io.File> getTestedApks(int, java.util.List<java.lang.String>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.TestOptions gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.TestOptions
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.TestOptions	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.TestOptions	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.internal.test.TestOptions implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254042;
+-  public com.android.build.gradle.internal.test.TestOptions();
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.String getResultsDir();
+-  public void setResultsDir(java.lang.String);
+-  public java.lang.String getReportDir();
+-  public void setReportDir(java.lang.String);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.CodePanelRenderer gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.CodePanelRenderer
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.CodePanelRenderer	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.CodePanelRenderer	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.CodePanelRenderer extends org.gradle.reporting.ReportRenderer<java.lang.String, com.android.build.gradle.internal.test.report.SimpleHtmlWriter> {
+-  public com.android.build.gradle.internal.test.report.CodePanelRenderer();
+-  public void render(java.lang.String, com.android.build.gradle.internal.test.report.SimpleHtmlWriter) throws java.io.IOException;
+-  public void render(java.lang.Object, java.lang.Object) throws java.io.IOException;
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.CompositeTestResults gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.CompositeTestResults
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.CompositeTestResults	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.CompositeTestResults	1969-12-31 14:00:00.000000000 -1000
+@@ -1,12 +0,0 @@
+-public abstract class com.android.build.gradle.internal.test.report.CompositeTestResults extends com.android.build.gradle.internal.test.report.TestResultModel {
+-  public java.lang.String getFilename(com.android.build.gradle.internal.test.report.ReportType);
+-  public abstract java.lang.String getName();
+-  public int getTestCount();
+-  public int getFailureCount();
+-  public long getDuration();
+-  public java.lang.String getFormattedDuration();
+-  public java.util.Set<com.android.build.gradle.internal.test.report.TestResult> getFailures();
+-  public org.gradle.api.tasks.testing.TestResult$ResultType getResultType();
+-  public java.lang.String getFormattedSuccessRate();
+-  public java.lang.Number getSuccessRate();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.ErroringAction<T> gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.ErroringAction<T>
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.ErroringAction<T>	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.ErroringAction<T>	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public abstract class com.android.build.gradle.internal.test.report.ErroringAction<T> implements org.gradle.api.Action<T> {
+-  public com.android.build.gradle.internal.test.report.ErroringAction();
+-  public void execute(T);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.HtmlReportRenderer gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.HtmlReportRenderer
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.HtmlReportRenderer	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.HtmlReportRenderer	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.HtmlReportRenderer {
+-  public com.android.build.gradle.internal.test.report.HtmlReportRenderer();
+-  public void requireResource(java.net.URL);
+-  public <T> com.android.build.gradle.internal.test.report.TextReportRenderer<T> renderer(org.gradle.reporting.ReportRenderer<T, com.android.build.gradle.internal.test.report.SimpleHtmlWriter>);
+-  public <T> com.android.build.gradle.internal.test.report.TextReportRenderer<T> renderer(com.android.build.gradle.internal.test.report.HtmlReportRenderer$TextReportRendererImpl<T>);
+-  public static java.lang.String substringAfterLast(java.lang.String, java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.PackagePageRenderer gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.PackagePageRenderer
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.PackagePageRenderer	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.PackagePageRenderer	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.PackagePageRenderer extends com.android.build.gradle.internal.test.report.PageRenderer<com.android.build.gradle.internal.test.report.PackageTestResults> {
+-  public com.android.build.gradle.internal.test.report.PackagePageRenderer(com.android.build.gradle.internal.test.report.ReportType);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.ReportType gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.ReportType
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.ReportType	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.ReportType	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public final class com.android.build.gradle.internal.test.report.ReportType extends java.lang.Enum<com.android.build.gradle.internal.test.report.ReportType> {
+-  public static final com.android.build.gradle.internal.test.report.ReportType SINGLE_FLAVOR;
+-  public static final com.android.build.gradle.internal.test.report.ReportType MULTI_FLAVOR;
+-  public static final com.android.build.gradle.internal.test.report.ReportType MULTI_PROJECT;
+-  public static com.android.build.gradle.internal.test.report.ReportType[] values();
+-  public static com.android.build.gradle.internal.test.report.ReportType valueOf(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.SimpleHtmlWriter gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.SimpleHtmlWriter
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.SimpleHtmlWriter	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.SimpleHtmlWriter	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.SimpleHtmlWriter extends com.android.build.gradle.internal.test.report.SimpleMarkupWriter {
+-  public com.android.build.gradle.internal.test.report.SimpleHtmlWriter(java.io.Writer) throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleHtmlWriter(java.io.Writer, java.lang.String) throws java.io.IOException;
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.SimpleMarkupWriter gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.SimpleMarkupWriter
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.SimpleMarkupWriter	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.SimpleMarkupWriter	1969-12-31 14:00:00.000000000 -1000
+@@ -1,13 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.SimpleMarkupWriter extends java.io.Writer {
+-  public void write(char[], int, int) throws java.io.IOException;
+-  public void flush() throws java.io.IOException;
+-  public void close() throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter characters(char[]) throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter characters(char[], int, int) throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter characters(java.lang.CharSequence) throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter startElement(java.lang.String) throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter endElement() throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter startCDATA() throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter endCDATA() throws java.io.IOException;
+-  public com.android.build.gradle.internal.test.report.SimpleMarkupWriter attribute(java.lang.String, java.lang.String) throws java.io.IOException;
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TabbedPageRenderer<T> gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TabbedPageRenderer<T>
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TabbedPageRenderer<T>	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TabbedPageRenderer<T>	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public abstract class com.android.build.gradle.internal.test.report.TabbedPageRenderer<T> extends org.gradle.reporting.ReportRenderer<T, com.android.build.gradle.internal.test.report.SimpleHtmlWriter> {
+-  public com.android.build.gradle.internal.test.report.TabbedPageRenderer();
+-  public void render(T, com.android.build.gradle.internal.test.report.SimpleHtmlWriter) throws java.io.IOException;
+-  public void render(java.lang.Object, java.lang.Object) throws java.io.IOException;
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TabsRenderer<T> gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TabsRenderer<T>
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TabsRenderer<T>	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TabsRenderer<T>	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.TabsRenderer<T> extends org.gradle.reporting.ReportRenderer<T, com.android.build.gradle.internal.test.report.SimpleHtmlWriter> {
+-  public com.android.build.gradle.internal.test.report.TabsRenderer();
+-  public void add(java.lang.String, org.gradle.reporting.ReportRenderer<T, com.android.build.gradle.internal.test.report.SimpleHtmlWriter>);
+-  public void clear();
+-  public void render(T, com.android.build.gradle.internal.test.report.SimpleHtmlWriter) throws java.io.IOException;
+-  public void render(java.lang.Object, java.lang.Object) throws java.io.IOException;
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TestReport gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TestReport
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TestReport	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TestReport	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.TestReport {
+-  public com.android.build.gradle.internal.test.report.TestReport(com.android.build.gradle.internal.test.report.ReportType, java.io.File, java.io.File);
+-  public void generateReport();
+-  public java.math.BigDecimal parse(java.lang.String) throws java.text.ParseException;
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TestResult$TestFailure gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TestResult$TestFailure
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TestResult$TestFailure	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TestResult$TestFailure	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.internal.test.report.TestResult$TestFailure {
+-  public com.android.build.gradle.internal.test.report.TestResult$TestFailure(java.lang.String, java.lang.String, java.lang.String);
+-  public java.lang.String getMessage();
+-  public java.lang.String getStackTrace();
+-  public java.lang.String getExceptionType();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TestResultModel gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TestResultModel
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TestResultModel	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TestResultModel	1969-12-31 14:00:00.000000000 -1000
+@@ -1,10 +0,0 @@
+-public abstract class com.android.build.gradle.internal.test.report.TestResultModel {
+-  public static final org.gradle.reporting.DurationFormatter DURATION_FORMATTER;
+-  public com.android.build.gradle.internal.test.report.TestResultModel();
+-  public abstract org.gradle.api.tasks.testing.TestResult$ResultType getResultType();
+-  public abstract long getDuration();
+-  public abstract java.lang.String getTitle();
+-  public java.lang.String getFormattedDuration();
+-  public java.lang.String getStatusClass();
+-  public java.lang.String getFormattedResultType();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TextReportRenderer<T> gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TextReportRenderer<T>
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.test.report.TextReportRenderer<T>	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.test.report.TextReportRenderer<T>	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public abstract class com.android.build.gradle.internal.test.report.TextReportRenderer<T> {
+-  public com.android.build.gradle.internal.test.report.TextReportRenderer();
+-  public void writeTo(T, java.io.File);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApkVariantData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApkVariantData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApkVariantData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApkVariantData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public abstract class com.android.build.gradle.internal.variant.ApkVariantData extends com.android.build.gradle.internal.variant.BaseVariantData<com.android.build.gradle.internal.variant.ApkVariantOutputData> {
+-  public com.android.build.gradle.tasks.PreDex preDexTask;
+-  public com.android.build.gradle.tasks.Dex dexTask;
+-  public org.gradle.api.DefaultTask installTask;
+-  public org.gradle.api.DefaultTask uninstallTask;
+-  public java.lang.String getDescription();
+-  public boolean isSigned();
+-  public boolean getZipAlignEnabled();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApkVariantOutputData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApkVariantOutputData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApkVariantOutputData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApkVariantOutputData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,18 +0,0 @@
+-public class com.android.build.gradle.internal.variant.ApkVariantOutputData extends com.android.build.gradle.internal.variant.BaseVariantOutputData {
+-  public com.android.build.gradle.tasks.PackageApplication packageApplicationTask;
+-  public com.android.build.gradle.tasks.ZipAlign zipAlignTask;
+-  public com.android.build.gradle.tasks.SplitZipAlign splitZipAlign;
+-  public com.android.build.gradle.internal.variant.ApkVariantOutputData(com.android.build.OutputFile$OutputType, java.util.Collection<com.android.build.FilterData>, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void setOutputFile(java.io.File);
+-  public java.io.File getOutputFile();
+-  public com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputs();
+-  public com.android.build.gradle.tasks.ZipAlign createZipAlignTask(java.lang.String, java.io.File, java.io.File);
+-  public int getVersionCode();
+-  public java.io.File getSplitFolder();
+-  public java.lang.String getVersionName();
+-  public void setVersionCodeOverride(int);
+-  public int getVersionCodeOverride();
+-  public void setVersionNameOverride(java.lang.String);
+-  public java.lang.String getVersionNameOverride();
+-  public java.util.Collection getOutputs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApplicationVariantData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApplicationVariantData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApplicationVariantData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApplicationVariantData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.internal.variant.ApplicationVariantData extends com.android.build.gradle.internal.variant.ApkVariantData implements com.android.build.gradle.internal.variant.TestedVariantData {
+-  public com.android.build.gradle.internal.variant.ApplicationVariantData(com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.core.GradleVariantConfiguration);
+-  public void setTestVariantData(com.android.build.gradle.internal.variant.TestVariantData);
+-  public com.android.build.gradle.internal.variant.TestVariantData getTestVariantData();
+-  public void setCompatibleScreens(java.util.Set<java.lang.String>);
+-  public java.util.Set<java.lang.String> getCompatibleScreens();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApplicationVariantFactory gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApplicationVariantFactory
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.ApplicationVariantFactory	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.ApplicationVariantFactory	1969-12-31 14:00:00.000000000 -1000
+@@ -1,11 +0,0 @@
+-public class com.android.build.gradle.internal.variant.ApplicationVariantFactory implements com.android.build.gradle.internal.variant.VariantFactory<com.android.build.gradle.internal.variant.ApplicationVariantData> {
+-  public com.android.build.gradle.internal.variant.ApplicationVariantFactory(com.android.build.gradle.BasePlugin);
+-  public com.android.build.gradle.internal.variant.ApplicationVariantData createVariantData(com.android.build.gradle.internal.core.GradleVariantConfiguration, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+-  public com.android.build.gradle.api.BaseVariant createVariantApi(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public static void createApkOutputApiObjects(com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.api.ApkVariantImpl);
+-  public com.android.builder.core.VariantConfiguration$Type getVariantConfigurationType();
+-  public boolean isLibrary();
+-  public void createTasks(com.android.build.gradle.internal.variant.BaseVariantData<?>, org.gradle.api.Task);
+-  public void validateModel(com.android.build.gradle.internal.VariantModel);
+-  public com.android.build.gradle.internal.variant.BaseVariantData createVariantData(com.android.build.gradle.internal.core.GradleVariantConfiguration, java.util.Set, java.util.Set, java.util.Set);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public final class com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy extends java.lang.Enum<com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy> {
+-  public static final com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy PRE_21_POLICY;
+-  public static final com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy RELEASE_21_AND_AFTER_POLICY;
+-  public static com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy[] values();
+-  public static com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy valueOf(java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.BaseVariantData<T gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.BaseVariantData<T
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.BaseVariantData<T	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.BaseVariantData<T	1969-12-31 14:00:00.000000000 -1000
+@@ -1,45 +0,0 @@
+-public abstract class com.android.build.gradle.internal.variant.BaseVariantData<T extends com.android.build.gradle.internal.variant.BaseVariantOutputData> {
+-  public org.gradle.api.Task preBuildTask;
+-  public com.android.build.gradle.internal.tasks.PrepareDependenciesTask prepareDependenciesTask;
+-  public com.android.build.gradle.tasks.ProcessAndroidResources generateRClassTask;
+-  public org.gradle.api.Task sourceGenTask;
+-  public org.gradle.api.Task resourceGenTask;
+-  public org.gradle.api.Task assetGenTask;
+-  public com.android.build.gradle.internal.tasks.CheckManifest checkManifestTask;
+-  public com.android.build.gradle.tasks.RenderscriptCompile renderscriptCompileTask;
+-  public com.android.build.gradle.tasks.AidlCompile aidlCompileTask;
+-  public com.android.build.gradle.tasks.MergeResources mergeResourcesTask;
+-  public com.android.build.gradle.tasks.MergeAssets mergeAssetsTask;
+-  public com.android.build.gradle.tasks.GenerateBuildConfig generateBuildConfigTask;
+-  public com.android.build.gradle.tasks.GenerateResValues generateResValuesTask;
+-  public org.gradle.api.tasks.Copy copyApkTask;
+-  public com.android.build.gradle.internal.tasks.GenerateApkDataTask generateApkDataTask;
+-  public org.gradle.api.tasks.Copy processJavaResourcesTask;
+-  public com.android.build.gradle.tasks.NdkCompile ndkCompileTask;
+-  public org.gradle.api.tasks.compile.JavaCompile javaCompileTask;
+-  public com.android.build.gradle.tasks.JackTask jackTask;
+-  public org.gradle.api.Task compileTask;
+-  public com.android.build.gradle.internal.coverage.JacocoInstrumentTask jacocoInstrumentTask;
+-  public org.gradle.api.Task obfuscationTask;
+-  public java.io.File obfuscatedClassesJar;
+-  public java.io.File mappingFile;
+-  public org.gradle.api.Task assembleVariantTask;
+-  public boolean outputsAreSigned;
+-  public com.android.build.gradle.internal.variant.BaseVariantData(com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.core.GradleVariantConfiguration);
+-  public com.android.build.gradle.internal.variant.BaseVariantData$SplitHandlingPolicy getSplitHandlingPolicy();
+-  public T createOutput(com.android.build.OutputFile$OutputType, java.util.Collection<com.android.build.FilterData>);
+-  public java.util.List<T> getOutputs();
+-  public com.android.build.gradle.internal.core.GradleVariantConfiguration getVariantConfiguration();
+-  public void setVariantDependency(com.android.build.gradle.internal.dependency.VariantDependencies);
+-  public com.android.build.gradle.internal.dependency.VariantDependencies getVariantDependency();
+-  public abstract java.lang.String getDescription();
+-  public java.lang.String getApplicationId();
+-  public java.util.List<java.io.File> getExtraGeneratedSourceFolders();
+-  public void addJavaSourceFoldersToModel(java.io.File...);
+-  public void addJavaSourceFoldersToModel(java.util.Collection<java.io.File>);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.io.File...);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.util.Collection<java.io.File>);
+-  public java.lang.Object[] getJavaSources();
+-  public java.util.List<java.io.File> getJavaSourceFoldersForCoverage();
+-  public java.util.List<java.lang.String> getWearConfigNames();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.BaseVariantOutputData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.BaseVariantOutputData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.BaseVariantOutputData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.BaseVariantOutputData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,19 +0,0 @@
+-public abstract class com.android.build.gradle.internal.variant.BaseVariantOutputData implements com.android.build.VariantOutput {
+-  public final com.android.build.gradle.internal.variant.BaseVariantData<?> variantData;
+-  public com.android.build.gradle.tasks.ManifestProcessorTask manifestProcessorTask;
+-  public com.android.build.gradle.tasks.ProcessAndroidResources processResourcesTask;
+-  public com.android.build.gradle.tasks.PackageSplitRes packageSplitResourcesTask;
+-  public com.android.build.gradle.tasks.PackageSplitAbi packageSplitAbiTask;
+-  public org.gradle.api.Task assembleTask;
+-  public com.android.build.gradle.internal.variant.BaseVariantOutputData(com.android.build.OutputFile$OutputType, java.util.Collection<com.android.build.FilterData>, com.android.build.gradle.internal.variant.BaseVariantData<?>);
+-  public com.android.build.gradle.api.ApkOutputFile getMainOutputFile();
+-  public abstract void setOutputFile(java.io.File);
+-  public abstract java.io.File getOutputFile();
+-  public abstract com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputs();
+-  public java.lang.String getFullName();
+-  public java.lang.String getBaseName();
+-  public java.lang.String getDirName();
+-  public java.io.File getSplitFolder();
+-  public java.util.Collection getOutputs();
+-  public com.android.build.OutputFile getMainOutputFile();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.DefaultSourceProviderContainer gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.DefaultSourceProviderContainer
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.DefaultSourceProviderContainer	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.DefaultSourceProviderContainer	1969-12-31 14:00:00.000000000 -1000
+@@ -1,5 +0,0 @@
+-public class com.android.build.gradle.internal.variant.DefaultSourceProviderContainer implements com.android.builder.model.SourceProviderContainer {
+-  public com.android.build.gradle.internal.variant.DefaultSourceProviderContainer(java.lang.String, com.android.builder.model.SourceProvider);
+-  public java.lang.String getArtifactName();
+-  public com.android.builder.model.SourceProvider getSourceProvider();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibVariantOutputData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibVariantOutputData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibVariantOutputData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibVariantOutputData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,8 +0,0 @@
+-public class com.android.build.gradle.internal.variant.LibVariantOutputData extends com.android.build.gradle.internal.variant.BaseVariantOutputData {
+-  public org.gradle.api.tasks.bundling.Zip packageLibTask;
+-  public void setOutputFile(java.io.File);
+-  public com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputs();
+-  public java.io.File getOutputFile();
+-  public int getVersionCode();
+-  public java.util.Collection getOutputs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibraryVariantData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibraryVariantData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibraryVariantData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibraryVariantData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,9 +0,0 @@
+-public class com.android.build.gradle.internal.variant.LibraryVariantData extends com.android.build.gradle.internal.variant.BaseVariantData<com.android.build.gradle.internal.variant.LibVariantOutputData> implements com.android.build.gradle.internal.variant.TestedVariantData {
+-  public com.android.build.gradle.tasks.ExtractAnnotations generateAnnotationsTask;
+-  public com.android.build.gradle.internal.variant.LibraryVariantData(com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.core.GradleVariantConfiguration);
+-  public java.lang.String getDescription();
+-  public void setTestVariantData(com.android.build.gradle.internal.variant.TestVariantData);
+-  public com.android.build.gradle.internal.variant.TestVariantData getTestVariantData();
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.io.File...);
+-  public void registerJavaGeneratingTask(org.gradle.api.Task, java.util.Collection<java.io.File>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibraryVariantFactory gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibraryVariantFactory
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibraryVariantFactory	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibraryVariantFactory	1969-12-31 14:00:00.000000000 -1000
+@@ -1,35 +0,0 @@
+-public class com.android.build.gradle.internal.variant.LibraryVariantFactory implements com.android.build.gradle.internal.variant.VariantFactory<com.android.build.gradle.internal.variant.LibraryVariantData>, groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254068;
+-  public com.android.build.gradle.internal.variant.LibraryVariantFactory(com.android.build.gradle.BasePlugin, com.android.build.gradle.LibraryExtension);
+-  public com.android.build.gradle.internal.variant.LibraryVariantData createVariantData(com.android.build.gradle.internal.core.GradleVariantConfiguration, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+-  public com.android.build.gradle.api.BaseVariant createVariantApi(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public com.android.builder.core.VariantConfiguration$Type getVariantConfigurationType();
+-  public boolean isLibrary();
+-  public void createTasks(com.android.build.gradle.internal.variant.BaseVariantData<?>, org.gradle.api.Task);
+-  public org.gradle.api.Task createExtractAnnotations(java.lang.String, org.gradle.api.Project, com.android.build.gradle.internal.variant.BaseVariantData);
+-  public void validateModel(com.android.build.gradle.internal.VariantModel);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public com.android.build.gradle.internal.variant.BaseVariantData createVariantData(com.android.build.gradle.internal.core.GradleVariantConfiguration, java.util.Set, java.util.Set, java.util.Set);
+-  public org.gradle.api.Task this$2$getAssembleDefault();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibraryVariantFactory$1 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibraryVariantFactory$1
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.LibraryVariantFactory$1	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.LibraryVariantFactory$1	1969-12-31 14:00:00.000000000 -1000
+@@ -1,55 +0,0 @@
+-public class com.android.build.gradle.internal.variant.LibraryVariantFactory$1 extends com.android.builder.dependency.LibraryBundle implements groovy.lang.GroovyObject {
+-  public groovy.lang.Reference variantConfig;
+-  public groovy.lang.Reference project;
+-  public groovy.lang.Reference variantData;
+-  public com.android.build.gradle.internal.variant.LibraryVariantFactory this$0;
+-  public static transient boolean __$stMC;
+-  public java.lang.String getProject();
+-  public java.lang.String getProjectVariant();
+-  public java.util.List<com.android.builder.dependency.LibraryDependency> getDependencies();
+-  public java.util.List<? extends com.android.builder.model.AndroidLibrary> getLibraryDependencies();
+-  public java.util.List<com.android.builder.dependency.ManifestDependency> getManifestDependencies();
+-  public com.android.builder.model.MavenCoordinates getRequestedCoordinates();
+-  public com.android.builder.model.MavenCoordinates getResolvedCoordinates();
+-  public java.lang.Object this$dist$invoke$2(java.lang.String, java.lang.Object);
+-  public void this$dist$set$2(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$2(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.io.File super$2$getFolder();
+-  public java.lang.String super$2$getName();
+-  public java.io.File super$2$getLintJar();
+-  public java.lang.String super$2$toString();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.String super$2$getProject();
+-  public java.util.List super$2$getLocalDependencies();
+-  public java.lang.String super$2$getProjectVariant();
+-  public java.io.File super$2$getAssetsFolder();
+-  public java.io.File super$2$getSymbolFile();
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait();
+-  public java.io.File super$2$getBundle();
+-  public java.io.File super$2$getJniFolder();
+-  public java.io.File super$2$getProguardRules();
+-  public void super$1$wait(long, int);
+-  public java.io.File super$2$getJarFile();
+-  public java.lang.Class super$1$getClass();
+-  public java.io.File super$2$getRenderscriptFolder();
+-  public java.io.File super$2$getBundleFolder();
+-  public java.io.File super$2$getManifest();
+-  public void super$1$finalize();
+-  public java.io.File super$2$getResFolder();
+-  public void super$1$wait(long);
+-  public java.io.File super$2$getAidlFolder();
+-  public boolean super$2$equals(java.lang.Object);
+-  public int super$2$hashCode();
+-  public java.util.List super$2$getLocalJars();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.TestVariantData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.TestVariantData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.TestVariantData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.TestVariantData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,8 +0,0 @@
+-public class com.android.build.gradle.internal.variant.TestVariantData extends com.android.build.gradle.internal.variant.ApkVariantData {
+-  public com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask connectedTestTask;
+-  public final java.util.List<com.android.build.gradle.internal.tasks.DeviceProviderInstrumentTestTask> providerTestTaskList;
+-  public com.android.build.gradle.internal.variant.TestVariantData(com.android.build.gradle.BasePlugin, com.android.build.gradle.internal.core.GradleVariantConfiguration, com.android.build.gradle.internal.variant.TestedVariantData);
+-  public com.android.build.gradle.internal.variant.TestedVariantData getTestedVariantData();
+-  public java.lang.String getDescription();
+-  public boolean getZipAlignEnabled();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.TestedVariantData gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.TestedVariantData
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.TestedVariantData	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.TestedVariantData	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public interface com.android.build.gradle.internal.variant.TestedVariantData {
+-  public abstract void setTestVariantData(com.android.build.gradle.internal.variant.TestVariantData);
+-  public abstract com.android.build.gradle.internal.variant.TestVariantData getTestVariantData();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.VariantFactory<T gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.VariantFactory<T
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.VariantFactory<T	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.VariantFactory<T	1969-12-31 14:00:00.000000000 -1000
+@@ -1,8 +0,0 @@
+-public interface com.android.build.gradle.internal.variant.VariantFactory<T extends com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>> {
+-  public abstract T createVariantData(com.android.build.gradle.internal.core.GradleVariantConfiguration, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+-  public abstract com.android.build.gradle.api.BaseVariant createVariantApi(com.android.build.gradle.internal.variant.BaseVariantData<? extends com.android.build.gradle.internal.variant.BaseVariantOutputData>, com.android.build.gradle.internal.api.ReadOnlyObjectProvider);
+-  public abstract com.android.builder.core.VariantConfiguration$Type getVariantConfigurationType();
+-  public abstract boolean isLibrary();
+-  public abstract void createTasks(com.android.build.gradle.internal.variant.BaseVariantData<?>, org.gradle.api.Task);
+-  public abstract void validateModel(com.android.build.gradle.internal.VariantModel);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.VariantHelper gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.VariantHelper
+--- gradle-1.0.1_489108d9/com.android.build.gradle.internal.variant.VariantHelper	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.internal.variant.VariantHelper	1969-12-31 14:00:00.000000000 -1000
+@@ -1,27 +0,0 @@
+-public class com.android.build.gradle.internal.variant.VariantHelper implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254106;
+-  public com.android.build.gradle.internal.variant.VariantHelper();
+-  public static void setupDefaultConfig(org.gradle.api.Project, org.gradle.api.artifacts.Configuration);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile	1969-12-31 14:00:00.000000000 -1000
+@@ -1,82 +0,0 @@
+-public class com.android.build.gradle.tasks.AidlCompile extends com.android.build.gradle.internal.tasks.IncrementalTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254860;
+-  public com.android.build.gradle.tasks.AidlCompile();
+-  public java.lang.String getBuildToolsVersion();
+-  public org.gradle.api.file.FileTree getSourceFiles();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getSourceOutputDir();
+-  public void setSourceOutputDir(java.io.File);
+-  public java.io.File getAidlParcelableDir();
+-  public void setAidlParcelableDir(java.io.File);
+-  public java.util.List<java.io.File> getSourceDirs();
+-  public void setSourceDirs(java.util.List<java.io.File>);
+-  public java.util.List<java.io.File> getImportDirs();
+-  public void setImportDirs(java.util.List<java.io.File>);
+-  public final org.gradle.api.tasks.util.PatternSet getPatternSet();
+-  public void this$6$compileAllFiles(com.android.builder.compiling.DependencyFileProcessor);
+-  public java.util.List this$6$getImportFolders();
+-  public void this$6$compileSingleFile(java.io.File, java.io.File, java.util.List, com.android.builder.compiling.DependencyFileProcessor);
+-  public java.io.File this$6$getSourceFolder(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile$1 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile$1
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile$1	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile$1	1969-12-31 14:00:00.000000000 -1000
+@@ -1,32 +0,0 @@
+-public class com.android.build.gradle.tasks.AidlCompile$1 implements java.util.concurrent.Callable<java.lang.Void>, groovy.lang.GroovyObject {
+-  public groovy.lang.Reference processor;
+-  public groovy.lang.Reference entry;
+-  public groovy.lang.Reference importFolders;
+-  public com.android.build.gradle.tasks.AidlCompile this$0;
+-  public static transient boolean __$stMC;
+-  public java.lang.Void call() throws java.lang.Exception;
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.Object call() throws java.lang.Exception;
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile$2 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile$2
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile$2	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile$2	1969-12-31 14:00:00.000000000 -1000
+@@ -1,32 +0,0 @@
+-public class com.android.build.gradle.tasks.AidlCompile$2 implements java.util.concurrent.Callable<java.lang.Void>, groovy.lang.GroovyObject {
+-  public groovy.lang.Reference processor;
+-  public groovy.lang.Reference data;
+-  public groovy.lang.Reference importFolders;
+-  public com.android.build.gradle.tasks.AidlCompile this$0;
+-  public static transient boolean __$stMC;
+-  public java.lang.Void call() throws java.lang.Exception;
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.Object call() throws java.lang.Exception;
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile$3 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile$3
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.AidlCompile$3	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.AidlCompile$3	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.tasks.AidlCompile$3 implements java.util.concurrent.Callable<java.lang.Void>, groovy.lang.GroovyObject {
+-  public groovy.lang.Reference data2;
+-  public com.android.build.gradle.tasks.AidlCompile this$0;
+-  public static transient boolean __$stMC;
+-  public java.lang.Void call() throws java.lang.Exception;
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.Object call() throws java.lang.Exception;
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.CompatibleScreensManifest gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.CompatibleScreensManifest
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.CompatibleScreensManifest	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.CompatibleScreensManifest	1969-12-31 14:00:00.000000000 -1000
+@@ -1,100 +0,0 @@
+-public class com.android.build.gradle.tasks.CompatibleScreensManifest extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254246;
+-  public com.android.build.gradle.tasks.CompatibleScreensManifest();
+-  public void generate();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.lang.String getScreenDensity();
+-  public void setScreenDensity(java.lang.String);
+-  public java.util.Set<java.lang.String> getScreenSizes();
+-  public void setScreenSizes(java.util.Set<java.lang.String>);
+-  public java.io.File getManifestFile();
+-  public void setManifestFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.Dex gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.Dex
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.Dex	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.Dex	1969-12-31 14:00:00.000000000 -1000
+@@ -1,92 +0,0 @@
+-public class com.android.build.gradle.tasks.Dex extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254640;
+-  public com.android.build.gradle.tasks.Dex();
+-  public java.lang.String getBuildToolsVersion();
+-  public void taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getOutputFolder();
+-  public void setOutputFolder(java.io.File);
+-  public java.util.List<java.lang.String> getAdditionalParameters();
+-  public void setAdditionalParameters(java.util.List<java.lang.String>);
+-  public boolean getEnableIncremental();
+-  public boolean isEnableIncremental();
+-  public void setEnableIncremental(boolean);
+-  public java.util.Collection<java.io.File> getInputFiles();
+-  public void setInputFiles(java.util.Collection<java.io.File>);
+-  public java.io.File getInputDir();
+-  public void setInputDir(java.io.File);
+-  public java.util.Collection<java.io.File> getLibraries();
+-  public void setLibraries(java.util.Collection<java.io.File>);
+-  public com.android.build.gradle.internal.dsl.DexOptions getDexOptions();
+-  public void setDexOptions(com.android.build.gradle.internal.dsl.DexOptions);
+-  public boolean getMultiDexEnabled();
+-  public boolean isMultiDexEnabled();
+-  public void setMultiDexEnabled(boolean);
+-  public boolean getLegacyMultiDexMode();
+-  public boolean isLegacyMultiDexMode();
+-  public void setLegacyMultiDexMode(boolean);
+-  public boolean getOptimize();
+-  public boolean isOptimize();
+-  public void setOptimize(boolean);
+-  public java.io.File getMainDexListFile();
+-  public void setMainDexListFile(java.io.File);
+-  public java.io.File getTmpFolder();
+-  public void setTmpFolder(java.io.File);
+-  public void this$5$doTaskAction(java.util.Collection, java.io.File, boolean);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ExtractAnnotations gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ExtractAnnotations
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ExtractAnnotations	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ExtractAnnotations	1969-12-31 14:00:00.000000000 -1000
+@@ -1,130 +0,0 @@
+-public class com.android.build.gradle.tasks.ExtractAnnotations extends org.gradle.api.tasks.compile.AbstractCompile implements groovy.lang.GroovyObject {
+-  public com.android.build.gradle.BasePlugin plugin;
+-  public com.android.build.gradle.internal.variant.BaseVariantData variant;
+-  public java.util.List<java.lang.String> bootClasspath;
+-  public java.io.File output;
+-  public java.io.File apiFilter;
+-  public java.util.List<java.io.File> mergeJars;
+-  public java.lang.String encoding;
+-  public java.io.File classDir;
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857255001;
+-  public com.android.build.gradle.tasks.ExtractAnnotations();
+-  public boolean hasAndroidAnnotations();
+-  public java.lang.Object this$dist$invoke$6(java.lang.String, java.lang.Object);
+-  public void this$dist$set$6(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$6(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public com.android.utils.Pair this$7$parseSources();
+-  public java.lang.Object this$7$addSources(java.util.List, java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.api.internal.ConventionMapping super$4$getConventionMapping();
+-  public java.io.File super$6$getDestinationDir();
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(java.lang.Iterable);
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$6$setDestinationDir(java.io.File);
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.SourceTask super$5$include(groovy.lang.Closure);
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$5$setSource(java.lang.Object);
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public java.lang.String super$6$getTargetCompatibility();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public void super$6$setTargetCompatibility(java.lang.String);
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public java.util.Set super$5$getIncludes();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.util.Set super$5$getExcludes();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public void super$6$setSourceCompatibility(java.lang.String);
+-  public org.gradle.api.tasks.SourceTask super$5$setIncludes(java.lang.Iterable);
+-  public org.gradle.api.tasks.SourceTask super$5$include(org.gradle.api.specs.Spec);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$4$conventionMapping(java.lang.String, java.util.concurrent.Callable);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public org.gradle.api.tasks.SourceTask super$5$source(java.lang.Object[]);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public org.gradle.api.file.FileTree super$5$getSource();
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$6$setClasspath(org.gradle.api.file.FileCollection);
+-  public org.gradle.api.file.FileCollection super$6$getClasspath();
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public org.gradle.api.tasks.SourceTask super$5$include(java.lang.Iterable);
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.api.tasks.SourceTask super$5$setExcludes(java.lang.Iterable);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.tasks.SourceTask super$5$include(java.lang.String[]);
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.api.Task super$4$conventionMapping(java.lang.String, groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(java.lang.String[]);
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(groovy.lang.Closure);
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public java.lang.String super$6$getSourceCompatibility();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(org.gradle.api.specs.Spec);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ExtractAnnotations$1 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ExtractAnnotations$1
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ExtractAnnotations$1	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ExtractAnnotations$1	1969-12-31 14:00:00.000000000 -1000
+@@ -1,31 +0,0 @@
+-public class com.android.build.gradle.tasks.ExtractAnnotations$1 extends org.gradle.api.file.EmptyFileVisitor implements groovy.lang.GroovyObject {
+-  public groovy.lang.Reference sourceUnits;
+-  public com.android.build.gradle.tasks.ExtractAnnotations this$0;
+-  public static transient boolean __$stMC;
+-  public void visitFile(org.gradle.api.file.FileVisitDetails);
+-  public java.lang.Object this$dist$invoke$2(java.lang.String, java.lang.Object);
+-  public void this$dist$set$2(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$2(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public void super$2$visitFile(org.gradle.api.file.FileVisitDetails);
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public java.lang.Class super$1$getClass();
+-  public void super$1$notifyAll();
+-  public void super$1$finalize();
+-  public void super$1$wait(long);
+-  public void super$2$visitDir(org.gradle.api.file.FileVisitDetails);
+-  public boolean super$1$equals(java.lang.Object);
+-  public java.lang.Object super$1$clone();
+-  public int super$1$hashCode();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GenerateBuildConfig gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GenerateBuildConfig
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GenerateBuildConfig	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GenerateBuildConfig	1969-12-31 14:00:00.000000000 -1000
+@@ -1,84 +0,0 @@
+-public class com.android.build.gradle.tasks.GenerateBuildConfig extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254507;
+-  public com.android.build.gradle.tasks.GenerateBuildConfig();
+-  public java.util.List<java.lang.String> getItemValues();
+-  public void generate();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getSourceOutputDir();
+-  public void setSourceOutputDir(java.io.File);
+-  public java.lang.String getBuildConfigPackageName();
+-  public void setBuildConfigPackageName(java.lang.String);
+-  public java.lang.String getAppPackageName();
+-  public void setAppPackageName(java.lang.String);
+-  public boolean getDebuggable();
+-  public boolean isDebuggable();
+-  public void setDebuggable(boolean);
+-  public java.lang.String getFlavorName();
+-  public void setFlavorName(java.lang.String);
+-  public java.util.List<java.lang.String> getFlavorNamesWithDimensionNames();
+-  public void setFlavorNamesWithDimensionNames(java.util.List<java.lang.String>);
+-  public java.lang.String getBuildTypeName();
+-  public void setBuildTypeName(java.lang.String);
+-  public java.lang.String getVersionName();
+-  public void setVersionName(java.lang.String);
+-  public int getVersionCode();
+-  public void setVersionCode(int);
+-  public java.util.List<java.lang.Object> getItems();
+-  public void setItems(java.util.List<java.lang.Object>);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GenerateResValues gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GenerateResValues
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GenerateResValues	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GenerateResValues	1969-12-31 14:00:00.000000000 -1000
+@@ -1,67 +0,0 @@
+-public class com.android.build.gradle.tasks.GenerateResValues extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254631;
+-  public com.android.build.gradle.tasks.GenerateResValues();
+-  public java.util.List<java.lang.String> getItemValues();
+-  public void generate();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getResOutputDir();
+-  public void setResOutputDir(java.io.File);
+-  public java.util.List<java.lang.Object> getItems();
+-  public void setItems(java.util.List<java.lang.Object>);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GenerateSplitAbiRes gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GenerateSplitAbiRes
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GenerateSplitAbiRes	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GenerateSplitAbiRes	1969-12-31 14:00:00.000000000 -1000
+@@ -1,78 +0,0 @@
+-public class com.android.build.gradle.tasks.GenerateSplitAbiRes extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254545;
+-  public com.android.build.gradle.tasks.GenerateSplitAbiRes();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.lang.String getApplicationId();
+-  public void setApplicationId(java.lang.String);
+-  public int getVersionCode();
+-  public void setVersionCode(int);
+-  public java.lang.String getVersionName();
+-  public void setVersionName(java.lang.String);
+-  public java.lang.String getOutputBaseName();
+-  public void setOutputBaseName(java.lang.String);
+-  public java.util.Set<java.lang.String> getSplits();
+-  public void setSplits(java.util.Set<java.lang.String>);
+-  public java.io.File getOutputDirectory();
+-  public void setOutputDirectory(java.io.File);
+-  public boolean getDebuggable();
+-  public boolean isDebuggable();
+-  public void setDebuggable(boolean);
+-  public com.android.build.gradle.internal.dsl.AaptOptions getAaptOptions();
+-  public void setAaptOptions(com.android.build.gradle.internal.dsl.AaptOptions);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GroovyGradleDetector gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GroovyGradleDetector
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.GroovyGradleDetector	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.GroovyGradleDetector	1969-12-31 14:00:00.000000000 -1000
+@@ -1,4 +0,0 @@
+-public class com.android.build.gradle.tasks.GroovyGradleDetector extends com.android.tools.lint.checks.GradleDetector {
+-  public com.android.build.gradle.tasks.GroovyGradleDetector();
+-  public void visitBuildScript(com.android.tools.lint.detector.api.Context, java.util.Map<java.lang.String, java.lang.Object>);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.InvokeManifestMerger gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.InvokeManifestMerger
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.InvokeManifestMerger	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.InvokeManifestMerger	1969-12-31 14:00:00.000000000 -1000
+@@ -1,99 +0,0 @@
+-public class com.android.build.gradle.tasks.InvokeManifestMerger extends org.gradle.api.DefaultTask implements com.android.build.gradle.internal.tasks.OutputFileTask,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254284;
+-  public com.android.build.gradle.tasks.InvokeManifestMerger();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getMainManifestFile();
+-  public void setMainManifestFile(java.io.File);
+-  public java.util.List<java.io.File> getSecondaryManifestFiles();
+-  public void setSecondaryManifestFiles(java.util.List<java.io.File>);
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.JackTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.JackTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.JackTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.JackTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,146 +0,0 @@
+-public class com.android.build.gradle.tasks.JackTask extends org.gradle.api.tasks.compile.AbstractCompile implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857255064;
+-  public com.android.build.gradle.tasks.JackTask();
+-  public java.io.File getJackExe();
+-  public void compile();
+-  public java.lang.Object this$dist$invoke$6(java.lang.String, java.lang.Object);
+-  public void this$dist$set$6(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$6(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public static final com.android.sdklib.repository.FullRevision getJACK_MIN_REV();
+-  public com.android.build.gradle.BasePlugin getPlugin();
+-  public void setPlugin(com.android.build.gradle.BasePlugin);
+-  public java.util.Collection<java.io.File> getPackagedLibraries();
+-  public void setPackagedLibraries(java.util.Collection<java.io.File>);
+-  public java.util.Collection<java.io.File> getProguardFiles();
+-  public void setProguardFiles(java.util.Collection<java.io.File>);
+-  public boolean getDebug();
+-  public boolean isDebug();
+-  public void setDebug(boolean);
+-  public java.io.File getTempFolder();
+-  public void setTempFolder(java.io.File);
+-  public java.io.File getJackFile();
+-  public void setJackFile(java.io.File);
+-  public java.io.File getMappingFile();
+-  public void setMappingFile(java.io.File);
+-  public boolean getMultiDexEnabled();
+-  public boolean isMultiDexEnabled();
+-  public void setMultiDexEnabled(boolean);
+-  public int getMinSdkVersion();
+-  public void setMinSdkVersion(int);
+-  public java.lang.String getJavaMaxHeapSize();
+-  public void setJavaMaxHeapSize(java.lang.String);
+-  public java.lang.String this$7$computeEcjOptionFile();
+-  public java.lang.String this$7$computeBootClasspath();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.api.internal.ConventionMapping super$4$getConventionMapping();
+-  public java.io.File super$6$getDestinationDir();
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(java.lang.Iterable);
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$6$setDestinationDir(java.io.File);
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.SourceTask super$5$include(groovy.lang.Closure);
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$5$setSource(java.lang.Object);
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public java.lang.String super$6$getTargetCompatibility();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public void super$6$setTargetCompatibility(java.lang.String);
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public java.util.Set super$5$getIncludes();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.util.Set super$5$getExcludes();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public void super$6$setSourceCompatibility(java.lang.String);
+-  public org.gradle.api.tasks.SourceTask super$5$setIncludes(java.lang.Iterable);
+-  public org.gradle.api.tasks.SourceTask super$5$include(org.gradle.api.specs.Spec);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$4$conventionMapping(java.lang.String, java.util.concurrent.Callable);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public org.gradle.api.tasks.SourceTask super$5$source(java.lang.Object[]);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public org.gradle.api.file.FileTree super$5$getSource();
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$6$setClasspath(org.gradle.api.file.FileCollection);
+-  public org.gradle.api.file.FileCollection super$6$getClasspath();
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public org.gradle.api.tasks.SourceTask super$5$include(java.lang.Iterable);
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.api.tasks.SourceTask super$5$setExcludes(java.lang.Iterable);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.tasks.SourceTask super$5$include(java.lang.String[]);
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.api.Task super$4$conventionMapping(java.lang.String, groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(java.lang.String[]);
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(groovy.lang.Closure);
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public java.lang.String super$6$getSourceCompatibility();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public org.gradle.api.tasks.SourceTask super$5$exclude(org.gradle.api.specs.Spec);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.JillTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.JillTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.JillTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.JillTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,70 +0,0 @@
+-public class com.android.build.gradle.tasks.JillTask extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254528;
+-  public com.android.build.gradle.tasks.JillTask();
+-  public java.lang.String getBuildToolsVersion();
+-  public void taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-  public static java.io.File getJackFileName(java.io.File, java.io.File);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.util.Collection<java.io.File> getInputLibs();
+-  public void setInputLibs(java.util.Collection<java.io.File>);
+-  public java.io.File getOutputFolder();
+-  public void setOutputFolder(java.io.File);
+-  public com.android.build.gradle.internal.dsl.DexOptions getDexOptions();
+-  public void setDexOptions(com.android.build.gradle.internal.dsl.DexOptions);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.Lint gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.Lint
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.Lint	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.Lint	1969-12-31 14:00:00.000000000 -1000
+@@ -1,101 +0,0 @@
+-public class com.android.build.gradle.tasks.Lint extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254301;
+-  public com.android.build.gradle.tasks.Lint();
+-  public void setPlugin(com.android.build.gradle.BasePlugin);
+-  public void setVariantName(java.lang.String);
+-  public void setFatalOnly(boolean);
+-  public void lint();
+-  public void lintAllVariants(com.android.builder.model.AndroidProject);
+-  public void lintSingleVariant(com.android.builder.model.AndroidProject, java.lang.String);
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public void this$4$abort();
+-  public java.util.List this$4$runLint(com.android.builder.model.AndroidProject, java.lang.String, boolean);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.Lint$LintGradleIssueRegistry gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.Lint$LintGradleIssueRegistry
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.Lint$LintGradleIssueRegistry	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.Lint$LintGradleIssueRegistry	1969-12-31 14:00:00.000000000 -1000
+@@ -1,36 +0,0 @@
+-public class com.android.build.gradle.tasks.Lint$LintGradleIssueRegistry extends com.android.tools.lint.checks.BuiltinIssueRegistry implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public com.android.build.gradle.tasks.Lint$LintGradleIssueRegistry();
+-  public java.util.List<com.android.tools.lint.detector.api.Issue> getIssues();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public boolean super$2$isCategoryName(java.lang.String);
+-  public void super$1$wait(long, int);
+-  public java.util.List super$2$createDetectors(com.android.tools.lint.client.api.LintClient, com.android.tools.lint.client.api.Configuration, java.util.EnumSet, java.util.Map);
+-  public java.util.List super$3$getIssues();
+-  public void super$1$notify();
+-  public java.util.List super$2$getIssuesForScope(java.util.EnumSet);
+-  public java.lang.Class super$1$getClass();
+-  public void super$1$notifyAll();
+-  public com.android.tools.lint.detector.api.Issue super$2$getIssue(java.lang.String);
+-  public void super$1$finalize();
+-  public boolean super$2$isIssueId(java.lang.String);
+-  public void super$1$wait(long);
+-  public int super$3$getIssueCapacity(java.util.EnumSet);
+-  public java.util.List super$2$getCategories();
+-  public boolean super$1$equals(java.lang.Object);
+-  public java.lang.Object super$1$clone();
+-  public int super$1$hashCode();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ManifestProcessorTask gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ManifestProcessorTask
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ManifestProcessorTask	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ManifestProcessorTask	1969-12-31 14:00:00.000000000 -1000
+@@ -1,69 +0,0 @@
+-public abstract class com.android.build.gradle.tasks.ManifestProcessorTask extends com.android.build.gradle.internal.tasks.IncrementalTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254958;
+-  public com.android.build.gradle.tasks.ManifestProcessorTask();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getManifestOutputFile();
+-  public void setManifestOutputFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ManifestProcessorTask$1 gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ManifestProcessorTask$1
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ManifestProcessorTask$1	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ManifestProcessorTask$1	1969-12-31 14:00:00.000000000 -1000
+@@ -1,30 +0,0 @@
+-public class com.android.build.gradle.tasks.ManifestProcessorTask$1 implements com.google.common.base.Function<java.util.Map$Entry<java.lang.String, java.lang.String>, java.lang.String>, groovy.lang.GroovyObject {
+-  public groovy.lang.Reference keyValueJoiner;
+-  public com.android.build.gradle.tasks.ManifestProcessorTask this$0;
+-  public static transient boolean __$stMC;
+-  public java.lang.String apply(java.util.Map$Entry<java.lang.String, java.lang.String>);
+-  public java.lang.Object this$dist$invoke$1(java.lang.String, java.lang.Object);
+-  public void this$dist$set$1(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$1(java.lang.String);
+-  public java.lang.Object methodMissing(java.lang.String, java.lang.Object);
+-  public void propertyMissing(java.lang.String, java.lang.Object);
+-  public java.lang.Object propertyMissing(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public void setProperty(java.lang.String, java.lang.Object);
+-  public static void __$swapInit();
+-  public java.lang.Object apply(java.lang.Object);
+-  public void super$1$wait();
+-  public java.lang.String super$1$toString();
+-  public void super$1$wait(long);
+-  public void super$1$wait(long, int);
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public java.lang.Class super$1$getClass();
+-  public java.lang.Object super$1$clone();
+-  public boolean super$1$equals(java.lang.Object);
+-  public int super$1$hashCode();
+-  public void super$1$finalize();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.MergeAssets gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.MergeAssets
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.MergeAssets	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.MergeAssets	1969-12-31 14:00:00.000000000 -1000
+@@ -1,72 +0,0 @@
+-public class com.android.build.gradle.tasks.MergeAssets extends com.android.build.gradle.internal.tasks.IncrementalTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254840;
+-  public com.android.build.gradle.tasks.MergeAssets();
+-  public java.lang.Iterable<java.io.File> getRawInputFolders();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getOutputDir();
+-  public void setOutputDir(java.io.File);
+-  public java.util.List<com.android.ide.common.res2.AssetSet> getInputAssetSets();
+-  public void setInputAssetSets(java.util.List<com.android.ide.common.res2.AssetSet>);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.MergeManifests gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.MergeManifests
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.MergeManifests	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.MergeManifests	1969-12-31 14:00:00.000000000 -1000
+@@ -1,99 +0,0 @@
+-public class com.android.build.gradle.tasks.MergeManifests extends com.android.build.gradle.tasks.ManifestProcessorTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857255054;
+-  public com.android.build.gradle.tasks.MergeManifests();
+-  public java.io.File getMainManifest();
+-  public java.util.List<java.io.File> getManifestOverlays();
+-  public java.lang.String getPackageOverride();
+-  public int getVersionCode();
+-  public java.lang.String getVersionName();
+-  public java.lang.String getManifestPlaceholders();
+-  public java.util.List<java.io.File> getLibraryManifests();
+-  public java.lang.Object this$dist$invoke$6(java.lang.String, java.lang.Object);
+-  public void this$dist$set$6(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$6(java.lang.String);
+-  public static void __$swapInit();
+-  public java.lang.String getMinSdkVersion();
+-  public void setMinSdkVersion(java.lang.String);
+-  public java.lang.String getTargetSdkVersion();
+-  public void setTargetSdkVersion(java.lang.String);
+-  public java.lang.Integer getMaxSdkVersion();
+-  public void setMaxSdkVersion(java.lang.Integer);
+-  public java.io.File getReportFile();
+-  public void setReportFile(java.io.File);
+-  public com.android.builder.core.VariantConfiguration getVariantConfiguration();
+-  public void setVariantConfiguration(com.android.builder.core.VariantConfiguration);
+-  public com.android.build.gradle.internal.variant.ApkVariantOutputData getVariantOutputData();
+-  public void setVariantOutputData(com.android.build.gradle.internal.variant.ApkVariantOutputData);
+-  public java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl> getLibraries();
+-  public void setLibraries(java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl>);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$6$super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$6$serializeMap(java.util.Map);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public java.lang.Object super$6$super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void super$6$setManifestOutputFile(java.io.File);
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$6$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$6$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$6$$getStaticMetaClass();
+-  public java.lang.Object super$6$this$dist$get$5(java.lang.String);
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public java.lang.Object super$6$super$5$super$4$this$dist$get$3(java.lang.String);
+-  public void super$6$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public java.lang.Object super$6$super$5$this$dist$get$4(java.lang.String);
+-  public java.io.File super$6$getManifestOutputFile();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.lang.Object super$6$this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$6$super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void super$6$super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$6$this$dist$set$5(java.lang.String, java.lang.Object);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.MergeResources gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.MergeResources
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.MergeResources	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.MergeResources	1969-12-31 14:00:00.000000000 -1000
+@@ -1,83 +0,0 @@
+-public class com.android.build.gradle.tasks.MergeResources extends com.android.build.gradle.internal.tasks.IncrementalTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254963;
+-  public com.android.build.gradle.tasks.MergeResources();
+-  public java.lang.Iterable<java.io.File> getRawInputFolders();
+-  public java.lang.String getBuildToolsVersion();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getOutputDir();
+-  public void setOutputDir(java.io.File);
+-  public boolean getProcess9Patch();
+-  public boolean isProcess9Patch();
+-  public void setProcess9Patch(boolean);
+-  public boolean getUseNewCruncher();
+-  public boolean isUseNewCruncher();
+-  public void setUseNewCruncher(boolean);
+-  public boolean getInsertSourceMarkers();
+-  public boolean isInsertSourceMarkers();
+-  public void setInsertSourceMarkers(boolean);
+-  public java.util.List<com.android.ide.common.res2.ResourceSet> getInputResourceSets();
+-  public void setInputResourceSets(java.util.List<com.android.ide.common.res2.ResourceSet>);
+-  public com.android.ide.common.internal.PngCruncher this$6$getCruncher();
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.NdkCompile gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.NdkCompile
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.NdkCompile	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.NdkCompile	1969-12-31 14:00:00.000000000 -1000
+@@ -1,90 +0,0 @@
+-public class com.android.build.gradle.tasks.NdkCompile extends com.android.build.gradle.internal.tasks.NdkTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254905;
+-  public com.android.build.gradle.tasks.NdkCompile();
+-  public org.gradle.api.file.FileTree getSource();
+-  public void taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.util.List<java.io.File> getSourceFolders();
+-  public void setSourceFolders(java.util.List<java.io.File>);
+-  public java.io.File getGeneratedMakefile();
+-  public void setGeneratedMakefile(java.io.File);
+-  public boolean getDebuggable();
+-  public boolean isDebuggable();
+-  public void setDebuggable(boolean);
+-  public java.io.File getSoFolder();
+-  public void setSoFolder(java.io.File);
+-  public java.io.File getObjFolder();
+-  public void setObjFolder(java.io.File);
+-  public boolean getNdkRenderScriptMode();
+-  public boolean isNdkRenderScriptMode();
+-  public void setNdkRenderScriptMode(boolean);
+-  public boolean getNdkCygwinMode();
+-  public boolean isNdkCygwinMode();
+-  public void setNdkCygwinMode(boolean);
+-  public void this$6$writeMakefile(java.util.Set, java.io.File);
+-  public void this$6$runNdkBuild(java.io.File, java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.String super$5$getcFlags();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public com.android.build.gradle.internal.core.NdkConfig super$5$getNdkConfig();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public java.util.Set super$5$getAbiFilters();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public java.lang.String super$5$getStl();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.String super$5$getModuleName();
+-  public void super$5$setNdkConfig(com.android.build.gradle.internal.core.NdkConfig);
+-  public java.util.Set super$5$getLdLibs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PackageApplication gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PackageApplication
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PackageApplication	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PackageApplication	1969-12-31 14:00:00.000000000 -1000
+@@ -1,91 +0,0 @@
+-public class com.android.build.gradle.tasks.PackageApplication extends com.android.build.gradle.internal.tasks.IncrementalTask implements com.android.build.gradle.internal.tasks.OutputFileTask,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254882;
+-  public com.android.build.gradle.tasks.PackageApplication();
+-  public org.gradle.api.file.FileTree getNativeLibraries();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getResourceFile();
+-  public void setResourceFile(java.io.File);
+-  public java.io.File getDexFolder();
+-  public void setDexFolder(java.io.File);
+-  public java.util.Collection<java.io.File> getDexedLibraries();
+-  public void setDexedLibraries(java.util.Collection<java.io.File>);
+-  public java.io.File getJavaResourceDir();
+-  public void setJavaResourceDir(java.io.File);
+-  public java.util.Set<java.io.File> getJniFolders();
+-  public void setJniFolders(java.util.Set<java.io.File>);
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-  public void setAbiFilters(java.util.Set<java.lang.String>);
+-  public java.util.Set<java.io.File> getPackagedJars();
+-  public void setPackagedJars(java.util.Set<java.io.File>);
+-  public boolean getJniDebugBuild();
+-  public boolean isJniDebugBuild();
+-  public void setJniDebugBuild(boolean);
+-  public com.android.build.gradle.internal.dsl.SigningConfig getSigningConfig();
+-  public void setSigningConfig(com.android.build.gradle.internal.dsl.SigningConfig);
+-  public com.android.build.gradle.internal.dsl.PackagingOptions getPackagingOptions();
+-  public void setPackagingOptions(com.android.build.gradle.internal.dsl.PackagingOptions);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PackageSplitAbi gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PackageSplitAbi
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PackageSplitAbi	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PackageSplitAbi	1969-12-31 14:00:00.000000000 -1000
+@@ -1,82 +0,0 @@
+-public class com.android.build.gradle.tasks.PackageSplitAbi extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254563;
+-  public com.android.build.gradle.tasks.PackageSplitAbi();
+-  public synchronized com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputSplitFiles();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputFiles();
+-  public void setOutputFiles(com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile>);
+-  public java.io.File getInputDirectory();
+-  public void setInputDirectory(java.io.File);
+-  public java.io.File getOutputDirectory();
+-  public void setOutputDirectory(java.io.File);
+-  public java.util.Set<java.lang.String> getSplits();
+-  public void setSplits(java.util.Set<java.lang.String>);
+-  public java.lang.String getOutputBaseName();
+-  public void setOutputBaseName(java.lang.String);
+-  public boolean getJniDebuggable();
+-  public boolean isJniDebuggable();
+-  public void setJniDebuggable(boolean);
+-  public com.android.build.gradle.internal.dsl.SigningConfig getSigningConfig();
+-  public void setSigningConfig(com.android.build.gradle.internal.dsl.SigningConfig);
+-  public com.android.build.gradle.internal.dsl.PackagingOptions getPackagingOptions();
+-  public void setPackagingOptions(com.android.build.gradle.internal.dsl.PackagingOptions);
+-  public java.util.Collection<java.io.File> getJniFolders();
+-  public void setJniFolders(java.util.Collection<java.io.File>);
+-  public boolean this$5$isAbiSplit(java.lang.String);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PackageSplitRes gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PackageSplitRes
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PackageSplitRes	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PackageSplitRes	1969-12-31 14:00:00.000000000 -1000
+@@ -1,74 +0,0 @@
+-public class com.android.build.gradle.tasks.PackageSplitRes extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254617;
+-  public com.android.build.gradle.tasks.PackageSplitRes();
+-  public synchronized com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputSplitFiles();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getmOutputFiles();
+-  public void setmOutputFiles(com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile>);
+-  public java.io.File getInputDirectory();
+-  public void setInputDirectory(java.io.File);
+-  public java.io.File getOutputDirectory();
+-  public void setOutputDirectory(java.io.File);
+-  public java.util.Set<java.lang.String> getSplits();
+-  public void setSplits(java.util.Set<java.lang.String>);
+-  public java.lang.String getOutputBaseName();
+-  public void setOutputBaseName(java.lang.String);
+-  public com.android.build.gradle.internal.dsl.SigningConfig getSigningConfig();
+-  public void setSigningConfig(com.android.build.gradle.internal.dsl.SigningConfig);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PreDex gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PreDex
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.PreDex	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.PreDex	1969-12-31 14:00:00.000000000 -1000
+@@ -1,73 +0,0 @@
+-public class com.android.build.gradle.tasks.PreDex extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254584;
+-  public com.android.build.gradle.tasks.PreDex();
+-  public java.lang.String getBuildToolsVersion();
+-  public void taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-  public static java.io.File getDexFileName(java.io.File, java.io.File);
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.util.Collection<java.io.File> getInputFiles();
+-  public void setInputFiles(java.util.Collection<java.io.File>);
+-  public java.io.File getOutputFolder();
+-  public void setOutputFolder(java.io.File);
+-  public com.android.build.gradle.internal.dsl.DexOptions getDexOptions();
+-  public void setDexOptions(com.android.build.gradle.internal.dsl.DexOptions);
+-  public boolean getMultiDex();
+-  public boolean isMultiDex();
+-  public void setMultiDex(boolean);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ProcessAndroidResources gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ProcessAndroidResources
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ProcessAndroidResources	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ProcessAndroidResources	1969-12-31 14:00:00.000000000 -1000
+@@ -1,105 +0,0 @@
+-public class com.android.build.gradle.tasks.ProcessAndroidResources extends com.android.build.gradle.internal.tasks.IncrementalTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254812;
+-  public com.android.build.gradle.tasks.ProcessAndroidResources();
+-  public java.lang.String getBuildToolsVersion();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getManifestFile();
+-  public void setManifestFile(java.io.File);
+-  public java.io.File getResDir();
+-  public void setResDir(java.io.File);
+-  public java.io.File getAssetsDir();
+-  public void setAssetsDir(java.io.File);
+-  public java.io.File getSourceOutputDir();
+-  public void setSourceOutputDir(java.io.File);
+-  public java.io.File getTextSymbolOutputDir();
+-  public void setTextSymbolOutputDir(java.io.File);
+-  public java.io.File getPackageOutputFile();
+-  public void setPackageOutputFile(java.io.File);
+-  public java.io.File getProguardOutputFile();
+-  public void setProguardOutputFile(java.io.File);
+-  public java.util.Collection<java.lang.String> getResourceConfigs();
+-  public void setResourceConfigs(java.util.Collection<java.lang.String>);
+-  public java.lang.String getPreferredDensity();
+-  public void setPreferredDensity(java.lang.String);
+-  public java.util.List<com.android.build.gradle.internal.dependency.SymbolFileProviderImpl> getLibraries();
+-  public void setLibraries(java.util.List<com.android.build.gradle.internal.dependency.SymbolFileProviderImpl>);
+-  public java.lang.String getPackageForR();
+-  public void setPackageForR(java.lang.String);
+-  public java.util.Collection<java.lang.String> getSplits();
+-  public void setSplits(java.util.Collection<java.lang.String>);
+-  public boolean getEnforceUniquePackageName();
+-  public boolean isEnforceUniquePackageName();
+-  public void setEnforceUniquePackageName(boolean);
+-  public com.android.builder.core.VariantConfiguration$Type getType();
+-  public void setType(com.android.builder.core.VariantConfiguration$Type);
+-  public boolean getDebuggable();
+-  public boolean isDebuggable();
+-  public void setDebuggable(boolean);
+-  public boolean getPseudoLocalesEnabled();
+-  public boolean isPseudoLocalesEnabled();
+-  public void setPseudoLocalesEnabled(boolean);
+-  public com.android.build.gradle.internal.dsl.AaptOptions getAaptOptions();
+-  public void setAaptOptions(com.android.build.gradle.internal.dsl.AaptOptions);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$5$taskAction(org.gradle.api.tasks.incremental.IncrementalTaskInputs);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ProcessManifest gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ProcessManifest
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ProcessManifest	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ProcessManifest	1969-12-31 14:00:00.000000000 -1000
+@@ -1,94 +0,0 @@
+-public class com.android.build.gradle.tasks.ProcessManifest extends com.android.build.gradle.tasks.ManifestProcessorTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254981;
+-  public com.android.build.gradle.tasks.ProcessManifest();
+-  public java.io.File getMainManifest();
+-  public java.lang.String getPackageOverride();
+-  public int getVersionCode();
+-  public java.lang.String getVersionName();
+-  public java.util.List<java.io.File> getManifestOverlays();
+-  public java.lang.String getManifestPlaceholders();
+-  public java.lang.Object this$dist$invoke$6(java.lang.String, java.lang.Object);
+-  public void this$dist$set$6(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$6(java.lang.String);
+-  public static void __$swapInit();
+-  public java.lang.String getMinSdkVersion();
+-  public void setMinSdkVersion(java.lang.String);
+-  public java.lang.String getTargetSdkVersion();
+-  public void setTargetSdkVersion(java.lang.String);
+-  public java.lang.Integer getMaxSdkVersion();
+-  public void setMaxSdkVersion(java.lang.Integer);
+-  public com.android.builder.core.VariantConfiguration getVariantConfiguration();
+-  public void setVariantConfiguration(com.android.builder.core.VariantConfiguration);
+-  public java.io.File getReportFile();
+-  public void setReportFile(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$6$super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$6$serializeMap(java.util.Map);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public java.lang.Object super$6$super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void super$6$setManifestOutputFile(java.io.File);
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$6$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$6$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$6$$getStaticMetaClass();
+-  public java.lang.Object super$6$this$dist$get$5(java.lang.String);
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public java.lang.Object super$6$super$5$super$4$this$dist$get$3(java.lang.String);
+-  public void super$6$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public java.lang.Object super$6$super$5$this$dist$get$4(java.lang.String);
+-  public java.io.File super$6$getManifestOutputFile();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.lang.Object super$6$this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$6$super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void super$6$super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$6$this$dist$set$5(java.lang.String, java.lang.Object);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ProcessTestManifest gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ProcessTestManifest
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ProcessTestManifest	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ProcessTestManifest	1969-12-31 14:00:00.000000000 -1000
+@@ -1,99 +0,0 @@
+-public class com.android.build.gradle.tasks.ProcessTestManifest extends com.android.build.gradle.tasks.ManifestProcessorTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254989;
+-  public com.android.build.gradle.tasks.ProcessTestManifest();
+-  public java.util.List<java.io.File> getLibraryManifests();
+-  public java.lang.Object this$dist$invoke$6(java.lang.String, java.lang.Object);
+-  public void this$dist$set$6(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$6(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getTestManifestFile();
+-  public void setTestManifestFile(java.io.File);
+-  public java.io.File getTmpDir();
+-  public void setTmpDir(java.io.File);
+-  public java.lang.String getTestApplicationId();
+-  public void setTestApplicationId(java.lang.String);
+-  public java.lang.String getMinSdkVersion();
+-  public void setMinSdkVersion(java.lang.String);
+-  public java.lang.String getTargetSdkVersion();
+-  public void setTargetSdkVersion(java.lang.String);
+-  public java.lang.String getTestedApplicationId();
+-  public void setTestedApplicationId(java.lang.String);
+-  public java.lang.String getInstrumentationRunner();
+-  public void setInstrumentationRunner(java.lang.String);
+-  public java.lang.Boolean getHandleProfiling();
+-  public void setHandleProfiling(java.lang.Boolean);
+-  public java.lang.Boolean getFunctionalTest();
+-  public void setFunctionalTest(java.lang.Boolean);
+-  public java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl> getLibraries();
+-  public void setLibraries(java.util.List<com.android.build.gradle.internal.dependency.ManifestDependencyImpl>);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public java.io.File super$5$getIncrementalFolder();
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$5$doIncrementalTaskAction(java.util.Map);
+-  public void super$6$super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public void super$5$setIncrementalFolder(java.io.File);
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public boolean super$5$isIncremental();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$6$serializeMap(java.util.Map);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public java.lang.Object super$6$super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void super$6$setManifestOutputFile(java.io.File);
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$6$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$6$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$6$$getStaticMetaClass();
+-  public java.lang.Object super$6$this$dist$get$5(java.lang.String);
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public java.lang.Object super$6$super$5$super$4$this$dist$get$3(java.lang.String);
+-  public void super$6$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public java.lang.Object super$6$super$5$this$dist$get$4(java.lang.String);
+-  public java.io.File super$6$getManifestOutputFile();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.lang.Object super$6$this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$6$super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void super$6$super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public void super$6$this$dist$set$5(java.lang.String, java.lang.Object);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.RenderscriptCompile gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.RenderscriptCompile
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.RenderscriptCompile	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.RenderscriptCompile	1969-12-31 14:00:00.000000000 -1000
+@@ -1,96 +0,0 @@
+-public class com.android.build.gradle.tasks.RenderscriptCompile extends com.android.build.gradle.internal.tasks.NdkTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254937;
+-  public com.android.build.gradle.tasks.RenderscriptCompile();
+-  public java.lang.String getBuildToolsVersion();
+-  public void taskAction();
+-  public java.lang.Object this$dist$invoke$5(java.lang.String, java.lang.Object);
+-  public void this$dist$set$5(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$5(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getSourceOutputDir();
+-  public void setSourceOutputDir(java.io.File);
+-  public java.io.File getResOutputDir();
+-  public void setResOutputDir(java.io.File);
+-  public java.io.File getObjOutputDir();
+-  public void setObjOutputDir(java.io.File);
+-  public java.io.File getLibOutputDir();
+-  public void setLibOutputDir(java.io.File);
+-  public java.util.List<java.io.File> getSourceDirs();
+-  public void setSourceDirs(java.util.List<java.io.File>);
+-  public java.util.List<java.io.File> getImportDirs();
+-  public void setImportDirs(java.util.List<java.io.File>);
+-  public java.lang.Integer getTargetApi();
+-  public void setTargetApi(java.lang.Integer);
+-  public boolean getSupportMode();
+-  public boolean isSupportMode();
+-  public void setSupportMode(boolean);
+-  public int getOptimLevel();
+-  public void setOptimLevel(int);
+-  public boolean getDebugBuild();
+-  public boolean isDebugBuild();
+-  public void setDebugBuild(boolean);
+-  public boolean getNdkMode();
+-  public boolean isNdkMode();
+-  public void setNdkMode(boolean);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public java.lang.Object super$5$this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.String super$5$getcFlags();
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public com.android.build.gradle.internal.core.NdkConfig super$5$getNdkConfig();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$5$super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$5$super$4$this$dist$get$3(java.lang.String);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$5$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public java.lang.Object super$5$this$dist$get$4(java.lang.String);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$5$super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public void super$5$this$dist$set$4(java.lang.String, java.lang.Object);
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public java.util.Set super$5$getAbiFilters();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public java.lang.String super$5$getStl();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.String super$5$getModuleName();
+-  public void super$5$setNdkConfig(com.android.build.gradle.internal.core.NdkConfig);
+-  public java.util.Set super$5$getLdLibs();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ResourceException gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ResourceException
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ResourceException	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ResourceException	1969-12-31 14:00:00.000000000 -1000
+@@ -1,3 +0,0 @@
+-public class com.android.build.gradle.tasks.ResourceException extends java.lang.RuntimeException {
+-  public com.android.build.gradle.tasks.ResourceException(java.lang.String, java.lang.Throwable);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ResourceUsageAnalyzer gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ResourceUsageAnalyzer
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ResourceUsageAnalyzer	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ResourceUsageAnalyzer	1969-12-31 14:00:00.000000000 -1000
+@@ -1,16 +0,0 @@
+-public class com.android.build.gradle.tasks.ResourceUsageAnalyzer {
+-  public static final boolean TWO_PASS_AAPT;
+-  public static final int TYPICAL_RESOURCE_COUNT;
+-  public com.android.build.gradle.tasks.ResourceUsageAnalyzer(java.io.File, java.io.File, java.io.File, java.io.File, java.io.File);
+-  public void analyze() throws java.io.IOException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException;
+-  public boolean isDryRun();
+-  public void setDryRun(boolean);
+-  public boolean isVerbose();
+-  public void setVerbose(boolean);
+-  public boolean isDebug();
+-  public void setDebug(boolean);
+-  public void rewriteResourceZip(java.io.File, java.io.File) throws java.io.IOException;
+-  public void removeUnused(java.io.File) throws java.io.IOException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException;
+-  public static java.lang.String getFieldName(java.lang.String);
+-  public int getUnusedResourceCount();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource	1969-12-31 14:00:00.000000000 -1000
+@@ -1,16 +0,0 @@
+-public class com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource {
+-  public com.android.resources.ResourceType type;
+-  public java.lang.String name;
+-  public int value;
+-  public boolean reachable;
+-  public boolean hasDefault;
+-  public java.util.List<com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource> references;
+-  public final java.util.List<java.io.File> declarations;
+-  public java.lang.String toString();
+-  public boolean equals(java.lang.Object);
+-  public int hashCode();
+-  public void addLocation(java.io.File);
+-  public void addReference(com.android.build.gradle.tasks.ResourceUsageAnalyzer$Resource);
+-  public java.lang.String getUrl();
+-  public boolean isRelevantType();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ShrinkResources gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ShrinkResources
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ShrinkResources	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ShrinkResources	1969-12-31 14:00:00.000000000 -1000
+@@ -1,67 +0,0 @@
+-public class com.android.build.gradle.tasks.ShrinkResources extends com.android.build.gradle.internal.tasks.BaseTask implements groovy.lang.GroovyObject {
+-  public com.android.build.gradle.internal.variant.BaseVariantOutputData variantOutputData;
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254599;
+-  public com.android.build.gradle.tasks.ShrinkResources();
+-  public void shrink();
+-  public java.lang.Object this$dist$invoke$4(java.lang.String, java.lang.Object);
+-  public void this$dist$set$4(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$4(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getUncompressedResources();
+-  public void setUncompressedResources(java.io.File);
+-  public java.io.File getCompressedResources();
+-  public void setCompressedResources(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$4$setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Class super$1$getClass();
+-  public java.util.Set super$2$getDependsOn();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public com.android.builder.core.AndroidBuilder super$4$getBuilder();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public com.android.build.gradle.BasePlugin super$4$getPlugin();
+-  public java.lang.String super$2$getPath();
+-  public void super$2$execute();
+-  public groovy.lang.MetaClass super$4$getMetaClass();
+-  public boolean super$2$getImpliesSubProjects();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public java.lang.Object super$4$this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public java.lang.String super$2$getGroup();
+-  public groovy.lang.MetaClass super$4$$getStaticMetaClass();
+-  public void super$1$wait(long);
+-  public java.lang.Object super$4$this$dist$get$3(java.lang.String);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public void super$4$this$dist$set$3(java.lang.String, java.lang.Object);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public void super$2$setGroup(java.lang.String);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public java.lang.String super$2$toString();
+-  public void super$4$emptyFolder(java.io.File);
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.lang.Object super$4$invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object super$4$getProperty(java.lang.String);
+-  public void super$4$setPlugin(com.android.build.gradle.BasePlugin);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.SplitZipAlign gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.SplitZipAlign
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.SplitZipAlign	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.SplitZipAlign	1969-12-31 14:00:00.000000000 -1000
+@@ -1,110 +0,0 @@
+-public class com.android.build.gradle.tasks.SplitZipAlign extends org.gradle.api.DefaultTask implements groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254256;
+-  public com.android.build.gradle.tasks.SplitZipAlign();
+-  public synchronized com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getOutputSplitFiles();
+-  public void splitZipAlign();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getInputDirectory();
+-  public void setInputDirectory(java.io.File);
+-  public java.lang.String getOutputBaseName();
+-  public void setOutputBaseName(java.lang.String);
+-  public java.util.Set<java.lang.String> getDensityFilters();
+-  public void setDensityFilters(java.util.Set<java.lang.String>);
+-  public java.util.Set<java.lang.String> getAbiFilters();
+-  public void setAbiFilters(java.util.Set<java.lang.String>);
+-  public java.io.File getOutputDirectory();
+-  public void setOutputDirectory(java.io.File);
+-  public java.io.File getZipAlignExe();
+-  public void setZipAlignExe(java.io.File);
+-  public com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile> getmOutputFiles();
+-  public void setmOutputFiles(com.google.common.collect.ImmutableList<com.android.build.gradle.api.ApkOutputFile>);
+-  public void this$4$processFilters(java.util.Set, com.android.build.OutputFile$FilterType, com.google.common.collect.ImmutableList$Builder);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ZipAlign gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ZipAlign
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.ZipAlign	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.ZipAlign	1969-12-31 14:00:00.000000000 -1000
+@@ -1,100 +0,0 @@
+-public class com.android.build.gradle.tasks.ZipAlign extends org.gradle.api.DefaultTask implements com.android.build.gradle.internal.tasks.OutputFileTask,groovy.lang.GroovyObject {
+-  public static transient boolean __$stMC;
+-  public static long __timeStamp;
+-  public static long __timeStamp__239_neverHappen1420857254237;
+-  public com.android.build.gradle.tasks.ZipAlign();
+-  public void zipAlign();
+-  public java.lang.Object this$dist$invoke$3(java.lang.String, java.lang.Object);
+-  public void this$dist$set$3(java.lang.String, java.lang.Object);
+-  public java.lang.Object this$dist$get$3(java.lang.String);
+-  public groovy.lang.MetaClass getMetaClass();
+-  public void setMetaClass(groovy.lang.MetaClass);
+-  public java.lang.Object invokeMethod(java.lang.String, java.lang.Object);
+-  public java.lang.Object getProperty(java.lang.String);
+-  public static void __$swapInit();
+-  public java.io.File getOutputFile();
+-  public void setOutputFile(java.io.File);
+-  public java.io.File getInputFile();
+-  public void setInputFile(java.io.File);
+-  public java.io.File getZipAlignExe();
+-  public void setZipAlignExe(java.io.File);
+-  public void super$2$onlyIf(org.gradle.api.specs.Spec);
+-  public void super$2$setImpliesSubProjects(boolean);
+-  public void super$2$setDependsOn(java.lang.Iterable);
+-  public void super$2$setProject(org.gradle.api.Project);
+-  public org.gradle.api.Task super$2$dependsOn(java.lang.Object[]);
+-  public org.gradle.api.Task super$2$finalizedBy(java.lang.Object[]);
+-  public org.gradle.logging.LoggingManagerInternal super$2$getLogging();
+-  public org.gradle.api.tasks.TaskInputs super$2$getInputs();
+-  public void super$2$addValidator(org.gradle.api.internal.tasks.execution.TaskValidator);
+-  public org.gradle.api.plugins.Convention super$2$getConvention();
+-  public void super$2$executeWithoutThrowingTaskFailure();
+-  public boolean super$2$getDidWork();
+-  public java.lang.Class super$1$getClass();
+-  public void super$2$setName(java.lang.String);
+-  public java.util.Set super$2$getDependsOn();
+-  public void super$2$setDidWork(boolean);
+-  public java.io.File super$2$getTemporaryDir();
+-  public org.gradle.logging.StandardOutputCapture super$2$getStandardOutputCapture();
+-  public int super$1$hashCode();
+-  public java.lang.String super$2$getName();
+-  public org.gradle.api.tasks.TaskDependency super$2$getMustRunAfter();
+-  public void super$2$setExecuter(org.gradle.api.internal.tasks.TaskExecuter);
+-  public org.gradle.api.logging.Logger super$2$getLogger();
+-  public org.gradle.api.specs.Spec super$2$getOnlyIf();
+-  public void super$2$setGroup(java.lang.String);
+-  public java.util.List super$2$getActions();
+-  public org.gradle.api.internal.tasks.TaskStateInternal super$2$getState();
+-  public void super$2$setOnlyIf(org.gradle.api.specs.Spec);
+-  public org.gradle.api.internal.tasks.TaskDependencyInternal super$2$getTaskDependencies();
+-  public org.gradle.api.plugins.ExtensionContainer super$2$getExtensions();
+-  public void super$2$setMustRunAfter(java.lang.Iterable);
+-  public boolean super$2$hasProperty(java.lang.String);
+-  public void super$2$setShouldRunAfter(java.lang.Iterable);
+-  public org.gradle.api.Task super$2$doFirst(groovy.lang.Closure);
+-  public java.lang.Object super$2$property(java.lang.String);
+-  public java.lang.String super$2$toString();
+-  public org.gradle.api.tasks.TaskDependency super$2$getShouldRunAfter();
+-  public org.gradle.api.Task super$2$doFirst(org.gradle.api.Action);
+-  public void super$2$setDescription(java.lang.String);
+-  public org.gradle.api.Task super$2$deleteAllActions();
+-  public boolean super$2$isEnabled();
+-  public void super$2$setProperty(java.lang.String, java.lang.Object);
+-  public int super$2$compareTo(org.gradle.api.Task);
+-  public org.gradle.api.Task super$2$doLast(org.gradle.api.Action);
+-  public java.lang.String super$2$getPath();
+-  public org.gradle.api.Task super$2$leftShift(groovy.lang.Closure);
+-  public void super$1$wait();
+-  public void super$2$execute();
+-  public boolean super$2$getImpliesSubProjects();
+-  public boolean super$2$getEnabled();
+-  public void super$2$onlyIf(groovy.lang.Closure);
+-  public java.lang.String super$2$getDescription();
+-  public void super$2$setOnlyIf(groovy.lang.Closure);
+-  public java.util.List super$2$getValidators();
+-  public org.gradle.api.Task super$2$doLast(groovy.lang.Closure);
+-  public org.gradle.api.internal.DynamicObject super$2$getAsDynamicObject();
+-  public java.util.List super$2$getTaskActions();
+-  public void super$2$setEnabled(boolean);
+-  public org.gradle.internal.Factory super$2$getTemporaryDirFactory();
+-  public org.gradle.api.internal.tasks.TaskExecuter super$2$getExecuter();
+-  public org.gradle.api.Task super$2$mustRunAfter(java.lang.Object[]);
+-  public org.gradle.api.Project super$2$getProject();
+-  public void super$1$notify();
+-  public void super$1$notifyAll();
+-  public void super$2$setFinalizedBy(java.lang.Iterable);
+-  public org.gradle.api.AntBuilder super$2$getAnt();
+-  public org.gradle.api.Task super$2$configure(groovy.lang.Closure);
+-  public java.lang.Object super$1$clone();
+-  public void super$1$wait(long, int);
+-  public java.lang.String super$2$getGroup();
+-  public org.gradle.api.internal.TaskOutputsInternal super$2$getOutputs();
+-  public org.gradle.internal.service.ServiceRegistry super$2$getServices();
+-  public void super$1$finalize();
+-  public void super$2$setActions(java.util.List);
+-  public void super$1$wait(long);
+-  public boolean super$2$dependsOnTaskDidWork();
+-  public org.gradle.api.tasks.TaskDependency super$2$shouldRunAfter(java.lang.Object[]);
+-  public boolean super$1$equals(java.lang.Object);
+-  public org.gradle.api.tasks.TaskDependency super$2$getFinalizedBy();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.annotations.ApiDatabase gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.annotations.ApiDatabase
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.annotations.ApiDatabase	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.annotations.ApiDatabase	1969-12-31 14:00:00.000000000 -1000
+@@ -1,6 +0,0 @@
+-public class com.android.build.gradle.tasks.annotations.ApiDatabase {
+-  public com.android.build.gradle.tasks.annotations.ApiDatabase(java.util.List<java.lang.String>);
+-  public com.android.build.gradle.tasks.annotations.ApiDatabase(java.io.File) throws java.io.IOException;
+-  public boolean hasMethod(java.lang.String, java.lang.String, java.lang.String);
+-  public boolean hasField(java.lang.String, java.lang.String);
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.annotations.Extractor gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.annotations.Extractor
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.annotations.Extractor	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.annotations.Extractor	1969-12-31 14:00:00.000000000 -1000
+@@ -1,23 +0,0 @@
+-public class com.android.build.gradle.tasks.annotations.Extractor {
+-  public static final java.lang.String ANDROID_ANNOTATIONS_PREFIX;
+-  public static final java.lang.String ANDROID_NULLABLE;
+-  public static final java.lang.String SUPPORT_NULLABLE;
+-  public static final java.lang.String RESOURCE_TYPE_ANNOTATIONS_SUFFIX;
+-  public static final java.lang.String ANDROID_NOTNULL;
+-  public static final java.lang.String SUPPORT_NOTNULL;
+-  public static final java.lang.String ANDROID_INT_DEF;
+-  public static final java.lang.String ANDROID_STRING_DEF;
+-  public static final java.lang.String IDEA_NULLABLE;
+-  public static final java.lang.String IDEA_NOTNULL;
+-  public static final java.lang.String IDEA_MAGIC;
+-  public static final java.lang.String IDEA_CONTRACT;
+-  public static final java.lang.String IDEA_NON_NLS;
+-  public com.android.build.gradle.tasks.annotations.Extractor(com.android.build.gradle.tasks.annotations.ApiDatabase, java.io.File, boolean);
+-  public void extractFromProjectSource(java.util.Collection<org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration>);
+-  public void removeTypedefClasses();
+-  public void export(java.io.File);
+-  public void writeStats();
+-  public void mergeExisting(java.io.File);
+-  public void setListIgnored(boolean);
+-  public boolean isListIgnored();
+-}
+diff -U 0 -N gradle-1.0.1_489108d9/com.android.build.gradle.tasks.annotations.TypedefCollector gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.annotations.TypedefCollector
+--- gradle-1.0.1_489108d9/com.android.build.gradle.tasks.annotations.TypedefCollector	2015-08-06 11:05:04.000000000 -1000
++++ gradle-1.1.0-rc3_9ee1312c/com.android.build.gradle.tasks.annotations.TypedefCollector	1969-12-31 14:00:00.000000000 -1000
+@@ -1,7 +0,0 @@
+-public class com.android.build.gradle.tasks.annotations.TypedefCollector extends org.eclipse.jdt.internal.compiler.ASTVisitor {
+-  public com.android.build.gradle.tasks.annotations.TypedefCollector(java.util.Collection<org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration>, boolean, boolean);
+-  public java.util.List<java.io.File> getNonPublicTypedefClassFiles();
+-  public java.util.Map<java.lang.String, org.eclipse.jdt.internal.compiler.ast.Annotation> getTypedefs();
+-  public boolean visit(org.eclipse.jdt.internal.compiler.ast.TypeDeclaration, org.eclipse.jdt.internal.compiler.lookup.ClassScope);
+-  public boolean visit(org.eclipse.jdt.internal.compiler.ast.TypeDeclaration, org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope);
+-}
+```
